@@ -75,7 +75,7 @@ function createDocument(preview,download) {
 
 
   if (App.request_form == 'volbaPostouSTrvalymPobytom') {
-    paragraph = 'Podľa § 60 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku 2016.';
+    paragraph = 'Podľa § 60 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+'.';
     localaddress = [
       {text: '', style: 'spacesmall'},
       {
@@ -121,7 +121,7 @@ function createDocument(preview,download) {
       }
     ];
   } else if (App.request_form == 'volbaPostouBezTrvalehoPobytu') {
-    paragraph = 'Podľa § 59 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku 2016 a o zaslanie hlasovacích lístkov a obálok na adresu:';
+    paragraph = 'Podľa § 59 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+' a o zaslanie hlasovacích lístkov a obálok na adresu:';
     noTP = [
 
       {text: '', style: 'space'},
@@ -161,7 +161,7 @@ function createDocument(preview,download) {
       },
       {text: '', style: 'space'},
       {
-        text: 'Na účely voľby poštou do Národnej rady Slovenskej republiky v roku 2016',
+        text: 'Na účely voľby poštou do Národnej rady Slovenskej republiky v roku '+elections_year+'',
         alignment: 'center'
       },
       {text: '', style: 'space'},
@@ -192,7 +192,7 @@ function createDocument(preview,download) {
         alignment: 'center'
       },
       {
-        text: 'pre voľby do Národnej rady Slovenskej republiky v roku 2016',
+        text: 'pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+'',
         style: 'header',
         alignment: 'center'
       },
@@ -377,7 +377,7 @@ function createDocument(preview,download) {
         text: [
           {text: 'podľa § 46 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov '},
           {text: 'o vydanie hlasovacieho preukazu', bold: true},
-          {text: ' pre voľby do Národnej rady Slovenskej republiky v roku 2016.'},
+          {text: ' pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+'.'},
         ]
       },
       {text: '', style: 'space'},

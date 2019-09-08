@@ -61,7 +61,10 @@ RequestGeneratorApp.prototype = {
         });
 
         $('.nav--progress a').on('click', function() {
-            App.Analytics.trackStepBack(that.getStep(that.active_section), that.getPreviousStep());
+            let step = that.getPreviousStep();
+            if(App.Analytics && step){
+                App.Analytics.trackStepBack(that.getStep(that.active_section), step);
+            }
         });
     },
 
@@ -339,8 +342,10 @@ RequestGeneratorApp.prototype = {
         $('.section').hide();
         $.when($('#' + this.active_section).show()).done(function(){
             resizeCanvas();
-            App.Analytics.trackStep(location.hash.replace( /^#/, ''), that.getStep(that.active_section));
-
+            let step = that.getStep(that.active_section);
+            if(App.Analytics && step){
+                App.Analytics.trackStep(location.hash.replace( /^#/, ''), step);
+            }
             $('html, body').animate({ scrollTop: 0 }, 'slow');
 
             if (that.active_section == 'ziadost')

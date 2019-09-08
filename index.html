@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- add description of the website -->
-	<title>Vytvorenie žiadosti o voľbu do NRSR 2016</title>
+	<title>Vytvorenie žiadosti o voľbu do NRSR 2020</title>
 	<meta name="description" content="Pripravte si žiadosť cez telefón a bez čítačky. Stačí Vám adresa a rodné číslo." />
 
 	<!-- Latest compiled and minified CSS -->
@@ -77,7 +77,7 @@
 
 		<div class="mobile hidden">
 
-			<h1>Parlamentné voľby 2016</h1>
+			<h1>Parlamentné voľby <span class="rok-volieb"></span></h1>
 			<h2>Stále môžete požiadať o možnosť voliť napríklad z lyžovačky v Tatrách.</h2>
 			<p class="text-justify">
 				Pripravte si žiadosť o <b>Hlasovací preukaz</b>. Hlasovacím preukazom je možné voliť v ktorejkoľvek volebnej miestnosti na Slovensku. Žiadosť môžete poslať poštou, alebo jednoducho tu a teraz e-mailom.
@@ -88,8 +88,8 @@
 
 			<div class="fb-share-button" data-href="https://volby.digital/" data-layout="button_count"></div>
 
-			<p>
-				<a class="btn btn-lg btn-success btn-step btn-volby-blue disabled" href="#tp-na-slovensku&volba-s-preukazom" role="button"><strong>Pripraviť žiadosť</strong></a>
+			<p> 
+				<a id="main" class="btn btn-lg btn-success btn-step btn-volby-blue" href="#tp-na-slovensku&volba-s-preukazom" role="button"><strong>Pripraviť žiadosť</strong></a>
 			</p>
 			<ul>
 			  <li>Vytvorenie trvá približne <strong>3 minúty</strong></li>
@@ -100,7 +100,7 @@
 			<!-- Sem dorobime Social buttonky -->
 
 			<p class="text-justify alert alert-info">
-				Termín na podávanie žiadostí o <b>voľbu poštou</b> zo zahraničia vypršal 15.1.2016. Kto zmeškal a má trvalý pobyt na Slovensku, stále sa môže posnažiť prísť <b>5.3.2016</b> do svojej volebnej miestnosti, alebo <a class="" href="#tp-na-slovensku&volba-s-preukazom" role="button">požiadať</a> o volebný preukaz a prísť do ktorejkoľvek volebnej miestnosti na Slovensku. <br /><small>(Volič s trvalým pobytom v Medzilaborciach žijuci v Hodoníne bude musieť prísť len do blízkeho Holíča. ;) )</small>
+				Termín na podávanie žiadostí o <b>voľbu poštou</b> zo zahraničia vypršal <span class="elections_by_post_end_formatted"></span>. Kto zmeškal a má trvalý pobyt na Slovensku, stále sa môže posnažiť prísť <b><span class="elections_start_formatted"></span></b> do svojej volebnej miestnosti, alebo <a class="" href="#tp-na-slovensku&volba-s-preukazom" role="button">požiadať</a> o volebný preukaz a prísť do ktorejkoľvek volebnej miestnosti na Slovensku. <br /><small>(Volič s trvalým pobytom v Medzilaborciach žijuci v Hodoníne bude musieť prísť len do blízkeho Holíča. ;) )</small>
 			</p>
 
 			<h4>Tento nástroj na jednoduchú prípravu žiadostí Vám prináša <a href="http://slovensko.digital/"><span>slovensko.digital</span></a></h4>
@@ -109,7 +109,7 @@
 
 		<div class="pc hidden">
 
-			<h1>Parlamentné voľby 2016</h1>
+			<h1>Parlamentné voľby <span class="rok-volieb"></span></h1>
 			<h2>Stále môžete požiadať o možnosť voliť napríklad z lyžovačky v Tatrách.</h2>
 			<p class="text-justify">
 				Pripravte si žiadosť o <b>Hlasovací preukaz</b>. Hlasovacím preukazom je možné voliť v ktorejkoľvek volebnej miestnosti na Slovensku. Žiadosť môžete poslať poštou, alebo jednoducho tu a teraz e-mailom.
@@ -122,9 +122,10 @@
 			<div class="fb-share-button" data-href="https://volby.digital/" data-layout="button_count"></div>
 
 			<p>
-				<a class="btn btn-block btn-success btn-volby-blue disabled" href="#tp-na-slovensku&volba-s-preukazom" role="button">Pripraviť žiadosť</a>
+				<a class="btn btn-block btn-success btn-volby-blue" href="#tp-na-slovensku&volba-s-preukazom" role="button">Pripraviť žiadosť</a>
 			</p>
 
+			<div class="label label-danger" id="count-down-vote-by-post"></div>
 			<div class="label label-info" id="count-down-voting-pass"></div>
 			<div class="label label-default" id="count-down-elections"></div>
 
@@ -142,7 +143,7 @@
 			<hr>
 
 			<p class="text-justify alert alert-info">
-				Termín na podávanie žiadostí o <b>voľbu poštou</b> zo zahraničia vypršal 15.1.2016. Kto zmeškal a má trvalý pobyt na Slovensku, stále sa môže posnažiť prísť <b>5.3.2015</b> do svojej volebnej miestnosti, alebo <a class="" href="#tp-na-slovensku&volba-s-preukazom" role="button">požiadať</a> o volebný preukaz a prísť do ktorejkoľvek volebnej miestnosti na Slovensku. <br /><small>(Volič s trvalým pobytom v Medzilaborciach žijuci v Hodoníne bude musieť prísť len do blízkeho Holíča. ;) )</small>
+				Termín na podávanie žiadostí o <b>voľbu poštou</b> zo zahraničia vypršal <span class="elections_by_post_end_formatted"></span>. Kto zmeškal a má trvalý pobyt na Slovensku, stále sa môže posnažiť prísť <b><span class="elections_start_formatted"></span></b> do svojej volebnej miestnosti, alebo do <span class="elections_by_votingpass_end_formatted"></span> <a class="" href="#tp-na-slovensku&volba-s-preukazom" role="button">požiadať</a> o volebný preukaz a prísť do ktorejkoľvek volebnej miestnosti na Slovensku. <br /><small>(Volič s trvalým pobytom v Medzilaborciach žijuci v Hodoníne bude musieť prísť len do blízkeho Holíča. ;) )</small>
 			</p>
 			<hr>
 			<!-- Sem dorobime Social buttonky -->
@@ -212,9 +213,9 @@
 			<div class="alert alert-danger hidden" id="alertie">POZOR! Používate prehliadač ktorý nepodporuje vytváranie náhľadov. Odporúčame Vám použiť chrome alebo firefox.</div>
 
 			<p id="github" class="footer text-center">
-				<br/> Dostupné sú aj <a target="_blank" href="https://github.com/marsher/volby-zo-zahranicia">zdrojové kódy</a>,
-				<a target="_blank" href="https://github.com/marsher/volby-zo-zahranicia/blob/master/README.md">dodatočné informácie</a>
-				a <a target="_blank" href="https://github.com/marsher/volby-zo-zahranicia/issues">diskusia</a> na Githube.
+				<br/> Dostupné sú aj <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia">zdrojové kódy</a>,
+				<a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/blob/master/README.md">dodatočné informácie</a>
+				a <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/issues">diskusia</a> na Githube.
 			</p>
 		</div>
 		</div>
@@ -235,7 +236,7 @@
 					<strong>odhlásený zo SR</strong></a>
 			</p>
 			<p class="text-color-lighter">
-				(Pobyt v zahraničí zvoľte, ak ste si odhlásili <b>trvalý</b> pobyt zo Slovenska. <small>V tomto prípade žiadosť musí byť doručená najneskôr do 15.1.2016</small>)
+				(Pobyt v zahraničí zvoľte, ak ste si odhlásili <b>trvalý</b> pobyt zo Slovenska. <small>V tomto prípade žiadosť musí byť doručená najneskôr do <span class="elections_by_post_end_formatted"></span></small>)
 			</p>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 				<p>
@@ -258,7 +259,7 @@
 				<a class="btn btn-volby-blue btn-block" href="#tp-na-slovensku&volba-postou" role="button">poštou zo zahraničia</a>
 			</p>
 			<p class="text-color-lighter">
-				(Žiadosť musí byť doručená najneskôr do <b>15.1.2016</b>)
+				(Žiadosť musí byť doručená najneskôr do <b><span class="elections_by_post_end_formatted"></span></b>)
 			</p>
 			<p>
 				<a class="btn btn-volby-blue btn-block" href="#tp-na-slovensku&volba-s-preukazom" role="button">hlasovacím preukazom na Slovensku</a>
@@ -266,7 +267,7 @@
 			<p>
 				Hlasovacím preukazom je možné voliť v ktorejkoľvek volebnej miestnosti na Slovensku.
 			</p>
-			<p class="text-color-lighter">(Žiadosť musí byť doručená najneskôr do <b>15.2.2016</b>)</p>
+			<p class="text-color-lighter">(Žiadosť musí byť doručená najneskôr do <b><span class="elections_by_votingpass_end_formatted"></span></b>)</p>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 				<p>
 					Vyberte si spôsob hlasovania. Poštou zo zahraničia alebo hlasovacím preukazom na Slovensku.
@@ -288,7 +289,7 @@
 			<p>
 				<a class="btn btn-block btn-volby-blue dontcountstep" href="#tp-na-slovensku&volba-s-preukazom&preukaz-preberie-splnomocnenec" role="button"><strong>Pre preukaz mi zájde na úrad splnomocnenec</strong></a>
 			</p>
-			<p>Preukaz si môžte vyzdvihúť aj osobne najneskôr posledný pracovný deň pred konaním volieb (t.j. najneskôr 4.3.2016) v úradných hodinách obce. Obec vydá hlasovací preukaz bezodkladne.</p>
+			<p>Preukaz si môžte vyzdvihúť aj osobne najneskôr posledný pracovný deň pred konaním volieb (t.j. najneskôr <span class="elections_by_votingpass_take_end_formatted"></span>) v úradných hodinách obce. Obec vydá hlasovací preukaz bezodkladne.</p>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 				<p>
 					Ak si nemôžete osobne prevziať hlasovací preukaz, splnomocnite na vyzdvihnutie niekoho.
@@ -605,7 +606,7 @@
 					Nezabudnite priložiť <b>fotokópiu časti cestovného dokladu</b> Slovenskej republiky s osobnými údajmi voliča <b>alebo</b> fotokópiu osvedčenia o štátnom občianstve Slovenskej republiky.
 				</div>
 				<div id="emailpotvrdeny" class="alert alert-info" role="alert">
-					Vaša obec alebo mesto nám potvrdili, že email je správny pre účel podávania žiadostí k voľbám do NRSR v roku 2016.
+					Vaša obec alebo mesto nám potvrdili, že email je správny pre účel podávania žiadostí k voľbám do NRSR v roku <span class="elections_year"></span>.
 				</div>
 				<p>
 					Ak máte aktivovaného mailového klienta, tlačítko <b>Vytvoriť email</b> nižšie by malo vytvoriť email automaticky.
@@ -729,25 +730,26 @@
 window.election.cities = {};
 window.election.psc = {};
 </script>
+<script src="js/settings-508e51ad77313243fd079ef290f45741.js"></script>
 <script src="assets/js/jquery-latest.min.js"></script>
 <script src="assets/js/jquery.mobile.hashchange.min.js"></script>
 <script src="assets/js/signature_pad.min.js"></script>
 <script src="assets/js/select2.min.js"></script>
-<script src="assets/js/pdfmake.min.js"></script>
-<script src="assets/js/vfs_fonts.js"></script>
+<script src="node_modules/pdfmake/build/pdfmake.min.js"></script>
+<script src="node_modules/pdfmake/build/vfs_fonts.js"></script>
 <script src="assets/js/clipboard.min.js"></script>
 <script src="assets/e560cfe3/yii.js"></script>
 <script src="assets/e560cfe3/yii.validation.js"></script>
 <script src="assets/e560cfe3/yii.activeForm.js"></script>
-<script src="js/countdown.js"></script>
-<script src="js/validation.js"></script>
-<script src="js/analytics.js"></script>
-<script src="js/request-generator-app.js"></script>
-<script src="js/address.js"></script>
-<script src="js/request.js"></script>
-<script src="js/os-detection.js"></script>
-<script src="js/app.js"></script>
-<script src="js/ga.js"></script>
+<script src="js/countdown-2f58c93d81b60b41772fc5241aa7e74f.js"></script>
+<script src="js/validation-41c8dfb3045ac07cdfd35aa9487bec21.js"></script>
+<script src="js/analytics-27d0c4b3c0de7655b9bf62b1ccd7e4c4.js"></script>
+<script src="js/request-generator-app-e5b4f1f6b93fed4619d002f9e8f604a6.js"></script>
+<script src="js/address-bd885114b66223d06579bf0bf659d0a1.js"></script>
+<script src="js/request-45c9537cc2acc1385516bf9e65ab3f2e.js"></script>
+<script src="js/os-detection-2b839833e988aca01613b28fa5dbf558.js"></script>
+<script src="js/app-e99a559ea5a4676f5f54d04fc1322988.js"></script>
+<script src="js/ga-7840c009f9fe130da6f005562cae9050.js"></script>
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?

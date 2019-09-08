@@ -1,5 +1,6 @@
 var App = window.election;
 
+
 function clearForm() {
   $('.preukaz-ps').hide();
   $('.posta-tp').hide();
@@ -71,6 +72,12 @@ $(document).ready(function ()
   resizeCanvas();
 
   App.signaturePad = new SignaturePad(canvas);
+
+  $(".elections_year").html(elections_year);
+  $(".elections_start_formatted").html(elections_start_formatted);
+  $(".elections_by_post_end_formatted").html(elections_by_post_end_formatted);
+  $(".elections_by_votingpass_end_formatted").html(elections_by_votingpass_end_formatted);
+  $(".elections_by_votingpass_take_end_formatted").html(elections_by_votingpass_take_end_formatted);
 
   $('#clear-button').on("click", function (event)
   {
