@@ -98,10 +98,11 @@ $(document).ready(function ()
   $(".elections_by_post_end_formatted").html(elections_by_post_end_formatted);
   $(".elections_by_votingpass_end_formatted").html(elections_by_votingpass_end_formatted);
   $(".elections_by_votingpass_take_end_formatted").html(elections_by_votingpass_take_end_formatted);
+  $("#logo").attr("src",logo_link);
 
 
   let period = getPeriod();
-  for(let i = 1;i <=5;i++){
+  for(let i = 1;i <= 5;i++){
       $(".show_period_"+i).hide();
       if(i === period){
         console.log(".hide_period_"+i+" : hide");
