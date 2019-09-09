@@ -28,7 +28,7 @@ $(document).ready( function () {
         var counter = $('#count-down-vote-by-post');
 		var remaining = getRemainingTimeText(elections_by_post_end_iso,'#count-down-vote-by-post','Uplynul termín pre podanie žiadosti o voľbu poštou');
 		if(remaining){
-			var text = 'Pre podanie žiadosti o hlasovací preukaz ostáva: ' + remaining;
+			var text = 'Pre podanie žiadosti o voľbu poštou ostáva: ' + remaining;
 			counter.html(text);
 		}
     }
