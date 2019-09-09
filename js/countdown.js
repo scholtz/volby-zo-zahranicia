@@ -32,8 +32,7 @@ $(document).ready( function () {
 			counter.html(text);
 		}
     }
-	
-	
+		
 	function getRemainingTimeText(time,elid,timeouttext){
 		var remainingTime = (new Date(time)).getTime() - Date.now();
 		var counter = $(elid);

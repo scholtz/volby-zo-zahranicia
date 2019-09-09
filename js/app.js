@@ -67,6 +67,26 @@ function makeSecondStep6ButtonPrimary(){
 	  $('#step6but2').addClass("btn-volby-blue").removeClass("btn-volby-gray");
 }
 
+function getPeriod(){
+    let remainingTime = (new Date(elections_by_post_end_iso)).getTime() - Date.now();
+    if (remainingTime > 0) {
+        return 1;
+    }
+    remainingTime = (new Date(elections_by_votingpass_end_iso)).getTime() - Date.now();
+    if (remainingTime > 0) {
+        return 2;
+    }
+    remainingTime = (new Date(elections_start_iso)).getTime() - Date.now();
+    if (remainingTime > 0) {
+        return 3;
+    }
+    remainingTime = (new Date(elections_end_iso)).getTime() - Date.now();
+    if (remainingTime > 0) {
+        return 4;
+    }
+    return 5;
+}
+
 $(document).ready(function ()
 {
   resizeCanvas();
@@ -78,6 +98,18 @@ $(document).ready(function ()
   $(".elections_by_post_end_formatted").html(elections_by_post_end_formatted);
   $(".elections_by_votingpass_end_formatted").html(elections_by_votingpass_end_formatted);
   $(".elections_by_votingpass_take_end_formatted").html(elections_by_votingpass_take_end_formatted);
+
+
+  let period = getPeriod();
+  for(let i = 1;i <=5;i++){
+      $(".show_period_"+i).hide();
+      if(i === period){
+        console.log(".hide_period_"+i+" : hide");
+        $(".show_period_"+i).show();
+        $(".hide_period_"+i).hide();
+      }else{
+      }
+  }
 
   $('#clear-button').on("click", function (event)
   {
