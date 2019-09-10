@@ -23,13 +23,22 @@ Oficiálne informácie o hlasovaní poštou pre osobu bez trvalého pobytu na Sl
 ---
 **Integračný manuál**
 
-1. Stiahnite si aktuálnu verziu cez git do adresára na vašej webstránke alebo pre subdoménu
+1. Stiahnite si aktuálnu verziu cez git do adresára na vašej webstránke alebo pre subdoménu .. vytvoríme kópiu v adresári volby
 ```
 git -clone https://github.com/scholtz/volby-zo-zahranicia.git volby
 ```
+```
+cd volby
+```
+V adresári projektu pridáme 3rd party knižnicu pre generovanie pdf
+```
+npm install pdfmake
+```
+
 2. Upravte si konfiguráciu
 Súbor js/custom-settings.js upravuje základné premenné, napríklad kustomizácia loga
 Súbor js/custom-modifications.js je spustený po celej aplikácii a môže byť použitý k modifikáciu ľubovoľnej časti stránky
+Súbor css/custom.css upravuje CSS
 
 Tieto súbory sú prázdne v oficiálnej verzii a nebudú sa upravovať.
 
