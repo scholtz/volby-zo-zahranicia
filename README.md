@@ -22,6 +22,7 @@ Oficiálne informácie o hlasovaní poštou pre osobu bez trvalého pobytu na Sl
 
 ---
 **Integračný manuál**
+
 1. Stiahnite si aktuálnu verziu cez git do adresára na vašej webstránke alebo pre subdoménu
 ```
 git -clone https://github.com/scholtz/volby-zo-zahranicia.git volby
@@ -38,6 +39,10 @@ Aby ste mali stále aktuálnu verziu, použite príkaz
 git pull
 ```
 Tento príkaz stiahne aktualizované súbory, npr emaily obcí, a ponechá vaše modifikácie na Vašej webstránke. Ak máte konflikt, pravdepodobne ste upravili aj iný súbor a musíte si tento konflikt vyriešiť sami.
+
+**Tento projekt integrujú**
+
+* https://volby.srdcomdoma.sk
 
 ---
 **Ako si nechať doručiť hlasovacie lístky na adresu v cudzine, ktorú ešte nepoznáte?**
