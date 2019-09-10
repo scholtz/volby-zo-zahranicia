@@ -1,5 +1,7 @@
-Voľby zo zahraničia — [volby.digital](https://volby.digital/)
+Voľby zo zahraničia — [volby.scholtz.sk](https://volby.scholtz.sk/)
 ============================
+
+V roku 2016 v spolupráci so slovensko.digital vznikol projekt pre vytvorenie žiadosti o voľbu zo zahraničia. Tento projekt je pokračovaním tohto pôvodného projektu upravený pre nasadenie k ľubovoľným ďalším voľbám do NRSR s možnosťou integrácie do webstránok tretích strán.
 
 Webová aplikácia, ktorá vygeneruje žiadosť pre voľby do Národnej rady SR
 alebo o volebný preukaz. Vygenerovanú žiadosť si volič môže stiahnuť a poslať poštou,
@@ -10,7 +12,7 @@ Formálne: Z hľadiska zákona o ochrane osobných údajov 122/2013 Z.z. keďže
 
 Informácie poskytované prostredníctvom tejto aplikácie týkajúce sa volieb (termíny, možnosti voliča, text žiadosti) sú zísakné z verejne dostupných zdrojov a overené. Správnosť informácií týkajúcich sa adries obcí tiež podľa možností overujeme, ale najmä pri e-mailových adresách malých obcí nevieme garantovať ich funkčnosť. Ak niekto zistí že sú tu nesprávne údaje, vytvorte prosím issue na githube. Napriek snahe autorov aplikácie aby všetko fungovalo ako má, za výsledok neručíme a odporúčame používateľom neodkladať zaslanie žiadosti na poslednú chvíľu, aby aj v prípade nefunkčnosti aplikácie, napr. v dôsledku nekompatibilnej konfigurácie zariadenia používateľa, alebo probléme v komunikácii (napr. zlá emailová adresa úradu) nedošlo k zmeškaniu kritických lehôt.
 
-Žiadosti musia byť DORUČENÉ do 15.1/15.2. Ďalšie informácie sú dostupné napríklad na stránke http://volby.scholtz.sk/, https://platforma.slovensko.digital/t/registracia-na-volby-postou-zo-zahranicia-alebo-volicsky-preukaz/893/34
+Diskusia k vývoju: https://platforma.slovensko.digital/t/registracia-na-volby-postou-zo-zahranicia-alebo-volicsky-preukaz/893/1000
 
 Oficiálne informácie o hlasovacom preukaze: http://www.minv.sk/?nr16-preukaz 
 
@@ -18,6 +20,24 @@ Oficiálne informácie o hlasovaní poštou pre osobu s trvalým pobytom na Slov
 
 Oficiálne informácie o hlasovaní poštou pre osobu bez trvalého pobytu na Slovensku: http://www.minv.sk/?nr16-posta1
 
+---
+**Integračný manuál**
+1. Stiahnite si aktuálnu verziu cez git do adresára na vašej webstránke alebo pre subdoménu
+```
+git -clone https://github.com/scholtz/volby-zo-zahranicia.git volby
+```
+2. Upravte si konfiguráciu
+Súbor js/custom-settings.js upravuje základné premenné, napríklad kustomizácia loga
+Súbor js/custom-modifications.js je spustený po celej aplikácii a môže byť použitý k modifikáciu ľubovoľnej časti stránky
+
+Tieto súbory sú prázdne v oficiálnej verzii a nebudú sa upravovať.
+
+3. Aktualizácia
+Aby ste mali stále aktuálnu verziu, použite príkaz 
+```
+git pull
+```
+Tento príkaz stiahne aktualizované súbory, npr emaily obcí, a ponechá vaše modifikácie na Vašej webstránke. Ak máte konflikt, pravdepodobne ste upravili aj iný súbor a musíte si tento konflikt vyriešiť sami.
 
 ---
 **Ako si nechať doručiť hlasovacie lístky na adresu v cudzine, ktorú ešte nepoznáte?**
@@ -82,6 +102,12 @@ https://volby.digital/test/
 ---
 
 **Changelog:**  
+  2.0-beta 10.9.2019 
+    Úprava pre voľby 2020
+    Možnosti rôznych textov pre rôzne obdobia - pred termínom pre podanie žiadosti o voľbu poštou [1], pred termínom pre podanie žiadosti o voľbu preukazom [2], pred voľbami [3], počas volieb [4], po voľbách [5] .. [hide_period_1 - nezobrazuje iba v období 1] [show_period_1 - zobrazuje iba v období 1]
+    Integrácia pre stránky tretích strán
+    Pridaný hash do názvu pre súbory javascriptu aby pri úpravách nebol cachovaný
+    
   1.0-stable 23.12.2015 
 	Aktualizácia údajov potvrdených obcami
 	Výber kraja okresu a obce podľa PSČ
