@@ -6,6 +6,16 @@ function clearForm() {
   $('.posta-tp').hide();
   $('.preukaz-tp').hide();
   $('.nemam-tp').hide();
+  $('.tp-v-zahranici').hide();
+  $('.tp-v-zahranici').hide();
+  $('.prehlasenim').hide();
+
+}
+
+function volbaSPrehlasenim(){
+  clearForm();
+  $('.prehlasenim').show();
+  App.request_form = 'volbaPrehlasenimBezTrvalehoPobytu';
 
 }
 
@@ -13,7 +23,6 @@ function nemamTP() {
   // update back button
   clearForm();
   $('.nemam-tp').show();
-  $('#photo-link').show();
 
   App.request_form = 'volbaPostouBezTrvalehoPobytu';
   $("#adresa").val("Ministerstvo vnútra Slovenskej republiky\nodbor volieb, referenda a politických strán\nDrieňová 22\n826 86  Bratislava 29\nSLOVAK REPUBLIC");
@@ -174,12 +183,8 @@ $(document).ready(function ()
   }
   if(isAndroid() || iosver > 1){
     $(".mobile").removeClass("hidden").show();
-	$("#intro").show();
-	$("#intromobile").show();
   }else{
     $(".pc").removeClass("hidden").show();
-	$("#intro").show();
-	$("#intromobile").hide();
   }
 
    

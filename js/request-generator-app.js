@@ -5,6 +5,7 @@ var RequestGeneratorApp = function() {
         tp: -1, // {'tp-na-slovensku', 'tp-odhlaseny'}
         volba: -1, // {volba-postou, volba-s-preukazom}
         preukaz: -1, // {preukaz-do-vlastnych-ruk, preukaz-preberie-splnomocnenec}
+        prehlasenim: -1,
         action: '' // {action-preview, action-sign, action-finalize, action-send}
     };
 
@@ -74,7 +75,9 @@ RequestGeneratorApp.prototype = {
             'intro': 0,
             'start': 1,// 'intro',
             'tp-na-slovensku': 2,// 'start',
+            'tp-v-zahranici': 2,// 'start',
             'preukaz': 3,// 'tp-na-slovensku',
+            'prehlasenim': 4,
             'ziadost': 4,
             'pdf': 5,
             'sign': 6,
@@ -160,6 +163,7 @@ RequestGeneratorApp.prototype = {
 
     run: function() {
         var section_and_state = this.resolveSectionAndState(location.hash);
+        console.log("section_and_state:",section_and_state);
 
         var section = section_and_state[0];
 
@@ -179,11 +183,11 @@ RequestGeneratorApp.prototype = {
     resolveSectionAndState: function(hash)
     {
         hash = hash.replace( /^#/, '');
-
         var section;
 
         switch (hash)
         {
+            case 'tp-v-zahranici':
             case 'start':
             case 'tp-na-slovensku':
                 section = hash;
@@ -191,15 +195,24 @@ RequestGeneratorApp.prototype = {
             case 'tp-na-slovensku&volba-s-preukazom':
                 section = 'preukaz';
                 break;
+            case 'prehlasenim':
             case 'tp-odhlaseny':
             case 'tp-na-slovensku&volba-postou':
             case 'tp-na-slovensku&volba-s-preukazom&preukaz-do-vlastnych-ruk':
             case 'tp-na-slovensku&volba-s-preukazom&preukaz-preberie-splnomocnenec':
                 section = 'ziadost';
                 break;
+            case 'prehlasenim&action-finalize':
+                section = 'pdf-final';
+            break;
+            case 'prehlasenim&action-send':
+                section = 'sendsection';
+            break;
             default:
+                console.log("hash not found: ",hash);
                 section = 'intro';
         }
+        
 
         var state = this.stateFromHash(hash);
 
@@ -264,17 +277,18 @@ RequestGeneratorApp.prototype = {
 
     finalizePdf: function()
     {
-        if(App.signaturePad.isEmpty() && !confirm ("Ste si istý, že chcete vytvoriť žiadosť aj bez podpisu?"))
-        {
-
-        }
-        else
+        if(App.signaturePad.isEmpty()){
+          if(App.request_form === "volbaPrehlasenimBezTrvalehoPobytu" || confirm ("Ste si istý, že chcete vytvoriť žiadosť aj bez podpisu?")){
+            createDocument(false);
+            $('#pdf-final').show();
+            var hash = location.hash.replace( /^#/, '').replace(/&action-.*/, '');
+            location.hash = hash + '&action-finalize';
+          }
+        } else
         {
             $('#signature').val(App.signaturePad.toDataURL());
             createDocument(false);
-
             $('#pdf-final').show();
-
             var hash = location.hash.replace( /^#/, '').replace(/&action-.*/, '');
             location.hash = hash + '&action-finalize';
         }
@@ -292,6 +306,11 @@ RequestGeneratorApp.prototype = {
         if (this.state.tp == 'tp-odhlaseny')
         {
             nemamTP();
+        }
+        
+        if (this.state.prehlasenim == 'prehlasenim')
+        {
+            volbaSPrehlasenim(); // pre osoby s trvalym pobytom v zahranici ktore budu v case volieb na slovensku
         }
 
         if (this.state.volba == 'volba-postou')
@@ -316,20 +335,21 @@ RequestGeneratorApp.prototype = {
             tp: -1,
             volba: -1,
             preukaz: -1,
+            prehlasenim: -1,
             action: ''
         };
 
         var parts = hash.split('&');
 
         $.each(parts, function(i, part) {
-            $.each(['tp', 'volba', 'preukaz', 'action'], function(i, prefix) {
+            $.each(['tp', 'volba', 'preukaz', 'prehlasenim', 'action'], function(i, prefix) {
                 if (part.indexOf(prefix) == 0)
                 {
                     state[prefix] = part;
                 }
             })
         });
-
+        
         return state;
     },
 
@@ -340,6 +360,8 @@ RequestGeneratorApp.prototype = {
         var that = this;
 		$('.help').hide();
         $('.section').hide();
+        console.log("setActiveSection",section);
+        
         $.when($('#' + this.active_section).show()).done(function(){
             resizeCanvas();
             let step = that.getStep(that.active_section);
@@ -353,5 +375,7 @@ RequestGeneratorApp.prototype = {
                 that.initForm();
             }
         });
+        
+        
     }
 };

@@ -15,14 +15,17 @@ function createDocument(preview,download) {
   }
   
   // playground requires you to assign document definition to a variable called dd
-  var paragraph, localaddress = [], noTP = [], vyhlasenie = [], signature = [], idPhoto = [];
+  var paragraph, localaddress = [], noTP = [], vyhlasenie = [], signature = [], idPhoto = [];signature2 = [];
+  let hasIdPhoto = false, isValidSignature = false, hasVyhlasenie = false;
   var signaturedata = App.signaturePad.toDataURL();
+
   if (signaturedata.length > 10) {
     $('#signature').val(signaturedata);
+    isValidSignature = true;
   }
-
-  signature2 = [];
-  if ($('#signature').val() != '') {
+  
+  if ($('#signature').val() != '' && $('#signature').val() != 'data:,') {
+      console.log("signature",$('#signature').val());
     signature =
             [
               {text: '', style: 'space'},
@@ -43,7 +46,7 @@ function createDocument(preview,download) {
               }
             ];
 
-    var signature2 = [
+    signature2 = [
       {text: '', style: 'space'},
       {
         text: ['V ', {text: $('#addressforeign-city').val(), style: 'value'}],
@@ -63,6 +66,7 @@ function createDocument(preview,download) {
     ];
   }
   if ($('#camera-input')[0].files.length > 0) {
+      hasIdPhoto = true;
     idPhoto =
             [
               {
@@ -73,7 +77,131 @@ function createDocument(preview,download) {
             ]
   }
 
-
+  if (App.request_form == 'volbaPrehlasenimBezTrvalehoPobytu') {
+      
+	formContent = [
+      {
+        columns: [
+          {text: 'Obec: ', style: 'line',},
+          {text: "", style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: 'Volebný okrsok č.: ', style: 'line',},
+          {text: "", style: 'value'},
+          {text: ''}
+        ]
+      },
+      {text: '', style: 'space'},
+      {
+        text: 'ČESTNÉ VYHLÁSENIE OBČANA SLOVENSKEJ REPUBLIKY',
+        style: 'header',
+        alignment: 'center'
+      },
+      {
+        text: 'O TRVALOM POBYTE V CUDZINE',
+        style: 'header',
+        alignment: 'center'
+      },
+      {text: '', style: 'space'},
+      {
+        columns: [
+          {text: 'Meno: ', style: 'line',},
+          {text: $('#basicinfo-name').val().toUpperCase(), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: 'Priezvisko: ', style: 'line',},
+          {text: $('#basicinfo-lastname').val().toUpperCase(), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: 'Rodné priezvisko: ', style: 'line',},
+          {text: $('#basicinfo-maidenlastname').val().toUpperCase(), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: 'Rodné číslo: ', style: 'line',},
+          {text: $('#basicinfo-birthno').val().toUpperCase(), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {text: '', style: 'space'},
+      {
+        text: 'Adresa trvalého pobytu',
+        style: 'header',
+        alignment: 'center'
+      },
+      {text: '', style: 'space'},
+      {
+        columns: [
+          {text: ( App.poste_res ? 'Adresa v cudzine:' : 'Ulica: '), style: 'line',},
+          {text: ( App.poste_res ? 'Poste Restante' : $('#addressforeign-street').val().toUpperCase() ), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: ( App.poste_res ? ' ' : 'Číslo domu: '), style: 'line',},
+          {text: ( App.poste_res ? ' ' : $('#addressforeign-streetno').val().toUpperCase() ), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: ( App.poste_res ? ' ' : 'Obec: '), style: 'line',},
+          {text: $('#addressforeign-city').val().toUpperCase(), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: ( App.poste_res ? ' ' : 'PSČ: '), style: 'line',},
+          {text: $('#addressforeign-zip').val(), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {
+        columns: [
+          {text: ( App.poste_res ? ' ' : 'Štát: '), style: 'line',},
+          {text: $('#addressforeign-country').val().toUpperCase(), style: 'value'},
+          {text: ''}
+        ]
+      },
+      {text: '', style: 'space'},
+      {
+        text: 'čestne vyhlasujem,',
+        style: 'header',
+        alignment: 'center'
+      },
+      {
+        text: 'že nemám trvalý pobyt na území Slovenskej republiky.',
+        style: 'header',
+        alignment: 'center'
+      },
+      {text: '', style: 'space'},
+      {
+        text: ['V ', {text: "", style: 'value'}],
+        style: 'footer',
+      },
+      {
+        text: ['Dátum: ', {text: elections_start_formatted, style: 'value'}],
+        style: 'footer',
+      },
+      {
+        text: '                      Podpis                      ',
+        style: 'signatureTextStyle'
+      }/**/
+    ];
+  }else
   if (App.request_form == 'volbaPostouSTrvalymPobytom') {
     paragraph = 'Podľa § 60 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+'.';
     localaddress = [
@@ -142,6 +270,7 @@ function createDocument(preview,download) {
         ]
       }
     ];
+    hasVyhlasenie = true;
     vyhlasenie = [
       {
         text: $('#basicinfo-name').val() + ' ' + $('#basicinfo-lastname').val() + ' ' + $('#basicinfo-birthno').val(),
@@ -384,19 +513,21 @@ function createDocument(preview,download) {
       preukazDelivery
     ]
   }
-  var dd = {
+  
+  let pdfContent = [];
+  if(formContent) pdfContent.push(formContent);
+  if(isValidSignature) pdfContent.push(signature);
+  if(hasVyhlasenie) pdfContent.push(vyhlasenie);
+  if(hasIdPhoto) pdfContent.push(idPhoto);
+  
+  let pdfConfig = {
 	pageSize: 'A4',
 	info: {
 		title: 'Žiadosť o účasť vo voľbách',
-		author: 'volby.digital',
+		author: 'volby.scholtz.sk',
 		subject: 'Žiadosť o účasť vo voľbách',
 	},
-    content: [
-      formContent,
-      signature,
-      vyhlasenie,
-      idPhoto,
-    ],
+    content: pdfContent,
     styles: {
       header: {
         fontSize: 12,
@@ -449,31 +580,43 @@ function createDocument(preview,download) {
   }
 	
   var name = "ziadost";
+  
   if(preview){
 	  if (App.request_form === "ziadostOPreukazPostou" || App.request_form === "ziadostOPreukaPreSplnomocnenca") {
 		  name = "ziadost-o-hlasovaci-preukaz-nahlad.pdf";
+	  }else if (App.request_form === "volbaPrehlasenimBezTrvalehoPobytu") {
+		  name = "prehlasenie-o-tp-v-zahranici-nahlad.pdf";
 	  }else{
 		  name = "ziadost-o-volbu-postou-nahlad.pdf";
 	  }
   }else{
 	  if (App.request_form === "ziadostOPreukazPostou" || App.request_form === "ziadostOPreukaPreSplnomocnenca") {
 		  name = "ziadost-o-hlasovaci-preukaz.pdf";
+	  }else if (App.request_form === "volbaPrehlasenimBezTrvalehoPobytu") {
+		  name = "prehlasenie-o-tp-v-zahranici.pdf";
 	  }else{
 		  name = "ziadost-o-volbu-postou.pdf";
 	  }
   }
   
   if(detectIE() || isAndroid() || download){
-	  pdfMake.createPdf(dd).download(name);
+          console.log("Idem vytvorit pdf v mobile",pdfConfig);
+	  pdfMake.createPdf(pdfConfig).download(name);
   }else{
 
 	  if (preview === true) {
-		pdfMake.createPdf(dd).getDataUrl(function (result) {
+        console.log("Idem vytvorit nahlad",pdfConfig);
+		pdfMake.createPdf(pdfConfig).getDataUrl(function (result) {
+          console.log("result",result);
 		  $('#preview').attr('src', result);
+          console.log("final.src",$('#preview').attr('src'));
 		});
 	  } else {
-		pdfMake.createPdf(dd).getDataUrl(function (result) {
+          console.log("Idem vytvorit finalny dokument",pdfConfig);
+		pdfMake.createPdf(pdfConfig).getDataUrl(function (result) {
+          console.log("result",result);
 		  $('#final').attr('src', result);
+          console.log("final.src",$('#final').attr('src'));
 		});
 	  }
   }
