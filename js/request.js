@@ -21,10 +21,11 @@ function createDocument(preview,download) {
 
   if (signaturedata.length > 10) {
     $('#signature').val(signaturedata);
-    isValidSignature = true;
   }
   
+  
   if ($('#signature').val() != '' && $('#signature').val() != 'data:,') {
+    isValidSignature = true;
       console.log("signature",$('#signature').val());
     signature =
             [
@@ -203,7 +204,7 @@ function createDocument(preview,download) {
     ];
   }else
   if (App.request_form == 'volbaPostouSTrvalymPobytom') {
-    paragraph = 'Podľa § 60 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+'.';
+    paragraph = 'Podľa § 60 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+'.';
     localaddress = [
       {text: '', style: 'spacesmall'},
       {
@@ -249,14 +250,19 @@ function createDocument(preview,download) {
       }
     ];
   } else if (App.request_form == 'volbaPostouBezTrvalehoPobytu') {
-    paragraph = 'Podľa § 59 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+' a o zaslanie hlasovacích lístkov a obálok na adresu:';
-    noTP = [
+    paragraph = 'Podľa § 59 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov, žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku '+elections_year+' a o zaslanie hlasovacích lístkov a obálok na adresu:';
+    localaddress = [
+      {text: '', style: 'spacesmall'},
+      {
+        text: 'Adresa miesta pobytu v cudzine (pre zaslanie hlasovacích lístkov a obálok):',
+        style: 'line',
+        //style: 'header',
+        bold: true
+      }
+     ];
 
-      {text: '', style: 'space'},
-	  {
-        text: 'Čestne vyhlasujem, že nemám trvalý pobyt na území Slovenskej republiky.',
-        style: 'header',
-      },
+    noTP = [
+	   
       {text: '', style: 'space'},
       {
         text: 'Prílohy:',
@@ -266,12 +272,14 @@ function createDocument(preview,download) {
       {
         ul: [
 		  'čestné vyhlásenie voliča, že nemá trvalý pobyt na území Slovenskej republiky.',
-          'fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča.',
+          'fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča, ktorého dátum vydania nie je starší ako 6 mesiacov',
         ]
       }
     ];
     hasVyhlasenie = true;
     vyhlasenie = [
+      {text: '', style: 'space'},
+      {text: '', style: 'space'},
       {
         text: $('#basicinfo-name').val() + ' ' + $('#basicinfo-lastname').val() + ' ' + $('#basicinfo-birthno').val(),
         alignment: 'center',
@@ -301,7 +309,8 @@ function createDocument(preview,download) {
       },
       {text: '', style: 'space'},
       {
-        text: 'že nemám trvalý pobyt na území Slovenskej republiky.'
+        text: 'že nemám trvalý pobyt na území Slovenskej republiky.',
+        alignment: 'center'
       },
       signature2
     ];
@@ -311,12 +320,7 @@ function createDocument(preview,download) {
 	
 	formContent = [
       {
-        text: 'Žiadosť',
-        style: 'header',
-        alignment: 'center'
-      },
-      {
-        text: 'o voľbu poštou',
+        text: 'Žiadosť o voľbu poštou',
         style: 'header',
         alignment: 'center'
       },
@@ -598,6 +602,7 @@ function createDocument(preview,download) {
 		  name = "ziadost-o-volbu-postou.pdf";
 	  }
   }
+  
   
   if(detectIE() || isAndroid() || download){
           console.log("Idem vytvorit pdf v mobile",pdfConfig);
