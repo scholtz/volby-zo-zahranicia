@@ -729,3 +729,6 @@ a.desc:after {
 	font-size: 90%;
 	text-align: justify;	
 }
+.nobr{
+    white-space: nowrap;
+}

@@ -99,6 +99,17 @@ jQuery(document).ready(function () {
 			});
 		}
 	}, {
+		"id": "basicinfo-birthdate",
+		"name": "birthDate",
+		"container": ".field-basicinfo-birthdate",
+		"input": "#basicinfo-birthdate",
+		"validate": function (attribute, value, messages, deferred, $form) {
+			yii.validation.required(value, messages, {
+				"message": "Pre vytvorenie žiadosti je potrebné zadať Váš dátum narodenia"
+			});
+			
+		}
+	}, {
 		"id": "basicinfo-birthno",
 		"name": "birthNo",
 		"container": ".field-basicinfo-birthno",

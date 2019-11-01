@@ -130,8 +130,8 @@ function createDocument(preview,download) {
       },
       {
         columns: [
-          {text: 'Rodné číslo: ', style: 'line',},
-          {text: $('#basicinfo-birthno').val().toUpperCase(), style: 'value'},
+          {text: $("#isAgeSelected").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', style: 'line',},
+          {text: $("#isAgeSelected").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val()), style: 'value'},
           {text: ''}
         ]
       },
@@ -364,8 +364,8 @@ function createDocument(preview,download) {
       },
       {
         columns: [
-          {text: 'Rodné číslo: ', style: 'line',},
-          {text: $('#basicinfo-birthno').val().toUpperCase(), style: 'value'},
+          {text: $("#isAgeSelected").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', style: 'line',},
+          {text: $("#isAgeSelected").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val()), style: 'value'},
           {text: ''}
         ]
       },
@@ -486,7 +486,7 @@ function createDocument(preview,download) {
       {
         columns: [
           {
-            text: ['Rodné číslo: ', {text: $('#basicinfo-birthno').val(), style: 'value'}],
+            text: [$("#isAgeSelected").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', {text: $("#isAgeSelected").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val()), style: 'value'}],
             style: 'line',
           },
           {

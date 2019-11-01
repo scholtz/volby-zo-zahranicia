@@ -50,7 +50,19 @@ function preukazPS() {
   App.request_form = 'ziadostOPreukaPreSplnomocnenca';
 }
 
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
 
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [day, month, year].join('.');
+}
 
 
 
@@ -120,6 +132,17 @@ $(document).ready(function ()
       }else{
       }
   }
+
+  $("#birthnoCheck").change(function() {
+      if(this.checked) {
+          $("#rcGroup").removeClass("hidden");
+          $("#bdGroup").addClass("hidden");
+          
+      }else{
+          $("#rcGroup").addClass("hidden");
+          $("#bdGroup").removeClass("hidden");
+      }
+  });
 
   $('#clear-button').on("click", function (event)
   {

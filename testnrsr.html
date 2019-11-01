@@ -341,9 +341,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<input type="text" id="basicinfo-maidenlastname" class="form-control" name="BasicInfo[maidenLastname]">
 						<div class="help-block"></div>
 					</div>
-					<div class="form-group field-basicinfo-birthno required">
-						<label class="control-label" for="basicinfo-birthno">Rodné číslo <span class="nemam-tp">(ak nemáte pridelené, doplňte len dátum narodenia)</span></label>
-						<input type="text" id="basicinfo-birthno" class="form-control" name="BasicInfo[birthNo]" autocomplete="off">
+                    <div class="checkbox nemam-tp">
+                      <label><input id="birthnoCheck" type="checkbox" checked>Mám pridelené rodné číslo</label>
+                    </div>
+					<div class="form-group field-basicinfo-birthno required" id="rcGroup">
+						<label class="control-label" for="basicinfo-birthno">Rodné číslo</label>
+						<input type="text" id="basicinfo-birthno" class="form-control" name="BasicInfo[birthNo]" autocomplete="off" placeholder="Vaše rodné číslo vo formáte 987654/3210" >
+						<div class="help-block"></div>
+					</div>
+					<div class="form-group field-basicinfo-birthdate nemam-tp hidden required" id="bdGroup">
+						<label class="control-label" for="basicinfo-birthdate">Dátum narodenia</label>
+						<input type="date" id="basicinfo-birthdate" class="form-control" name="BasicInfo[birthdate]" autocomplete="off">
 						<div class="help-block"></div>
 					</div>
 				</form>
