@@ -5,8 +5,8 @@ TENTO SÚBOR NIE JE NA SERVERI A POUŽÍVA SA IBA NA SPRACOVANIE DB EMAILOV OBC�
 
 */
 
-require_once('c:\webserver\vhost\AsyncWeb\gitAW\AsyncWeb\src\AsyncWeb\Text\Texts.php');
-require_once('c:\webserver\vhost\AsyncWeb\gitAW\AsyncWeb\src\AsyncWeb\Text\Validate.php');
+//require_once('c:\webserver\vhost\AsyncWeb\gitAW\AsyncWeb\src\AsyncWeb\Text\Texts.php');
+//require_once('c:\webserver\vhost\AsyncWeb\gitAW\AsyncWeb\src\AsyncWeb\Text\Validate.php');
 use AsyncWeb\Text\Texts;
 use AsyncWeb\Text\Validate;
 
@@ -16,7 +16,7 @@ $aDisabledEmails = array('daniel.juracek@bosaca.eu','obec.bartosovce@wi-net.sk',
 $aPreferableEmailParts = array( 'sluzbyobcanom','podatelna','obec', 'ocu', 'ou', 'obu', 'urad', 'mu','msu','mesto','sekretariat','kancelaria','obecnyurad','miestnyurad','mestskyyurad','info','referent','NAZOVOBCE@NAZOVOBCE.SK','@NAZOVOBCE.SK','NAZOVOBCE','NAZOVOBCE@','primator','primatorka','starosta','starostka','kancelariaprimatora','prednosta','prednostka'); 
 
 $chybneemaily = "";
-file_put_contents("corrections.csv",file_get_contents("http://volby.digital/corrections.csv"));
+//file_put_contents("corrections.csv",file_get_contents("http://volby.digital/corrections.csv"));
 
 $overenePostou = array();
 $overenePreukaz = array();

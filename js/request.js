@@ -87,7 +87,7 @@ function createDocument(preview,download) {
 
   if (App.request_form == 'volbaPrehlasenimBezTrvalehoPobytu') {
       
-	formContent = [
+  formContent = [
       {
         columns: [
           {text: 'Obec: ', style: 'line',},
@@ -270,7 +270,7 @@ function createDocument(preview,download) {
         bold: true
       },
       {
-        text: 'Prosím, použite formát adresy: ' + (App.switchStreetAndNumber ? "Číslo ulica, Mesto PSČ, Štát" : "Ulica číslo, PSČ Mesto, Štát"),
+        text: 'Pre spoľahlivé doručenie zásielky na moju adresu v zahraničí prosím použite nasledujúci formát adresy: ' + (App.switchStreetAndNumber ? "ČísloDomu Ulica, Obec PSČ, Štát" : "Ulica ČísloDomu, PSČ Obec, Štát") + '.',
         style: 'line',
       }
     ];
@@ -285,13 +285,13 @@ function createDocument(preview,download) {
         bold: true
       },
       {
-        text: 'Prosím, použite formát adresy: ' + (App.switchStreetAndNumber ? "Číslo ulica, Mesto PSČ, Štát" : "Ulica číslo, PSČ Mesto, Štát"),
+        text: 'Pre spoľahlivé doručenie zásielky na moju adresu v zahraničí prosím použite nasledujúci formát adresy: ' + (App.switchStreetAndNumber ? "ČísloDomu Ulica, Obec PSČ, Štát" : "Ulica ČísloDomu, PSČ Obec, Štát") + '.',
         style: 'line',
       }
      ];
 
     noTP = [
-	   
+     
       {text: '', style: 'space'},
       {
         text: 'Prílohy:',
@@ -300,7 +300,7 @@ function createDocument(preview,download) {
       },
       {
         ul: [
-		  'čestné vyhlásenie voliča, že nemá trvalý pobyt na území Slovenskej republiky.',
+      'čestné vyhlásenie voliča, že nemá trvalý pobyt na území Slovenskej republiky.',
           'fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča, ktorého dátum vydania nie je starší ako 6 mesiacov',
         ]
       }
@@ -346,8 +346,8 @@ function createDocument(preview,download) {
   }
 
   if (App.request_form === "volbaPostouSTrvalymPobytom" || App.request_form === "volbaPostouBezTrvalehoPobytu") {
-	
-	formContent = [
+  
+  formContent = [
       {
         text: 'Žiadosť o voľbu poštou',
         style: 'header',
@@ -568,12 +568,12 @@ function createDocument(preview,download) {
   if(hasIdPhoto) pdfContent.push(idPhoto);
   
   let pdfConfig = {
-	pageSize: 'A4',
-	info: {
-		title: 'Žiadosť o účasť vo voľbách',
-		author: 'volby.scholtz.sk',
-		subject: 'Žiadosť o účasť vo voľbách',
-	},
+  pageSize: 'A4',
+  info: {
+    title: 'Žiadosť o účasť vo voľbách',
+    author: 'volby.scholtz.sk',
+    subject: 'Žiadosť o účasť vo voľbách',
+  },
     content: pdfContent,
     styles: {
       header: {
@@ -625,47 +625,47 @@ function createDocument(preview,download) {
       }
     }
   }
-	
+  
   var name = "ziadost";
   
   if(preview){
-	  if (App.request_form === "ziadostOPreukazPostou" || App.request_form === "ziadostOPreukaPreSplnomocnenca") {
-		  name = "ziadost-o-hlasovaci-preukaz-nahlad.pdf";
-	  }else if (App.request_form === "volbaPrehlasenimBezTrvalehoPobytu") {
-		  name = "prehlasenie-o-tp-v-zahranici-nahlad.pdf";
-	  }else{
-		  name = "ziadost-o-volbu-postou-nahlad.pdf";
-	  }
+    if (App.request_form === "ziadostOPreukazPostou" || App.request_form === "ziadostOPreukaPreSplnomocnenca") {
+      name = "ziadost-o-hlasovaci-preukaz-nahlad.pdf";
+    }else if (App.request_form === "volbaPrehlasenimBezTrvalehoPobytu") {
+      name = "prehlasenie-o-tp-v-zahranici-nahlad.pdf";
+    }else{
+      name = "ziadost-o-volbu-postou-nahlad.pdf";
+    }
   }else{
-	  if (App.request_form === "ziadostOPreukazPostou" || App.request_form === "ziadostOPreukaPreSplnomocnenca") {
-		  name = "ziadost-o-hlasovaci-preukaz.pdf";
-	  }else if (App.request_form === "volbaPrehlasenimBezTrvalehoPobytu") {
-		  name = "prehlasenie-o-tp-v-zahranici.pdf";
-	  }else{
-		  name = "ziadost-o-volbu-postou.pdf";
-	  }
+    if (App.request_form === "ziadostOPreukazPostou" || App.request_form === "ziadostOPreukaPreSplnomocnenca") {
+      name = "ziadost-o-hlasovaci-preukaz.pdf";
+    }else if (App.request_form === "volbaPrehlasenimBezTrvalehoPobytu") {
+      name = "prehlasenie-o-tp-v-zahranici.pdf";
+    }else{
+      name = "ziadost-o-volbu-postou.pdf";
+    }
   }
   
   
   if(detectIE() || isAndroid() || download){
           console.log("Idem vytvorit pdf v mobile",pdfConfig);
-	  pdfMake.createPdf(pdfConfig).download(name);
+    pdfMake.createPdf(pdfConfig).download(name);
   }else{
 
-	  if (preview === true) {
+    if (preview === true) {
         console.log("Idem vytvorit nahlad",pdfConfig);
-		pdfMake.createPdf(pdfConfig).getDataUrl(function (result) {
+    pdfMake.createPdf(pdfConfig).getDataUrl(function (result) {
           console.log("result",result);
-		  $('#preview').attr('src', result);
+      $('#preview').attr('src', result);
           console.log("final.src",$('#preview').attr('src'));
-		});
-	  } else {
+    });
+    } else {
           console.log("Idem vytvorit finalny dokument",pdfConfig);
-		pdfMake.createPdf(pdfConfig).getDataUrl(function (result) {
+    pdfMake.createPdf(pdfConfig).getDataUrl(function (result) {
           console.log("result",result);
-		  $('#final').attr('src', result);
+      $('#final').attr('src', result);
           console.log("final.src",$('#final').attr('src'));
-		});
-	  }
+    });
+    }
   }
 }
