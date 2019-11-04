@@ -1,0 +1,1 @@
+var logo_link = '//srdcomdoma.sk/images/Srdcomdoma_logo_horizontal_RGB_no_margin.jpg';

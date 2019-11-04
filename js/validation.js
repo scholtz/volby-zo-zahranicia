@@ -2,7 +2,9 @@
 var validateBirthNumber = function(value, messages) {
 	// rules according to https://sk.wikipedia.org/wiki/Rodn%C3%A9_%C4%8D%C3%ADslo
 	// considering that people born in 2000 and later are not allowed to vote yet
-	
+	if(!$("#birthnoCheck").is(':checked')){
+        return;
+    }
 	if (value.substr(0,2) < 54) {
 		yii.validation.regularExpression(value, messages, {
 			"pattern":/^\d{2}[0156]\d{3}\/\d{3}$/,
@@ -45,7 +47,7 @@ var validatePSC = function(value, messages) {
 	if( value.length != 5 ) yii.validation.addMessage(messages, "Vaše domáce PSČ by malo byť dlhé 5 číslic.", value);
 	else yii.validation.regularExpression(value, messages, {
 			"pattern":/^\d{5}$/,
-			"message":"Vaše domáce PSČ by malo obsahovať iba čísla."
+			"message":"Vaše domáce PSČ by malo obsahovať iba číslice."
 		});
 }
 

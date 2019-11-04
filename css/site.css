@@ -30,7 +30,9 @@ h1 {
 h2 {
 	font-size: 1.4em;
 }
-
+h3{
+	font-size: 1.1em;
+}
 .container {
 	max-width: 600px;
 }
@@ -174,13 +176,13 @@ label em {
 
 
 .footer {
-	opacity: .5;
+	opacity: .7;
 	font-size: .8em;
 }
 
 .powered-by img {
 	margin: 1em 0;
-	height: 18px;
+	height: 35px;
 }
 
 
@@ -196,6 +198,7 @@ label em {
 	transition: background-color 0.5s ease;
 	font-size: 1em;
 	white-space: normal;
+	margin: 30px 0;
 }
 
 .btn-volby-blue {
@@ -255,6 +258,7 @@ h2.as-title-with-padding, h3.as-title-with-padding {
 
 .digitalRed {
 	color: #c33;
+	margin-bottom: 25px;
 }
 
 .digitalRed:hover {
@@ -285,7 +289,7 @@ h2.as-title-with-padding, h3.as-title-with-padding {
 	padding-top: 2px;
 	border-radius: 6px;
 	cursor: pointer;
-	background-color: #ddd;
+	background-color: white;
 	transition: background-color 0s;
 	width:30px;
 	height: 30px;
@@ -731,4 +735,13 @@ a.desc:after {
 }
 .nobr{
     white-space: nowrap;
+}
+.alert-warning, .alert-info{
+	margin:50px 0;
+}
+hr{
+	margin: 40px 0;
+}
+.alert>p{
+	margin: 18px 0;
 }

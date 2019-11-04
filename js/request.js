@@ -130,8 +130,8 @@ function createDocument(preview,download) {
       },
       {
         columns: [
-          {text: $("#isAgeSelected").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', style: 'line',},
-          {text: $("#isAgeSelected").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val()), style: 'value'},
+          {text: $("#birthnoCheck").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', style: 'line',},
+          {text: $("#birthnoCheck").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val())+"- nebolo mi pridelené rodné číslo", style: 'value'},
           {text: ''}
         ]
       },
@@ -364,8 +364,8 @@ function createDocument(preview,download) {
       },
       {
         columns: [
-          {text: $("#isAgeSelected").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', style: 'line',},
-          {text: $("#isAgeSelected").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val()), style: 'value'},
+          {text: $("#birthnoCheck").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', style: 'line',},
+          {text: $("#birthnoCheck").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val())+" - nebolo mi pridelené rodné číslo", style: 'value'},
           {text: ''}
         ]
       },
@@ -486,7 +486,7 @@ function createDocument(preview,download) {
       {
         columns: [
           {
-            text: [$("#isAgeSelected").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', {text: $("#isAgeSelected").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val()), style: 'value'}],
+            text: [$("#birthnoCheck").is(':checked') ? 'Rodné číslo: ' : 'Dátum narodenia: ', {text: $("#birthnoCheck").is(':checked') ? $('#basicinfo-birthno').val().toUpperCase() :  formatDate($('#basicinfo-birthdate').val())+" - nebolo mi pridelené rodné číslo", style: 'value'}],
             style: 'line',
           },
           {

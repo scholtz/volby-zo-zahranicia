@@ -17,7 +17,6 @@
 	<link href="css/site.css" rel="stylesheet" />
 	<link href="css/custom.css" rel="stylesheet" />
 
-
 	<!-- open graph specification if anyone shares -->
 	<meta property="og:title" content="Podajte si žiadosť o voľbu poštou zo zahraničia či hlasovací preukaz online. Voľby do NR SR 2020 - nepremárnite šancu!" />
     <meta property="og:image" content="https://volby.srdcomdoma.sk/images/Srdcom_doma_logo_Kompakt_RGB.png" />
@@ -30,12 +29,10 @@
     <meta name="twitter:image" content="https://volby.srdcomdoma.sk/images/Srdcom_doma_logo_Kompakt_RGB.png"/>
 	<meta name="twitter:title" content="Podajte si žiadosť o voľbu poštou zo zahraničia či hlasovací preukaz online. Voľby do NR SR 2020 - nepremárnite šancu!" />
 	<meta name="twitter:description" content="Vybavte žiadosť online za menej ako 3 minúty. Nezmeškajte lehotu pre podanie žiadosti pre voľby do NR SR v roku 2020!"/>
-	
-    
+
 	<style>
 	.section { display: none; }
 	</style>
-
 	<!-- Google Tag Manager for SRDCOM DOMA -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,16 +42,8 @@
 	<!-- End Google Tag Manager -->
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics for VOLBY.SRDCOMDOMA.SK-->
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113904149-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-113904149-2');
-    </script>
+    
+	<script src="https://kit.fontawesome.com/954432fe75.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -70,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="navbar navbar-volby navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-            <a class="navbar-brand" href="#"><img id="logo" title="volby.srdcomdoma.sk"></a>
+            <a class="navbar-brand" href="#intro"><img id="logo" title="volby.srdcomdoma.sk"></a>
 		</div>
 
 		<div id="krokomer" class="navbar-steps">
@@ -99,73 +88,120 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
 
 
-        <div >
+	        <div >
 
-            <h1>Voľby do NR SR <span class="elections_year"></span></h1>
-            <h2>Voľte zo zahraničia, či mimo trvalého bydliska.</h2>
-            
+	            <h1>Voľby do NR SR <span class="elections_year"></span></h1>
+	            <p class="intro paragraph-1" style="color:#999;">Voľte zo zahraničia, alebo mimo miesta trvalého pobytu.</p>
+	            <p style="font-size: 1.2em;">Za menej ako 3 minúty tu vybavíte:</p> 
+	            <ul>
+					<li>
+						<h2 style="font-size: 1.2em;">Žiadosť o voľbu poštou -> voľte zo zahraničia, alebo </h2>
+					</li>
+					<li>
+						<h2 style="font-size: 1.2em;">Žiadosť o hlasovací preukaz -> voľte odkiaľkoľvek v SR.</h2>
+				    </li>
+	        	</ul>
 
-            <div class="container">
-                <div class="row">
-                    <p class="show_period_1">Podrobné informácie o možnosti ako voliť zverejnilo <a href="https://www.minv.sk/?volby-nrsr" target="_blank">MV SR na stránkach</a>.</p> 
-                    <p class="show_period_1">Na stránke volby.srdcomdoma.sk si čoskoro bude môcť vytvoriť žiadosť o voľbu poštou zo zahraničia, alebo o hlasovací preukaz pre voľbu mimo trvalého bydliska.
-                    <p class="show_period_1">Chcete byť informovaní? Zadajte email a pošleme Vám informácie k voľbám do NR SR:</p>
-                </div>
-                <form action="./mailing.php" method="post" class="show_period_1">
-                    <div class="row">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Zadajte Váš e-mail:</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@">
-                        <small id="emailHelp" class="form-text text-muted">Odoslaním e-mail adresy súhlasíte, aby Vám <a href="https://www.srdcomdoma.sk" target="_blank">Srdcom doma o.z.</a> zaslal upozornenia týkajúce sa volieb. Súhlas môžete kedykoľvek odvolať. Email neposkytneme žiadnemu inému subjektu. </small>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <button type="submit" class="btn btn-primary btn btn-block btn-success btn-volby-blue">Zaregistrovať email</button>
-                    </div>
-                </form>
-            </div>
+				<h2 class="show_period_2">Nepremeškajte možnosť voliť. Zákonná lehota už čoskoro vyprší!</h2>
+				<h2 class="show_period_3">Lehota pre podanie žiadosti o voľbu poštou zo zahraničia uplynula. Ak&nbsp;ste ju nestihli a máte trvalý pobyt na území SR, stále máte možnosť zúčastniť sa volieb - ako? Musíte byť na území SR dňa: <span class="elections_start_formatted"></span>.</h2>
+				<h2 class="show_period_4">DNES prebiehajú voľby do NR SR. Dnes môžu voliť na území SR len voliči, ktorí maj útrvalý pobyt na území SR. Ak ste si v predstihu vybavili hlasovací preukaz, môžete voliť v ktorejkoľvek volebnej miestnosti na území SR. Ak hlasovací preukaz nemáte, môžete voliť výhradne vo volebnej miestnosti v mieste trvalého pobytu.</h2>
+				<h2 class="show_period_5">Voľby do NRSR <span class="elections_year"></span> sa skončili. Volili v nich občania na území SR i v zahraničí - poštou. Podporte petíciu za možnosť voliť zo zahraničia vo všetkých voľbách - na www.srdcomdoma.sk.</h2>
 
-            <h2 class="show_period_2">Nepremeškajte možnosť voliť. Zákonná lehota už čoskoro vyprší!</h2>
-            <h2 class="show_period_3">Lehota pre podanie žiadosti o voľbu poštou zo zahraničia uplynula. Ak ste ju nestihli, stále máte možnosť zúčastniť sa volieb - ako? Musíte byť na území SR dňa: <span class="elections_start_formatted"></span>.</h2>
-            <h2 class="show_period_4">DNES prebiehajú voľby do NR SR. Dnes sa dá voliť len na území SR. Ako? Niekoľkými kliknutiami zistite vaše možnosti.</h2>
-            <h2 class="show_period_5">Voľby do NRSR <span class="elections_year"></span> sa skončili. Volili v nich občania na území SR i v zahraničí - poštou. Podporte petíciu za možnosť voliť zo zahraničia vo všetkých voľbách - na www.srdcomdoma.sk.</h2>
-
-            <br>
-            <br>
-
-		    <p class="powered-by text-center">
-		        Otvorený kód tejto aplikácie vytvorili dobrovoľníci úplne zdarma. 
-		        <a target="_blank" href="http://www.srdcomdoma.sk/">
-		            <img src="https://www.srdcomdoma.sk/images/Srdcomdoma_logo_horizontal_RGB_no_margin.jpg" height="18">
-		        </a>                
-		        <br/>
-                  
-                  Sledujte nás na: 
-                  <a href="https://www.facebook.com/srdcomdoma" target="_blank">Facebooku</a> |
-                  <a href="https://instagram.com/srdcomdoma" target="_blank">Instagrame</a> | 
-                  <a href="https://www.srdcomdoma.sk" target="_blank">Webe</a> 
-		        <br/><br/>
-		        Ďakujeme.
-
-		    </p>
-            <div class="text-center">
-                <div class="fb-share-button" data-href="https://volby.srdcomdoma.sk/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvolby.srdcomdoma.sk%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-            </div>                
+	            
+				<div class="alert alert-warning" role="alert">
+					<p>Podrobné informácie pre voličov zverejnilo <a href="https://www.minv.sk/?nr20-info1" target="_blank">MV SR na stránkach</a>.</p> 
+				</div>
+				<p class="text-justify">
+					<b>Ste občanom SR</b> a v čase volieb budete mať minimálne <b>18 rokov</b>? Potom máte <b>právo voliť do NR SR</b>. 
+				</p>
+				<ol>
+			    	<li>Budete v čase volieb v zahraničí? Aj Vy môžete voliť - poštou!</li>
+			    	<li>Trvalé bydlisko v zahraničí? Môžete voliť len zo zahraničia!</li>
+			    	<li>Nepremeškajte lehotu pre podanie žiadosti!</li>
+			    	<li>Tu zistíte, ako môžete voliť práve Vy.</li>
+			    	<li>Tu vybavíte všetko v predstihu.</li>
+			    	<li>Nečakajte v radoch.</li>
+			    	<li>Neodkladajte to!</li>
+			    	<li>Zaberie to 3 min.</li>
+			    	<li>Ide o veľa! </li>
+			    </ol>
 
 
-            
+				<div class="alert alert-warning" role="alert">
+
+					<p>
+						<b>Rôzne spôsoby voľby vyžadujú:</b>
+					</p>
+					<ul> 
+					  <li>včas podanú žiadosť (vytvoríte na týchto stránkach),</li> 
+					  <li>čestné prehlásenie (vytvoríte na týchto stránkach),</li> 
+					  <li>fotku / scan dokladu (len ak nemáte trvalý pobyt v SR), </li>
+					  <li>..všetko zistíte v nasledujúcich krokoch.</li>
+					</ul>
+
+					<p>
+	                Všetky náležitosti <b>odošlete e-&#x2060;mailom</b> na adresu, ktorá sa zobrazí <b>v poslednom kroku</b> (závisí od miesta Vášho trvalého pobytu). Ak&nbsp;nedostanete odpoveď na e-&#x2060;mail, doporučujeme overiť si prijatie žiadosti <b>telefonicky</b>.
+					</p>
+					</div>			
+					<div class="text-center" style="margin: 50px;"> 
+						<a id="main" class="show_period_1 btn btn-lg btn-success btn-step btn-volby-blue" href="#start" role="button" style="width: 80%;"><b>Štart!</b></a>
+						<a class="hide_period_1 btn btn-block btn-success btn-volby-blue" href="#tp-na-slovensku&volba-s-preukazom" role="button">Štart!</a>
+					</div>
+					<ul>
+					<li>Celý proces trvá menej ako <b>3 min.</b></li>
+					<li>Formulár je vyplnený len vo <b>vašom zariadení</b> (mobile, počítači,..).</li>
+					<li>Žiadne z údajov, ktoré zadáte sa <b>u nás neukladajú</b>.</li>
+					<li>Vytvorenú žiadosť si <b>uložíte u seba</b> a odošlete <b>z vášho e-&#x2060;mailu</b>.</li>
+	                <li>Ukladáme si len <b>anonymné štatistiky</b> návštevnosti stránky.</li>
+					</ul>
+
+					<br>
+					<br>
+	                <hr>                     
+
+	            </div>
 
 
-            <div class="alert alert-danger hidden" id="alertie">POZOR! Používate prehliadač ktorý nepodporuje vytváranie náhľadov. Odporúčame Vám použiť chrome alebo firefox.</div>
+	            <div class="alert alert-danger hidden" id="alertie">
+	            	POZOR! Používate prehliadač ktorý nepodporuje vytváranie náhľadov. Odporúčame Vám použiť chrome alebo firefox.
+	            </div>
 
-            <p id="github" class="footer text-center">
-                <br/> Dostupné sú aj <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia">zdrojové kódy</a>,
-                <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/blob/master/README.md">dodatočné informácie</a>
-                a <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/issues">diskusia</a> na Githube.
-            </p>
-        </div>
+				<div class="text-center">
+					<div class="fb-share-button" data-href="https://volby.srdcomdoma.sk" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvolby.srdcomdoma.sk%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+				</div>
 
-        </div>
+
+				<div class="text-center footer">
+
+					<p class="powered-by text-center">
+					    Otvorený kód tejto aplikácie vytvorili dobrovoľníci úplne zdarma. 
+					    <a target="_blank" href="http://www.srdcomdoma.sk/">
+					        <img src="https://www.srdcomdoma.sk/images/Srdcomdoma_logo_horizontal_RGB_no_margin.jpg" >
+					    </a>                
+					    <br/>
+					    
+					    Sledujte nás: 
+					    <a href="https://www.facebook.com/srdcomdoma" target="_blank"><i class="fab fa-facebook-square"></i></a> |
+					    <a href="https://instagram.com/srdcomdoma" target="_blank"><i class="fab fa-instagram"></i></a> | 
+					    <a href="https://www.srdcomdoma.sk" target="_blank"><i class="far fa-file-image"></i></a> | 
+					    <a href="https://zubo.blog.sme.sk/" target="_blank"><i class="far fa-file-alt"></i></a> <br/>
+					    <img src="images/sd-email.png" style="height:20px;">
+						<br/>
+					    Ďakujeme.
+					</p>
+
+		            <p id="github" class="footer text-center">
+					    Srdcom doma o.z., Sibírska 65, 83102 Bratislava - Nové Mesto, IČO: 52089207, <a href="https://ib.fio.sk/ib/transparent?a=2901594765" target="_blank">transparentný účet</a> 
+					    <br/>
+		                <br/> Dostupné sú aj <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia">zdrojové kódy</a>,
+		                <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/blob/master/README.md">dodatočné informácie</a>
+		                a <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/issues">diskusia</a> na Githube.
+		                <br/>
+		            </p>
+		        </div>
+
+	        </div>
+
 
 
 		<!-- ----- ----- -->
@@ -176,20 +212,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<hr>
 			<p>
 				<a class="btn btn-block btn-volby-blue" href="#tp-na-slovensku" role="button">
-					<strong>mám v SR<sup>*</sup></strong></a>
+					<b>mám v SR<sup>*</sup></b></a>
 			</p>
 			<p>
 				<a class="btn btn-block btn-volby-blue" href="#tp-v-zahranici" role="button">
-					<strong>nemám v SR</strong></a>
+					<b>nemám v SR</b></a>
 			</p>
 			<p class="text-color-lighter">
 				<sup>*</sup> zvoľte, ak ste si neodhlásili trvalý pobyt zo SR
 			</p>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
-				<p>
-				Občan SR žijúci v zahraničí má možnosť prihlásiť sa k trvalému pobytu v zahraničí. <b>Trvalý pobyt v SR mu tým automaticky nezaniká</b>. Ten trvá aj naďalej a tak môže mať občan SR trvalý pobyt v SR i v zahraničí súčasne. </p>
-                <p>Ak ste si trvalý pobyt <b>zo SR odhlásili</b>, voliť do Národnej rady Slovenskej republiky môžete jedine poštou, zo zahraničia. Hlasovacie lístky, Vám zašle MV SR na žiadosť, ktorú si vytvoríte v ďalších krokoch.</p>
-                </p>
+				<p>Občan SR žijúci v zahraničí má možnosť prihlásiť sa k trvalému pobytu v zahraničí. <b>Trvalý pobyt v SR</b> mu tým <b>automaticky nezaniká</b>. Ten trvá aj naďalej a tak môže mať občan SR trvalý pobyt v SR i v zahraničí súčasne. </p>
+                <p>Ak ste si trvalý pobyt <b>zo SR odhlásili</b>, voliť do Národnej rady Slovenskej republiky môžete <b>jedine zo zahraničia - poštou</b>. Na&nbsp;území SR nemôžete voliť do NR SR. Hlasovacie lístky Vám zašle MV SR na žiadosť, ktorú si vytvoríte v ďalších krokoch.</p></p>
+                <p><b>Nie ste si istí</b>, či máte trvalý pobyt v SR? Zavolajte na mestský / obecný úrad Vášho posledného pobytu v SR. Tam Vám poskytnú potrebné informácie.</p> 
 			</div></div>
 		</div>
 
@@ -206,20 +241,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<a class="btn btn-volby-blue btn-block" href="#tp-na-slovensku&volba-postou" role="button">poštou - zo zahraničia <sup>*</sup></a>
 			</p>
 			<p>
-				<sup>*</sup> Budete v čase volieb v zahraničí? V tom prípade môžete voliť poštou. Nechajte si zaslať hlasovacie lístky na akúkoľvek zahraničnú adresu.
+				<sup>*</sup> Budete v čase volieb v zahraničí? V tom prípade môžete voliť poštou. Hlasovacie lístky si <b>musíte nechať zaslať</b> na adresu <b>do zahraničia</b>.
             </p>
 			<p>
 				<a class="btn btn-volby-blue btn-block" href="#tp-na-slovensku&volba-s-preukazom" role="button">hlasovacím preukazom - na Slovensku <sup>**</sup></a>
 			</p>
 			<p>
-				<sup>**</sup> Ak máte trvalý pobyt na území SR, budete v čase volieb na území Slovenska, ale mimo miesta trvalého pobytu, budete potrebovať Hlasovací preukaz. S ním môžete voliť v ktorejkoľvek volebnej miestnosti na Slovensku.
+				<sup>**</sup> Ak máte <b>trvalý pobyt na území SR</b>, budete v čase volieb na území Slovenska, ale <b>mimo miesta trvalého pobytu</b>, budete potrebovať <b>Hlasovací preukaz</b>. S ním môžete voliť v ktorejkoľvek volebnej miestnosti na Slovensku.
 			</p>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 			<p class="text-color-lighter">
-				<sup>*</sup>Žiadosť o voľbu poštou musí byť doručená najneskôr do <b><span class="elections_by_post_end_formatted"></span></b>.
+				<sup>*</sup>Žiadosť o voľbu poštou musí byť doručená najneskôr <b>50 dní</b> pred termínom konania volieb - do <b><span class="elections_by_post_end_formatted"></span></b>.
             </p>
 			<p class="text-color-lighter">
-				<sup>**</sup>Žiadosť o hlasovací preukaz musí byť doručená najneskôr <b>15 dní </b> pred termínom konania volieb.
+				<sup>**</sup>Žiadosť o hlasovací preukaz musí byť doručená najneskôr <b>15 dní </b> pred termínom konania volieb (<span class="elections_by_votingpass_end_formatted"></span>). 
+			<p class="text-color-lighter">
+				Preukaz si môžete <b>vyzdvihúť aj osobne</b> (v takom prípade žiadosť nepotrebujete) najneskôr posledný pracovný deň pred konaním volieb (t.j. <b>najneskôr <span class="elections_by_votingpass_take_end_formatted"></span></b>) v úradných hodinách obce. Obec vydá hlasovací preukaz <b>bezodkladne</b>.</p>
+
             </p>
 
 		  </div></div>
@@ -237,15 +275,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<a class="btn btn-volby-blue btn-block" href="#tp-odhlaseny" role="button">poštou zo zahraničia<sup>*</sup></a>
 			</p>
 			<p class="text-color-lighter">
-				<sup>*</sup> Ak požiadate o voľbu poštou, budú Vám do zahraničia zaslané hlasovacie lístky s pokynmi, ako správne voliť poštou.  
-                <br/>Žiadosť musí byť doručená najneskôr do <b><span class="elections_by_post_end_formatted"></span></b>.
-                
+				<sup>*</sup>K žiadosti, ktorá bude vytvorená v ďalšom kroku, je potrebné priložiť <b>scan / fotku cestovného pasu</b>, roztvoreného na dvojstránke s osobnými údajmi.
+				<br/>Žiadosť musí byť doručená najneskôr 50 dní pred termínom konania volieb <b><span class="elections_by_post_end_formatted"></span></b>.
+				<br/>Na základe Vašej žiadosti Vám budú zaslané hlasovacie lístky a obálky s pokynmi, ako správne voliť poštou.
 			</p>
 						
  
             <div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 				<p>
-					<sup>*</sup> Pred odoslaním žiadosti emailom si pripravte scan / fotografiu svojho cestovného pasu, roztvoreného na dvojstránke s osobnými údajmi.  
+					<sup>*</sup> Nezabudnite k Vašej žiadosti pripojiť scan / fotografiu Vášho cestovného pasu, roztvoreného na dvojstránke s osobnými údajmi.  
                 </p>
 			</div></div>
 
@@ -259,15 +297,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<h2 class="as-title-with-padding">Hlasovací preukaz:</h2>
 			<hr>
 			<p>
-				<a class="btn btn-block btn-volby-blue dontcountstep" href="#tp-na-slovensku&volba-s-preukazom&preukaz-do-vlastnych-ruk" role="button"><strong>žiadam zaslať poštou do vlastných rúk</strong></a>
+				<a class="btn btn-block btn-volby-blue dontcountstep" href="#tp-na-slovensku&volba-s-preukazom&preukaz-do-vlastnych-ruk" role="button"><b>žiadam zaslať poštou do vlastných rúk<sup>*</sup></b></a>
 			</p>
 			<p>
-				<a class="btn btn-block btn-volby-blue dontcountstep" href="#tp-na-slovensku&volba-s-preukazom&preukaz-preberie-splnomocnenec" role="button"><strong>žiadam vydať splnomocnenej osobe</strong></a>
+				<a class="btn btn-block btn-volby-blue dontcountstep" href="#tp-na-slovensku&volba-s-preukazom&preukaz-preberie-splnomocnenec" role="button"><b>žiadam vydať splnomocnenej osobe<sup>**</sup></b></a>
 			</p>
-			<p>Preukaz si môžete vyzdvihúť aj osobne najneskôr posledný pracovný deň pred konaním volieb (t.j. najneskôr <span class="elections_by_votingpass_take_end_formatted"></span>) v úradných hodinách obce. Obec vydá hlasovací preukaz bezodkladne.</p>
+			<p>
+				Ako získať Hlasovací preukaz <br/>
+				<sup>*</sup>nechajte si ho zaslať <b>poštou</b> - na adresu na Slovensku, alebo v zahraničí (žiadosť doručte najneskôr <span class="elections_by_votingpass_end_formatted"></span>),<br/>
+				<sup>**</sup><b>splnomocnite</b> inú osobu, aby ho za Vás vyzdvihla (žiadosť doručte najneskôr <span class="elections_by_votingpass_end_formatted"></span>),<br/>
+				alebo si ho môžete vyzdvihnúť <b>osobne</b> - v takom prípade žiadosť nepotrebujete (najneskôr <span class="elections_by_votingpass_take_end_formatted"></span>).
+			</p>
+
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 				<p>
-					Ak si nemôžete osobne prevziať hlasovací preukaz, splnomocnite na vyzdvihnutie inú osobu.
+					Preukaz si môžete vyzdvihúť aj osobne (v takom prípade žiadosť nepotrebujete) najneskôr posledný pracovný <b>deň pred konaním volieb</b> (t.j. najneskôr <span class="elections_by_votingpass_take_end_formatted"></span>) v úradných hodinách obce. Obec Vám vydá hlasovací preukaz <b>bezodkladne</b>.
 				</p>
 			</div></div>
 		</div>
@@ -289,7 +333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			<hr>
 			<p class="alert alert-info">
-				Vaše osobné údaje nespracúvame. Sú výhradne vo Vašom počítači. Ak chcete mať 100% istotu, odpojte sa od internetu.
+				Vaše osobné údaje nespracúvame. Sú výhradne vo Vašom počítači. Ak&nbsp;chcete mať 100% istotu, odpojte sa od internetu.
 			</p>
 			<div class="preukaz-ps posta-tp preukaz-tp nemam-tp prehlasenim">
 				<!-- ----- ----- -->
@@ -311,44 +355,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<input type="text" id="basicinfo-maidenlastname" class="form-control" name="BasicInfo[maidenLastname]">
 						<div class="help-block"></div>
 					</div>
-					<div class="form-group field-basicinfo-birthno required">
-						<label class="control-label" for="basicinfo-birthno">Rodné číslo <span class="nemam-tp">(ak nemáte pridelené, doplňte len dátum narodenia)</span></label>
-						<input type="text" id="basicinfo-birthno" class="form-control" name="BasicInfo[birthNo]" autocomplete="off">
+                    <div class="checkbox nemam-tp">
+                      <label><input id="birthnoCheck" type="checkbox" checked>Mám pridelené rodné číslo</label>
+                    </div>
+					<div class="form-group field-basicinfo-birthno required" id="rcGroup">
+						<label class="control-label" for="basicinfo-birthno">Rodné číslo</label>
+						<input type="text" id="basicinfo-birthno" class="form-control" name="BasicInfo[birthNo]" autocomplete="off" placeholder="Vaše rodné číslo vo formáte 987654/3210" >
 						<div class="help-block"></div>
 					</div>
-				</form>
-			</div>
-
-			<div class="preukaz-ps">
-				<h3 class="digitalRed as-title-with-padding">Údaje splnomocnenca</h3>
-				<hr>
-				<!-- ----- ----- -->
-				<!-- STEP 4 FORM PROXY -->
-				<!-- ----- ----- -->
-				<form id="proxy" action="/" method="post">
-
-					<div class="form-group field-proxy-name required">
-						<label class="control-label" for="proxy-name">Meno</label>
-						<input type="text" id="proxy-name" class="form-control" name="Proxy[name]">
-						<div class="help-block"></div>
-					</div>
-					<div class="form-group field-proxy-lastname required">
-						<label class="control-label" for="proxy-lastname">Priezvisko</label>
-						<input type="text" id="proxy-lastname" class="form-control" name="Proxy[lastname]">
-						<div class="help-block"></div>
-					</div>
-					<div class="form-group field-proxy-idno required">
-						<label class="control-label" for="proxy-idno">Číslo občianskeho preukazu</label>
-						<input type="text" id="proxy-idno" class="form-control" name="Proxy[idNo]">
+					<div class="form-group field-basicinfo-birthdate nemam-tp hidden required" id="bdGroup">
+						<label class="control-label" for="basicinfo-birthdate">Dátum narodenia</label>
+						<input type="date" id="basicinfo-birthdate" class="form-control" name="BasicInfo[birthdate]" autocomplete="off">
 						<div class="help-block"></div>
 					</div>
 				</form>
 			</div>
 
 			<div class="preukaz-ps preukaz-tp posta-tp">
-				<h3 class="as-title-with-padding digitalRed">
-					Vaša adresa trvalého pobytu v Slovenskej republike</h3>
 				<hr>
+				<h3 class="as-title-with-padding digitalRed">
+					Adresa Vášho trvalého pobytu v Slovenskej republike</h3>
+				
 				<!-- ----- ----- -->
 				<!-- STEP 4 FORM ADDRESS SLOVAKIA -->
 				<!-- ----- ----- -->
@@ -364,11 +391,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="help-block"></div>
 					</div>
 					<div class="form-group field-addressslovakia-zip required">
-						<label class="control-label" for="addressslovakia-zip">PSČ <small>(Zadajte PSČ, alebo vyberte mesto zo zoznamu.)</small></label>
+						<label class="control-label" for="addressslovakia-zip">PSČ <small>(Zadajte PSČ trvalého pobytu, alebo vyberte mesto zo zoznamu nižšie.)</small></label>
 						<input type="text" id="addressslovakia-zip" class="form-control" name="AddressSlovakia[zip]" onkeyup="findZIP()" onchange="findZIP()">
 						<div class="wrong-psc"></div>
 						<div class="help-block psc"></div>
-						<div><small>(PSČ Vášho obecného/mestského úradu sa môže líšiť od Vášho.)</small></div>
+						<div><small>(PSČ Vášho obecného/mestského úradu sa môže líšiť od PSČ Vašej adresy.)</small></div>
 					</div>
 					<div class="form-group field-addressslovakia-kraj required">
 						<label class="control-label" for="addressslovakia-kraj">Kraj</label>
@@ -394,17 +421,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</form>
 			</div>
 
+			<div class="preukaz-ps">
+				<hr>
+				<h3 class="digitalRed as-title-with-padding">Údaje splnomocnenca (kto za Vás vyzdvihne hlasovací preukaz)</h3>
+				<!-- ----- ----- -->
+				<!-- STEP 4 FORM PROXY -->
+				<!-- ----- ----- -->
+				<form id="proxy" action="/" method="post">
+
+					<div class="form-group field-proxy-name required">
+						<label class="control-label" for="proxy-name">Meno</label>
+						<input type="text" id="proxy-name" class="form-control" name="Proxy[name]">
+						<div class="help-block"></div>
+					</div>
+					<div class="form-group field-proxy-lastname required">
+						<label class="control-label" for="proxy-lastname">Priezvisko</label>
+						<input type="text" id="proxy-lastname" class="form-control" name="Proxy[lastname]">
+						<div class="help-block"></div>
+					</div>
+					<div class="form-group field-proxy-idno required">
+						<label class="control-label" for="proxy-idno">Číslo občianskeho preukazu</label>
+						<input type="text" id="proxy-idno" class="form-control" name="Proxy[idNo]">
+						<div class="help-block"></div>
+					</div>
+				</form>
+			</div>
+
+			<hr>
+
 			<div class="posta-tp preukaz-tp nemam-tp prehlasenim">
 				<h3 id="foreign-header" class="as-title-with-padding digitalRed preukaz-tp">
-					Adresa pre odoslanie hlasovacieho preukazu
+					Adresa pre doručenie hlasovacieho preukazu
 				</h3>
-				<div class="preukaz-tp">
-					Pre skopírovanie adresy trvalého pobytu <button id="copyadress" class="btn btn-default btn-xs">kliknite tu</button>.
+				<div class="preukaz-tp" style="margin-bottom:30px;">
+					Pre skopírovanie údajov z adresy Vášho trvalého pobytu <button id="copyadress" class="btn btn-default btn-xs">kliknite sem</button>.
 				</div>
 				<h3 id="foreign-header" class="as-title-with-padding digitalRed nemam-tp posta-tp prehlasenim">
 					Adresa miesta pobytu v cudzine
 				</h3>
-				<hr>
+				
 				<!-- ----- ----- -->
 				<!-- STEP 4 FORM ADDRESS FOREIGN -->
 				<!-- ----- ----- -->
@@ -435,14 +490,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="help-block"></div>
 					</div>
 					<div class="form-group field-addressforeign-format posta-tp nemam-tp">
-						<label class="control-label" for="addressforeign-format">Formát adresy</label>
+						<label class="control-label" for="addressforeign-format">Formát adresy<sup>*</sup></label>
 						<select id="addressforeign-format" class="form-control" name="AddressForeign[format]" onchange="nastavPosteRestante()">
 							<option value="sk">SK formát - Ulica číslo, PSČ Mesto, Štát</option>
 							<option value="usa">USA formát - číslo ulica, Mesto PSČ, Štát</option>
 							<option value="sk-poste-restante">Poste Restante SK formát</option>
 							<option value="usa-poste-restante">Poste Restante USA formát</option>
 						</select>
-						<div class="help-block"></div>
+						<p><small><sup>*</sup>Zásielku si môžete nechať poslať na poštu v zahraničí. V takom prípade zvoľte Poste Restante. Zásielku Vám na pošte vydajú, ak sa identifikujete dokladom. </small></p>
+					<div class="help-block"></div>
 					</div>
 				</form>
 			</div>
@@ -450,24 +506,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<p class="preukaz-ps posta-tp preukaz-tp nemam-tp">
 				<a class="btn btn-volby-blue btn-block btn-submit-form" href="#pdf" id="preview-button" role="button">Vytvoriť náhľad žiadosti</a>
 			</p>
-			<p class="prehlasenim">
-				<a class="btn btn-volby-blue btn-block btn-finalize-pdf" href="#pdf-final" id="preview-button" role="button">Vytvoriť Čestné prehlásenie o trvalom pobyte v cudzine <sup>*</sup></a>
-			</p>
 
-            <p  class="preukaz-ps">
-				<sup>*</sup> Vyplňte formulár a kliknite na tlačidlo. Vygeneruje sa dokument. Ten si <b>uložte</b> a odošlite emailom alebo poštou. 
-            </p>
-            <p  class="prehlasenim">
-				<sup>*</sup> Vyplňte formulár a kliknite na tlačidlo. Vygeneruje sa dokument. Ten si <b>vytlačte</b>. V deň volieb <b>navštívte ktorúkoľvek volebnú miestnosť</b>, predložte <b>cestovný pas</b> a odovzdajte čestné <b>prehlásenie</b> volebnej komisii. Tá Vám dá hlasovacie lístky a obálku. 
-            </p>
-            <p>
-                Ďakujeme, že volíte!    
-            </p>
 
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
-				<p>Vyplňte všetky políčka formulára. Ak Vám nebolo pridelené rodné číslo, zadajte dátum narodenia.</p> 
-                <p  class="prehlasenim">Čestné prehlásenie nie je potrebné nikam posielať. Vezmite ho so sebou v deň volieb do volebnej miestnosti.</p>
-			</div></div>
+					<p>Vyplňte všetky políčka formulára a kliknite na tlačidlo "<b>Vytvoriť náhľad žiadosti</b>". </p>
+					<p class="nemam-tp">Ak Vám nebolo pridelené rodné číslo, zadajte dátum narodenia.</p> 
+	                <p class="prehlasenim">Čestné prehlásenie nie je potrebné nikam posielať. Vezmite ho so sebou v deň volieb do volebnej miestnosti.</p>
+				</div>
+			</div>
 		</div>
 
 
@@ -480,9 +526,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="hiddenOnAndroid embed-responsive embed-responsive-210by297">
 				<iframe class="embed-responsive-item" id="preview"></iframe>
 			</div>
-			<p>
-				<center><small>Kliknutím na tlačidlo "Uložiť" uložíte dokument do svojho počítača.</small></center>
-			</p>
+			<p>Kliknite na tlačidlo "<b>Podpísať</b>" a pohybom kurzoru (myši, prsta po dotykovej obrazovke) podpíšte <b>žiadosť</b>. </p>
+			
 			<div class="row">
 				<div class="col-sm-6">
 					<p>
@@ -496,10 +541,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
-				<p>                  
-                    Kliknutím na tlačidlo "Podpísať", vytvoríte podpis pohybom myši / kurzoru. Následne si žiadosť stiahnite do počítača a odošlite emailom, alebo poštou.
-				</p>
-			</div></div>
+					<p class="nemam-tp">                  
+	                    Nezabudnite do e-&#x2060;mailu priložiť scan / fotografiu cestovného pasu! Žiadosť bez scanu / fotografie cestovného pasu by nebola úplná!
+					</p>
+					<p>
+						Po podpísaní dokumentu sa zobrazia ďalšie pokyny.
+					</p>
+				</div>
+			</div>
 		</div>
 
 
@@ -545,51 +594,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="hiddenOnAndroid embed-responsive embed-responsive-210by297">
 				<iframe id="final" class="embed-responsive-item"></iframe>
 			</div>
-			<p><small>Ak je súčasťou Vášho internetového prehliadača aj prehliadač PDF súborov, mali by ste vidieť náhľad čestného vyhlásenia. Ak sa nezobrazil, nezúfajte. Kliknutím na tlačidlo "Uložiť" ho uložte ako súbor do svojho počítača. </small>
+			<p>
+				<small>
+					Ak je súčasťou Vášho internetového prehliadača aj prehliadač PDF súborov, mali by ste vidieť náhľad vytvoreného dokumentu. Ak&nbsp;sa nezobrazil, nezúfajte. 
+				</small>
 			</p>
-			<p class="prehlasenim">Čestné vyhlásenie uložte, <b>vytlačte</b> a podpíšte. Počas volebného dňa môžete <b>voliť v ktorejkoľvek volebnej miestnosti</b> na území SR. Volebnej komisii sa preukážete <b>cestovným pasom</b> a odovzdajte jej <b>Čestné vyhlásenie</b> o trvalom pobyte v zahraničí. Volebná komisia overí, že ste odhlásení z trvalého pobytu v SR a ak je tomu tak, umožní Vám voliť.</p>
-			<div class="btn-group">
+			<p>
+				Kliknutím na tlačidlo "<b>Uložiť</b>" uložte súbor so žiadosťou. Potom kliknite na tlačidlo "Odoslať žiadosť". 
+			</p>
 
-			</div>
 			<div class="row">
 				<div class="col-sm-6">
 					<p id="download-final-btn">
 						<a class="btn btn-volby-blue btn-block btn-download-pdf" href="#pdf" id="step6but1" role="button">Uložiť</a>
 					</p>
 				</div>
+				<div class="col-sm-6">
+					<p>
+						<a class="btn btn-volby-gray btn-block btn-show-final-info" id="step6but2" href="#sendsection" role="button">Odoslať žiadosť</a>
+					</p>
+				</div>
 			</div>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 				<p id="download-final-ios-text" class="hidden">
-					<b>Na iOS podržte prst na vygenerovanom dokumente a uložte si ho do knižnice obrázkov. Ak Vám možnosť uloženia ako obrázok neponúka, stlačte tlačítko uložiť a pomocou aplikácie iBooks alebo inej na prezeranie PDF dokumentov si ju uložte. Z nej budete môcť následne priložiť tento PDF dokument do e-mailu.</b>
+					<b>Na iOS podržte prst na vygenerovanom dokumente a uložte si ho do knižnice obrázkov. Ak&nbsp;Vám možnosť uloženia ako obrázok neponúka, stlačte tlačítko uložiť a pomocou aplikácie iBooks alebo inej na prezeranie PDF dokumentov si ju uložte. Z nej budete môcť následne priložiť tento PDF dokument do e-&#x2060;mailu.</b>
 				</p>
-				<p  class="posta-tp nemam-tp preukaz-ps reukaz-tp">
-                    Žiadosť je potrebné odoslať poštou, alebo e-mailom.    
-				</p>
-
-                <p class="show_period_1">Do oficiálneho vyhlásenia termínu volieb <b>úrady zatiaľ neprijímajú žiadosti</b> o voľbu poštou ani o hlasovací preukaz.</p> 
-                <p class="show_period_1"><b>Nepremeškajte</b> termín pre podanie žiadosti! <b>Zadajte email</b> a pošleme Vám notifikáciu ihneď po oficiálnom vyhlásení termínu volieb:</p>
-
-                <form action="./mailing.php" method="post" class="show_period_1">
-                    <div class="row">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Zadajte Váš e-mail:</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@">
-                        <small id="emailHelp" class="form-text text-muted">Odoslaním e-mail adresy súhlasíte, aby Vám <a href="https://www.srdcomdoma.sk" target="_blank">Srdcom doma o.z.</a> zaslal upozornenia týkajúce sa volieb. Súhlas môžete kedykoľvek odvolať. Email neposkytneme žiadnemu inému subjektu. </small>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <button type="submit" class="btn btn-primary btn btn-block btn-success btn-volby-blue">Zaregistrovať email</button>
-                    </div>
-                </form>
+				
 
 				<p  class="prehlasenim">
                     Čestné prehlásenie nie je potrebné nikam posielať. Vytlačte ho na tlačiarni v deň volieb ho vezmite so sebou do ktorejkoľvek volebnej miestnosti, kde chcete voliť.  
 				</p>
 				<p>
-                    Ďakujeme Vám, že volíte! Poraďte aj Vašim priateľom a známym aby využili túto aplikáciu a uľahčili si volebný proces.  
-				</p>
-				<p>
-                    Ak chcete zjednodušiť občanom SR volebný proces, podpíšte online petíciu za možnosť voliť zo zahraničia - vo všetkých voľbách na <a href="https://www.srdcomdoma.sk/" target="_blank">www.srdcomdoma.sk</a>.  
+					Uložte si žiadosť kliknutím na tlačidlo "Uložiť" a  potom kliknite na tlačidlo "Odoslať žiadosť".
+
 				</p>
 
 			</div></div>
@@ -602,70 +639,180 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- ----- ----- -->
 		<div class="section krok7 sendsection" id="sendsection">
 			<div class="" id="sendemail">
-				<h2>Odošlite email</h2>
+				<h2>Odošlite e-&#x2060;mail</h2>
 				<div class="alert alert-warning" role="alert">
-					Nezabudnite priložiť <b>stiahnutú žiadosť</b> k emailu.
-					<br /><small>(Tú s vytvoreným podpisom.)</small>
+					V predchádzajúcich krokoch ste vytvorili a podpísali <b>žiadosť</b>.
 				</div>
-				<div class="alert alert-warning nemam-tp" role="alert">
-					Nezabudnite priložiť <b>fotokópiu časti cestovného dokladu</b> Slovenskej republiky s osobnými údajmi voliča <b>alebo</b> fotokópiu osvedčenia o štátnom občianstve Slovenskej republiky.
-				</div>
+				<p>
+					V tomto kroku odošlete žiadosť s prílohami e-mailom.
+				</p>
 				<div id="emailpotvrdeny" class="alert alert-info" role="alert">
-					Vaša obec alebo mesto nám potvrdili, že email je správny pre účel podávania žiadostí k voľbám do NRSR v roku <span class="elections_year"></span>.
+					Vaša obec alebo mesto nám potvrdili e-&#x2060;mail adresu pre účel podávania žiadostí k voľbám do NRSR v roku <span class="elections_year"></span>. <br/>Vaša žiadosť by sa teda nemala stratiť.
 				</div>
+
+				<div class="alert alert-warning" role="alert">
+					<p><b>Po odoslaní e-&#x2060;mailu s prílohou</b> počkajte tri pracovné dni. Ak&nbsp;nedostanete potvrdenie o prijatí žiadosti e-&#x2060;mailom do troch pracovných dní, <b>doporučujeme overiť si telefonicky</b>, či Vaša žiadosť bola spracovaná.</p>
+					<p id="phonetext">Informácie o stave Vašej žiadosti Vám poskytnú na t. čísle obce / mesta: (+421) <b><span class="bold" id="phone"></span></b> (ak tel. číslo neodpovedá, budete si musieť nájsť správne t. číslo cez internet).</p>
+				</div>
+				
 				<p>
-					Ak máte aktivovaného mailového klienta, tlačítko <b>Vytvoriť email</b> nižšie by malo vytvoriť email automaticky.
+					Kliknutím na tlačidlo "Vytvoriť e-&#x2060;mail", by sa mal vytvoriť nový e-&#x2060;mail. </p>
+				<p>
+					<b>Do e-&#x2060;mailu vložte:</b> 
+					<ul>
+						<li><b>žiadosť</b> <span class="nemam-tp">(vrátane čestného prehlásenia)</span> vytvorenú v&nbsp;predchádzajúcich krokoch</li>
+						<li class="nemam-tp"><b>foto / scan</b> Vášho <b>cestovného pasu</b> roztvorený na stránkach s&nbsp;osobnými údajmi <b>alebo</b> foto / scan <b>osvedčenia o štátnom občianstve Slovenskej republiky</b>, ktorého dátum vydania nie&nbsp;je starší ako 6 mesiacov (Osvedčenie o štátnom občianstve v&nbsp;zahraničí vybavíte na <a href="https://www.mzv.sk/ministerstvo/slovenske_zastupitelstva-vsetky_zastupitelstva" target="_blank">zastupiteľských úradoch SR</a>, na Slovensku na okresnom úrade v sídle kraja).</li>
+					</ul>
 				</p>
-				<a id="send" class="btn btn-volby-blue btn-block" target="_blank" href="" role="button">Vytvoriť email</a>
+				<a id="send" class="btn btn-volby-blue btn-block" target="_blank" href="" role="button">Vytvoriť e-&#x2060;mail</a>
 				<p>
 				</p>
+				<p class="email-paragraph">
+					Ak sa e-&#x2060;mail kliknutím na tlačidlo nevytvoril, vytvorte e-&#x2060;mail manuálne:</p>
 				<p>
-					Ak to u Vás nefunguje, odošlite nasledovný email skopírovaním nasledujúcich textov do príjmateľa, predmetu a obsahu emailu. <br /><small>(Na kopírovanie do schránky použite <b>obrázky obálok</b> pri textoch a na vloženie do emailu na PC pravé tlačítko myši a vložiť, alebo "Ctrl" a súčasne "V". Na mobilnom telefóne podržťe prst na políčku, kde budete vkladať a po zobrazení ponuky stlačiť "vložiť", alebo "paste".)<small></p>
-				<p>
-					Na emailovú adresu: <strong><span id="sendto"></span></strong>
-					<button type="button" class="copy-btn" data-clipboard-target="#sendto" title="Skopírovať email do schránky (Ctrl+C)">
-						<img src="images/copy.png" alt="Skopíruj"/>
+					<button type="button" class="copy-btn" data-clipboard-target="#sendto" title="Skopírovať E-mail adresáta">
+						<img src="images/copy.png" alt="Skopíruj" width="16" />
 					</button>
+					<b>E-&#x2060;mail adresáta:</b> <span id="sendto" class="type"></span>
 				</p>
-				<p>
-					S predmetom: <b><span class="bold" id="emailsubject"></span></b>
-					<button type="button" class="copy-btn" data-clipboard-target="#emailsubject" title="Skopírovať predmet do schránky (Ctrl+C)">
-						<img src="images/copy.png" alt="Skopíruj"/>
+				<p class="email-paragraph">
+					<button type="button" class="copy-btn" data-clipboard-target="#emailsubject" title="Skopírovať Predmet">
+						<img src="images/copy.png" alt="Skopíruj" width="16"/>
 					</button>
+					<b>Predmet / Subject: </b><span id="emailsubject" class="type"></span>
 				</p>
-				<p>
-					S textom: <b><span class="bold" id="emailbody"></span></b>
-					<button type="button" class="copy-btn" data-clipboard-target="#emailbody" title="Skopírovať text do schránky (Ctrl+C)">
-						<img src="images/copy.png" alt="Skopíruj"/>
+				<p class="email-paragraph">
+					<button type="button" class="copy-btn" data-clipboard-target="#emailbody" title="Skopírovať Text e-mailu">
+						<img src="images/copy.png" alt="Skopíruj" width="16"/>
 					</button>
+					<b>Telo / Text e-&#x2060;mailu: </b><span id="emailbody" class="type"></span>
 				</p>
+
 				<hr>
-				<p>Po odoslaní emailu <strong>s prílohou</strong> očakávajte potvrdenie, že Vaša žiadosť bola spracovaná.</p>
-				<p id="phonetext">Ak sa tak nestane, kontaktujte ich telefonicky. Ak nedostanete potvrdenie o prijatí Vašej pošty do 3 dní, skúste im zavolať na telefón: (+421) <b><span class="bold" id="phone"></span></b></p>
+
+				<h2>
+					Jeden hlas nestačí! Urobte viac:
+				</h2>
+				<ol>
+					<li><b>Zdieľajte</b> túto www stránku so svojimi známymi! <div class="fb-share-button" data-href="https://volby.srdcomdoma.sk" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvolby.srdcomdoma.sk%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div></li>
+					<li><b>Podpíšte <a href="https://www.srdcomdoma.sk/" target="_blank">petíciu</a></b>, <a href="https://www.srdcomdoma.sk/peticiu-srdcom-doma-podporuju/" target="_blank">tak ako 83 osobností a spolkov</a>, za možnosť voliť zo zahraničia vo všetkých voľbách (nie len do NR SR). </li>
+					<li><b>Pošlite príspevok</b> na propagáciu voľby poštou a tejto aplikácie na účet: <br/>
+						IBAN: SK3783300000002901594765 BIC: FIOZSKBAXXX <br/>
+						<a href="https://ib.fio.sk/ib/transparent?a=2901594765" target="_blank">(transparentný účet Srdcom doma)</a>.</li>
+					<li><b>Natočte</b> max. 1 minútové <b>video</b> o tom, ako podať žiadosť online.</li>
+					<li><b>Píšte a tagujte</b> na sociálnych sieťach: <br/>#srdcomdoma #volmezozahranicia #volbapostou</li>
+				</ol>
 				<hr />
-				<p><b>Na dnes všetko. Ďakuje Vám
-					<a target="_blank" href="http://www.srdcomdoma.sk/">
-						Srdcom doma
-					</a>
-					a celé Slovensko </b>
-				</p>
-				<div class="fb-share-button" data-href="https://volby.srdcomdoma.sk/" data-layout="button_count"></div>
+
+				<div class="alert alert-warning" role="alert">
+					A čo bude nasledovať? Kliknite vpravo hore na "Pomoc".	
+				</div>
+				
+				<hr />
+
 			</div>
 			<div class="row hidden justify" id="noemail">
 				<div class="col-lg-12">
 					<h2>Odošlite žiadosť</h2>
-					<p>Bohužiaľ sme nenašli email pre Vašu obec. Vygenerovanú žiadosť v PDF si však stále môžete vytlačiť a odoslať poštou na adresu úradu v hlavičke žiadosti. Ak im pošlete žiadosť poštou, prosím upovedomte ich, aby si zriadili emailovú adresu, aby ste pre prípadné ďalšie voľby takúto žiadosť nemuseli odosielať poštou.</p>
+					<p>Bohužiaľ sme nenašli e-&#x2060;mail pre Vašu obec. Vygenerovanú žiadosť v PDF si však stále môžete vytlačiť a odoslať poštou na adresu úradu v hlavičke žiadosti. Ak&nbsp;im pošlete žiadosť poštou, prosím upovedomte ich, aby si zriadili e-&#x2060;mailovú</span> adresu, aby ste pre prípadné ďalšie voľby takúto žiadosť nemuseli odosielať poštou.</p>
 				</div>
 			</div>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 					<p>
-						Odošlite Vašu žiadosť a nezabudnite pripojiť súbor žiadosti (a v prípade, že ste si odhlásili trvalý pobyt zo SR, pripojte aj fotku / scan cestovného pasu). <br />
-						Ak nemáte nakonfigurovaný emailový klient na Vašom počítači, vytvorte email a vložte doňho vyššie zobrazené texty. <br />
-						Ikonka v pravej časti stránky Vám skopíruje text do schránky, takže nemusíte text označovať.
+						Odošlite Vašu žiadosť e-&#x2060;mailom. Nezabudnite priložiť 
 					</p>
+						<ul>
+							<li><b>žiadosť</b> <span class="nemam-tp">(vrátane čestného prehlásenia)</span> vytvorenú v&nbsp;predchádzajúcich krokoch</li>
+							<li class="nemam-tp"><b>foto / scan</b> Vášho <b>cestovného pasu</b> roztvorený na stránkach s&nbsp;osobnými údajmi <b>alebo</b> foto / scan <b>osvedčenia o štátnom občianstve Slovenskej republiky</b>, ktorého dátum vydania nie&nbsp;je starší ako 6 mesiacov (Osvedčenie o štátnom občianstve v&nbsp;zahraničí vybavíte na <a href="https://www.mzv.sk/ministerstvo/slovenske_zastupitelstva-vsetky_zastupitelstva" target="_blank">zastupiteľských úradoch SR</a>, na Slovensku na okresnom úrade v sídle kraja).</li>
+						</ul>
+					<p>
+						
+						<b>Ak</b> kliknutie na tlačidlo "Vytvoriť e-mail" <b>nevytvorilo e-mail</b>, pravdepodobne nemáte nakonfigurovaného e-&#x2060;mailového klienta. 
+					</p>
+					<p>
+						V takom prípade <b>vytvorte e-&#x2060;mail ručne</b>. Adresujte ho na vyššie uvedenú e-mailovú <b>adresu</b> a vložte doň vyššie zobrazený <b>predmet</b> a <b>text</b>. 
+					</p>
+					<p>
+						Kliknutím na ikonku naľavo od textov skopírujete text, ktorý potom ľahko vložíte do emailu.
+					</p>
+
+
+					<div class="alert alert-warning posta-tp nemam-tp" role="alert">
+
+						<p>
+							Ak žiadosť spĺňa zákonom ustanovené náležitosti, úrad zašle najneskôr 35 dní predo dňom konania volieb voličovi, ktorý požiadal o voľbu poštou, na adresu miesta pobytu v cudzine
+						</p>
+						<ol>
+							<li>
+								obálku opatrenú odtlačkom úradnej pečiatky,
+							</li>
+							<li>
+								hlasovacie lístky,
+							</li>
+							<li>
+								návratnú obálku (označenú heslom „VOĽBA POŠTOU - ELECTION BY MAIL“ a vypísanou adresou sídla úradu ako adresáta a adresou voliča ako odosielateľa),
+							</li>
+							<li>
+								poučenie o spôsobe hlasovania.
+							</li>
+						</ol>
+						<p>
+							Keď volič obdrží vyššie uvedenú zásielku, 
+						</p>
+						<ul>
+							<li>
+								vyberie hlasovací lístok jednej strany, hnutia, alebo koalície 
+							</li>
+							<li>
+								a môže (nemusí) označiť najviac 4 kandidátov zakrúžkovaním ich poradového čísla. 
+							</li>
+							<li>
+								Hlasovací lístok následne vloží do obálky označenej reliéfnou pečiatkou (obálka bez adresy). 
+							</li>
+							<li>
+								Túto obálku zalepí a vloží ju do návratovej obálky, s napísaným adresátom aj odosielateľom.
+							</li>
+							<li>
+								Volič odošle obálku poštou na svoje náklady.
+							</li>
+						</ul>
+						<p>
+							Do výsledku hlasovania sa započítavajú hlasy na hlasovacích lístkoch, 
+							ktoré boli doručené najneskôr v posledný pracovný deň predo dňom konania volieb (t.j. najneskôr <span class="elections_by_votingpass_take_end_formatted"></span>).
+						</p>
+					</div>
+				</span>
 				</div>
 			</div>
 
+			<div class="text-center footer">
+
+				<p class="powered-by text-center">
+				    Otvorený kód tejto aplikácie vytvorili dobrovoľníci úplne zdarma. 
+				    <a target="_blank" href="http://www.srdcomdoma.sk/">
+				        <img src="https://www.srdcomdoma.sk/images/Srdcomdoma_logo_horizontal_RGB_no_margin.jpg" >
+				    </a>                
+				    <br/>
+				    
+				    Sledujte nás: 
+				    <a href="https://www.facebook.com/srdcomdoma" target="_blank"><i class="fab fa-facebook-square"></i></a> |
+				    <a href="https://instagram.com/srdcomdoma" target="_blank"><i class="fab fa-instagram"></i></a> | 
+				    <a href="https://www.srdcomdoma.sk" target="_blank"><i class="far fa-file-image"></i></a> | 
+				    <a href="https://zubo.blog.sme.sk/" target="_blank"><i class="far fa-file-alt"></i></a> <br/>
+				    <img src="images/sd-email.png" style="height:20px;">
+					<br/>
+				    Ďakujeme.
+				</p>
+
+	            <p id="github" class="footer text-center">
+				    Srdcom doma o.z., Sibírska 65, 83102 Bratislava - Nové Mesto, IČO: 52089207, <a href="https://ib.fio.sk/ib/transparent?a=2901594765" target="_blank">transparentný účet</a> 
+				    <br/>
+	                <br/> Dostupné sú aj <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia">zdrojové kódy</a>,
+	                <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/blob/master/README.md">dodatočné informácie</a>
+	                a <a target="_blank" href="https://github.com/scholtz/volby-zo-zahranicia/issues">diskusia</a> na Githube.
+	                <br/>
+	            </p>
+	        </div>
 		</div>
 
 	</div>
@@ -748,16 +895,18 @@ window.election.psc = {};
 <script src="assets/e560cfe3/yii.validation.js"></script>
 <script src="assets/e560cfe3/yii.activeForm.js"></script>
 <script src="js/countdown-f783626ab2094f3970068d7a55e8fe94.js"></script>
-<script src="js/validation-41c8dfb3045ac07cdfd35aa9487bec21.js"></script>
+<script src="js/validation-c8e67e8ccd81f0a1e74b5b83b7cafd06.js"></script>
 <script src="js/analytics-27d0c4b3c0de7655b9bf62b1ccd7e4c4.js"></script>
 <script src="js/request-generator-app-51f3b8533fd28d138ab88b5fa9acfcb8.js"></script>
 <script src="js/address-bd885114b66223d06579bf0bf659d0a1.js"></script>
 <script src="js/request-1c8b1d5d2ba746be75902c86d000d52d.js"></script>
 <script src="js/os-detection-2b839833e988aca01613b28fa5dbf558.js"></script>
-<script src="js/app-7742d39e1710b41ce14224978ae8e9b3.js"></script>
+<script src="js/app-bf515574d4e9cccaaede01ecc610fee1.js"></script>
 <script src="js/ga-7840c009f9fe130da6f005562cae9050.js"></script>
 <script src="js/custom-modifications.js"></script>
 
 <script async src="js/cities.js"></script>
+
+
 </body>
 </html>

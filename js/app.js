@@ -16,7 +16,8 @@ function volbaSPrehlasenim(){
   clearForm();
   $('.prehlasenim').show();
   App.request_form = 'volbaPrehlasenimBezTrvalehoPobytu';
-
+  $("#birthnoCheck").prop('checked', true);
+  setProperStateForRCForm();
 }
 
 function nemamTP() {
@@ -33,11 +34,15 @@ function postaTP() {
   clearForm();
   $('.posta-tp').show();
   $('#photo-link').hide();
+  $("#birthnoCheck").prop('checked', true);
+  setProperStateForRCForm();
   App.request_form = 'volbaPostouSTrvalymPobytom';
 }
 
 function preukazTP() {
   clearForm();
+  $("#birthnoCheck").prop('checked', true);
+  setProperStateForRCForm();
   $('.preukaz-tp').show();
   $('#photo-link').hide();
   App.request_form = 'ziadostOPreukazPostou';
@@ -45,6 +50,8 @@ function preukazTP() {
 
 function preukazPS() {
   clearForm();
+  $("#birthnoCheck").prop('checked', true);
+  setProperStateForRCForm();
   $('.preukaz-ps').show();
   $('#photo-link').hide();
   App.request_form = 'ziadostOPreukaPreSplnomocnenca';
@@ -60,8 +67,9 @@ function formatDate(date) {
         month = '0' + month;
     if (day.length < 2) 
         day = '0' + day;
-
-    return [day, month, year].join('.');
+    var ret = [day, month, year].join('.');
+    console.log("Format date",date,ret);
+    return ret;
 }
 
 
@@ -108,6 +116,17 @@ function getPeriod(){
     return 5;
 }
 
+function setProperStateForRCForm(){
+  if($("#birthnoCheck").is(':checked')) {
+      $("#rcGroup").removeClass("hidden");
+      $("#bdGroup").addClass("hidden");
+      
+  }else{
+      $("#rcGroup").addClass("hidden");
+      $("#bdGroup").removeClass("hidden");
+  }
+}
+
 $(document).ready(function ()
 {
   resizeCanvas();
@@ -134,14 +153,7 @@ $(document).ready(function ()
   }
 
   $("#birthnoCheck").change(function() {
-      if(this.checked) {
-          $("#rcGroup").removeClass("hidden");
-          $("#bdGroup").addClass("hidden");
-          
-      }else{
-          $("#rcGroup").addClass("hidden");
-          $("#bdGroup").removeClass("hidden");
-      }
+      setProperStateForRCForm();
   });
 
   $('#clear-button').on("click", function (event)
