@@ -109,6 +109,7 @@ https://volby.digital/test/
 * Mac OS X El Capitan v10.11.1, Safari Version 9.0.1 - Plná funkcionalita
 * Mac OS X El Capitan v10.11.1, Firefox 43.0 - Plná funkcionalita
 * iOS 9.2 (iPad),Mobile Safari 9.0 - Plná funkcionalita
+* iOS 12.4.1 (iPhone), Mobile Safari - Plná funkcionalita, žiadosť uložiť do súborov / files a po iniciovaní e-mailu vložiť prílohu z files.
 * Ubuntu 14.10, Chrome 46.0.2490.86 - Podpisovanie je nefunkčné
 * Ubuntu 14.10, Firefox 42.0 - Plná funkcionalita
 * FreeBSD 10.2-RELEASE-p4, Firefox 41.0.2 - Plná funkcionalita
