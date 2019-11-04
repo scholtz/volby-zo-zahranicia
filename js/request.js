@@ -22,7 +22,14 @@ function createDocument(preview,download) {
   if (signaturedata.length > 10) {
     $('#signature').val(signaturedata);
   }
+
+  App.switchStreetAndNumber = false;
+  if($("#addressforeign-format").val()==="usa" || $("#addressforeign-format").val()==="usa-poste-restante"){
+      App.switchStreetAndNumber = true;
+  }
   
+  
+  console.log("App.switchStreetAndNumber",$("#addressforeign-format").val(),App.switchStreetAndNumber);
   
   if ($('#signature').val() != '' && $('#signature').val() != 'data:,') {
     isValidSignature = true;
@@ -144,15 +151,29 @@ function createDocument(preview,download) {
       {text: '', style: 'space'},
       {
         columns: [
-          {text: ( App.poste_res ? 'Adresa v cudzine:' : 'Ulica: '), style: 'line',},
-          {text: ( App.poste_res ? 'Poste Restante' : $('#addressforeign-street').val().toUpperCase() ), style: 'value'},
+          {text: ( App.poste_res ? 'Adresa v cudzine:' : (!App.switchStreetAndNumber ? 'Ulica: ' : 'Číslo domu: ')), style: 'line',},
+          {text: ( App.poste_res ? 'POSTE RESTANTE' : 
+            (
+                !App.switchStreetAndNumber ? 
+                $('#addressforeign-street').val().toUpperCase() : 
+                $('#addressforeign-streetno').val().toUpperCase()
+            )
+           ), style: 'value'},
           {text: ''}
         ]
       },
       {
         columns: [
-          {text: ( App.poste_res ? ' ' : 'Číslo domu: '), style: 'line',},
-          {text: ( App.poste_res ? ' ' : $('#addressforeign-streetno').val().toUpperCase() ), style: 'value'},
+          {text: ( App.poste_res ? 'Adresa pošty: ' : (App.switchStreetAndNumber ? 'Ulica: ' : 'Číslo domu: ')), style: 'line',},
+          {text: 
+            ( App.poste_res ? $('#addressforeign-streetno').val().toUpperCase() : 
+                (
+                    App.switchStreetAndNumber ? 
+                    $('#addressforeign-street').val().toUpperCase() : 
+                    $('#addressforeign-streetno').val().toUpperCase()
+                )
+            )
+           , style: 'value'},
           {text: ''}
         ]
       },
@@ -247,6 +268,10 @@ function createDocument(preview,download) {
         style: 'line',
         //style: 'header',
         bold: true
+      },
+      {
+        text: 'Prosím, použite formát adresy: ' + (App.switchStreetAndNumber ? "Číslo ulica, Mesto PSČ, Štát" : "Ulica číslo, PSČ Mesto, Štát"),
+        style: 'line',
       }
     ];
   } else if (App.request_form == 'volbaPostouBezTrvalehoPobytu') {
@@ -258,6 +283,10 @@ function createDocument(preview,download) {
         style: 'line',
         //style: 'header',
         bold: true
+      },
+      {
+        text: 'Prosím, použite formát adresy: ' + (App.switchStreetAndNumber ? "Číslo ulica, Mesto PSČ, Štát" : "Ulica číslo, PSČ Mesto, Štát"),
+        style: 'line',
       }
      ];
 
@@ -372,15 +401,29 @@ function createDocument(preview,download) {
       localaddress,
       {
         columns: [
-          {text: ( App.poste_res ? 'Adresa v cudzine:' : 'Ulica: '), style: 'line',},
-          {text: ( App.poste_res ? 'Poste Restante' : $('#addressforeign-street').val().toUpperCase() ), style: 'value'},
+          {text: ( App.poste_res ? 'Adresa v cudzine:' : (!App.switchStreetAndNumber ? 'Ulica: ' : 'Číslo domu: ')), style: 'line',},
+          {text: ( App.poste_res ? 'POSTE RESTANTE' : 
+            (
+                !App.switchStreetAndNumber ? 
+                $('#addressforeign-street').val().toUpperCase() : 
+                $('#addressforeign-streetno').val().toUpperCase()
+            )
+           ), style: 'value'},
           {text: ''}
         ]
       },
       {
         columns: [
-          {text: ( App.poste_res ? ' ' : 'Číslo domu: '), style: 'line',},
-          {text: ( App.poste_res ? ' ' : $('#addressforeign-streetno').val().toUpperCase() ), style: 'value'},
+          {text: ( App.poste_res ? 'Adresa pošty: ' : (App.switchStreetAndNumber ? 'Ulica: ' : 'Číslo domu: ')), style: 'line',},
+          {text: 
+            ( App.poste_res ? $('#addressforeign-streetno').val().toUpperCase() : 
+                (
+                    App.switchStreetAndNumber ? 
+                    $('#addressforeign-street').val().toUpperCase() : 
+                    $('#addressforeign-streetno').val().toUpperCase()
+                )
+            )
+           , style: 'value'},
           {text: ''}
         ]
       },

@@ -464,6 +464,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<!-- STEP 4 FORM ADDRESS FOREIGN -->
 				<!-- ----- ----- -->
 				<form id="address-foreign" action="/" method="post">
+					<div class="form-group field-addressforeign-format posta-tp nemam-tp">
+						<label class="control-label" for="addressforeign-format">Formát adresy<sup>*</sup></label>
+						<select id="addressforeign-format" class="form-control" name="AddressForeign[format]" onchange="nastavPosteRestante()">
+							<option value="sk">SK formát - Ulica číslo, PSČ Mesto, Štát</option>
+							<option value="usa">USA formát - Číslo ulica, Mesto PSČ, Štát</option>
+							<option value="sk-poste-restante">Poste Restante SK formát</option>
+							<option value="usa-poste-restante">Poste Restante USA formát</option>
+						</select>
+						<p><small><sup>*</sup>Zásielku si môžete nechať poslať na poštu v zahraničí. V takom prípade zvoľte Poste Restante. Zásielku Vám na pošte vydajú, ak sa identifikujete dokladom. </small></p>
+                        <div class="help-block"></div>
+					</div>
 					<div class="form-group field-addressforeign-street required">
 						<label class="control-label" for="addressforeign-street">Ulica</label>
 						<input type="text" id="addressforeign-street" class="form-control" name="AddressForeign[street]">
@@ -488,17 +499,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<label class="control-label" for="addressforeign-country">Štát</label>
 						<input type="text" id="addressforeign-country" class="form-control" name="AddressForeign[country]" value="Česká Republika">
 						<div class="help-block"></div>
-					</div>
-					<div class="form-group field-addressforeign-format posta-tp nemam-tp">
-						<label class="control-label" for="addressforeign-format">Formát adresy<sup>*</sup></label>
-						<select id="addressforeign-format" class="form-control" name="AddressForeign[format]" onchange="nastavPosteRestante()">
-							<option value="sk">SK formát - Ulica číslo, PSČ Mesto, Štát</option>
-							<option value="usa">USA formát - číslo ulica, Mesto PSČ, Štát</option>
-							<option value="sk-poste-restante">Poste Restante SK formát</option>
-							<option value="usa-poste-restante">Poste Restante USA formát</option>
-						</select>
-						<p><small><sup>*</sup>Zásielku si môžete nechať poslať na poštu v zahraničí. V takom prípade zvoľte Poste Restante. Zásielku Vám na pošte vydajú, ak sa identifikujete dokladom. </small></p>
-					<div class="help-block"></div>
 					</div>
 				</form>
 			</div>
@@ -882,7 +882,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 window.election.cities = {};
 window.election.psc = {};
 </script>
-<script src="js/settings-a29ae098d679846af8d6dfacc0e96244.js"></script>
+<script src="js/settings-b98603d6b16471882d90e53297298150.js"></script>
 <script src="js/custom-settings.js"></script>
 <script src="assets/js/jquery-latest.min.js"></script>
 <script src="assets/js/jquery.mobile.hashchange.min.js"></script>
@@ -895,14 +895,14 @@ window.election.psc = {};
 <script src="assets/e560cfe3/yii.validation.js"></script>
 <script src="assets/e560cfe3/yii.activeForm.js"></script>
 <script src="js/countdown-f783626ab2094f3970068d7a55e8fe94.js"></script>
-<script src="js/validation-c8e67e8ccd81f0a1e74b5b83b7cafd06.js"></script>
+<script src="js/validation-8d75da43734dc703137b1d72ad6dc379.js"></script>
 <script src="js/analytics-27d0c4b3c0de7655b9bf62b1ccd7e4c4.js"></script>
 <script src="js/request-generator-app-51f3b8533fd28d138ab88b5fa9acfcb8.js"></script>
 <script src="js/address-bd885114b66223d06579bf0bf659d0a1.js"></script>
-<script src="js/request-1c8b1d5d2ba746be75902c86d000d52d.js"></script>
+<script src="js/request-ff8b251babd0e5069faa3ebbb6a45c70.js"></script>
 <script src="js/os-detection-2b839833e988aca01613b28fa5dbf558.js"></script>
-<script src="js/app-bf515574d4e9cccaaede01ecc610fee1.js"></script>
-<script src="js/ga-7840c009f9fe130da6f005562cae9050.js"></script>
+<script src="js/app-c7c27fdefe270c17a6a0d360c188d52b.js"></script>
+<script src="js/ga-b272bc9659ac0f2eb6b13f80e6ec18ec.js"></script>
 <script src="js/custom-modifications.js"></script>
 
 <script async src="js/cities.js"></script>
