@@ -49,9 +49,19 @@ git pull
 ```
 Tento príkaz stiahne aktualizované súbory, npr emaily obcí, a ponechá vaše modifikácie na Vašej webstránke. Ak máte konflikt, pravdepodobne ste upravili aj iný súbor a musíte si tento konflikt vyriešiť sami.
 
+---
 **Tento projekt integrujú**
 
 * https://volby.srdcomdoma.sk
+
+---
+**Prispejte nám:**
+
+Tento projekt vytvoril a spravuje Ľudovít Scholtz. Pomôže mi, ak si kúpite licenciu na monitoring firiem a médií v projekte www.cz-fin.com, alebo prispejete na môj kryptoúčet: BTC: 1KxgcfMhSX1St9VjKCKnjnCCAUCQMKUTtP, BCH: 1L7amxYgRTuKCBKu18QxZK7wxjf1o3urrp alebo LTC: LgDHfszjzMY7q3NrddfGw2aBpKPM8MjAT5.
+
+Projekt SrdcomDoma.sk sa výrazne podieľalo na vývoji aplikácie pre voľby do NRSR 2020. SrdcomDoma podporuje iniciatívu o voľbách zo zahraničia nie len pri voľbách do národnej rady.
+
+IBAN: SK3783300000002901594765 BIC: FIOZSKBAXXX - Transparentný účet https://ib.fio.sk/ib/transparent?a=2901594765
 
 ---
 **Ako si nechať doručiť hlasovacie lístky na adresu v cudzine, ktorú ešte nepoznáte?**
