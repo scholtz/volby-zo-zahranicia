@@ -49,9 +49,19 @@ git pull
 ```
 Tento príkaz stiahne aktualizované súbory, npr emaily obcí, a ponechá vaše modifikácie na Vašej webstránke. Ak máte konflikt, pravdepodobne ste upravili aj iný súbor a musíte si tento konflikt vyriešiť sami.
 
+---
 **Tento projekt integrujú**
 
 * https://volby.srdcomdoma.sk
+
+---
+**Prispejte nám:**
+
+Tento projekt vytvoril a spravuje Ľudovít Scholtz. Pomôže mi, ak si kúpite licenciu na monitoring firiem a médií v projekte www.cz-fin.com, alebo prispejete na môj kryptoúčet: BTC: 1KxgcfMhSX1St9VjKCKnjnCCAUCQMKUTtP, BCH: 1L7amxYgRTuKCBKu18QxZK7wxjf1o3urrp alebo LTC: LgDHfszjzMY7q3NrddfGw2aBpKPM8MjAT5.
+
+Projekt SrdcomDoma.sk sa výrazne podieľalo na vývoji aplikácie pre voľby do NRSR 2020. SrdcomDoma podporuje iniciatívu o voľbách zo zahraničia nie len pri voľbách do národnej rady.
+
+IBAN: SK3783300000002901594765 BIC: FIOZSKBAXXX - Transparentný účet https://ib.fio.sk/ib/transparent?a=2901594765
 
 ---
 **Ako si nechať doručiť hlasovacie lístky na adresu v cudzine, ktorú ešte nepoznáte?**
@@ -109,6 +119,7 @@ https://volby.digital/test/
 * Mac OS X El Capitan v10.11.1, Safari Version 9.0.1 - Plná funkcionalita
 * Mac OS X El Capitan v10.11.1, Firefox 43.0 - Plná funkcionalita
 * iOS 9.2 (iPad),Mobile Safari 9.0 - Plná funkcionalita
+* iOS 12.4.1 (iPhone), Mobile Safari - Plná funkcionalita, žiadosť uložiť do súborov / files a po iniciovaní e-mailu vložiť prílohu z files.
 * Ubuntu 14.10, Chrome 46.0.2490.86 - Podpisovanie je nefunkčné
 * Ubuntu 14.10, Firefox 42.0 - Plná funkcionalita
 * FreeBSD 10.2-RELEASE-p4, Firefox 41.0.2 - Plná funkcionalita
