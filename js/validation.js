@@ -5,7 +5,7 @@ var validateBirthNumber = function(value, messages) {
 	if(!$("#birthnoCheck").is(':checked')){
         return;
     }
-	if (value.substr(0,2) < 54) {
+	if (value.length == 9 || (value.length == 10 && value.indexOf("/"))) {
 		yii.validation.regularExpression(value, messages, {
 			"pattern":/^\d{2}[0156]\d{3}\/\d{3}$/,
 			"message":"Rodné číslo pred rokom 1954 musí mať 9 číslic vo formáte XXXXXX/XXX. Tretia číslica musí byť 0,1,5 alebo 6."
