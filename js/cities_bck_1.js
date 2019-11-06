@@ -19294,12 +19294,12 @@ election.cities={
     "142",
     "044 16",
     "Bohdanovce",
-    "bohdanovcevk@azet.sk",
+    "bohdanovce@stonline.sk",
     "055",
     "729 44 05",
     "0905 911 306",
     "Bohdanovce",
-    "1",
+    "0",
     ""
    ],
    "boliarov": [
@@ -43277,7 +43277,7 @@ election.cities={
    "dubove": [
     "Obecný úrad",
     "",
-    "Dubové    Dubové 50   Dubové    ",
+    "Dubové          Dubové 50   Dubové          ",
     "50",
     "038 23",
     "Dubové ",
