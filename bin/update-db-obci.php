@@ -9,9 +9,9 @@ $setToUnverified = false;
 $updateFromSlovenskoSk = false;
 
 $from ="js/cities.js";
-$from = "js/cities.js.orig";
-$setToUnverified = true;
-$updateFromSlovenskoSk = true;
+//$from = "js/cities.js.orig";
+$setToUnverified = false;
+$updateFromSlovenskoSk = false;
 
 
 $cities = file_get_contents($from);
