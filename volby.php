@@ -1,8 +1,9 @@
 <?php
 $obec = "";
+$email = $_REQUEST["u"];
 if (($handle = fopen("emaily.txt", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-		if($_REQUEST["u"] == $data[0]){
+		if($email == $data[0]){
 			$obec = $data[1];
 			break;
 		}
@@ -10,7 +11,6 @@ if (($handle = fopen("emaily.txt", "r")) !== FALSE) {
     fclose($handle);
 }
 $thx = false;
-$email = $_REQUEST["u"];
 if(isset($_REQUEST["emailposta"])){
 	$out = fopen('corrections.csv', 'a+');
 	if(fputcsv($out, array($_REQUEST["u"],$emailposta=$_REQUEST["emailposta"],date("c"),$_SERVER["REMOTE_ADDR"],$emailpreukaz=$_REQUEST["emailpreukaz"]))){
@@ -51,17 +51,16 @@ if(!$emailpreukaz) $emailpreukaz = $email;
 				if($thx == "2"){echo '<div class="alert alert-danger">Nepodarilo sa uložiť informáciu. Prosím kontaktujte nás.</div>';}else
 				if($obec){echo '<div class="alert alert-info">Nastavujete email pre obec: <b>'.$obec.'</b></div>';}?>
 				<form class="form-horizontal" method="post" action="volby.php">
+                    <input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
 					<div class="form-group">
 						<label for="inputEmail3" class="col-sm-2 control-label">Email pre voľbu poštou</label>
 						<div class="col-sm-10">
-							<input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
 							<input  name="emailposta" class="form-control" id="inputEmail3" value="<?php echo htmlspecialchars($emailposta);?>" placeholder="Email pre podanie žiadostí o voľbu poštou">
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="inputEmail3" class="col-sm-2 control-label">Email pre hlasovací preukaz</label>
 						<div class="col-sm-10">
-							<input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
 							<input  name="emailpreukaz" class="form-control" id="inputEmail3" value="<?php echo htmlspecialchars($emailpreukaz);?>" placeholder="Email pre podanie žiadostí o hlasovací preukaz">
 						</div>
 					</div>

@@ -23,12 +23,12 @@ $json = str_replace("'",'"',$json);
 $json = trim($json,';');
 //var_dump($json);
 try{
-    file_put_contents("bin/error.txt",$json);
-    $db = json_decode($json,true,10000,JSON_THROW_ON_ERROR);
+    $db = json_decode($json,true,10000);
     if($setToUnverified){
         foreach($db as $kraj=>$arr1){
             foreach($arr1 as $okres=>$arr2){
                 foreach($arr2 as $obec => $obecdata){
+                    
                     $db[$kraj][$okres][$obec][11] = '0';
                 }
             }
@@ -148,12 +148,71 @@ if (($handle = fopen("emaily.csv", "r")) !== FALSE) {
 	}
 }
 
+echo "\nnastavujem udaje podla corrections 2\n";
+$corrections2 = [];
+if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
+	$i = 0;
+	while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {$i++;
+        if(isset($data[19])){
+            $obec = $data[17];
+            $okres = $data[18];
+            $kraj = $data[19];
+            $corrections2[$kraj][$okres][$obec] = $data;
+
+            if(isset($db[$kraj][$okres][$obec])){
+//                if(!$db[$kraj][$okres][$obec]["11"]){ // if not confirmed
+                    for($i = 0;$i<=12;$i++) {
+                        
+                        if($i == 6 || $i == 12){
+                            
+                            $emails = str_replace(",",";",$data[$i]);
+                            $emails = explode(";",$emails);
+                            
+                            foreach($emails as $key=>$v){
+                                $emails[$key] = $em = trim($v);
+                                if(!$em){unset($emails[$key]);continue;}
+                                if(!Validate::check("email",$em)){
+                                    echo "!!! EMAIL v CORRECTIONS2 NIE JE VALIDNY! ".$em."\n";
+                                    unset($emails[$key]);
+                                }
+                            }
+                            
+                            $newemails = implode(";",$emails);
+                            
+                            if($i == 12){
+                                if($newemails == $db[$kraj][$okres][$obec][6]){
+                                   $newemails = "";// do not fill this info if the same value applies for col 6 
+                                }
+                            }
+                            
+                            //var_dump($newemails);
+                            if($db[$kraj][$okres][$obec][$i] != $newemails){
+                                echo "corrections2: $obec $okres $kraj : $newemails z ".$db[$kraj][$okres][$obec][$i]."\n";
+                                $db[$kraj][$okres][$obec][$i] = $newemails;
+                            }
+                            
+                            
+                            
+                        }else{
+                            $db[$kraj][$okres][$obec][$i] = $data[$i];
+                            
+                        }
+                    }
+//                }
+            }else{
+                echo "\nnenasiel som $kraj $okres $obec\n";exit;
+            }
+        }
+	}
+}
+
 // corrections data type:
 // [0] user ktory robi request
 // [1] emailposta
 // [2] cas
 // [3] REMOTE_ADDR
 // [4] emailpreukaz
+echo "\nkontrolujem corrections 1\n";
 
 if (($handle = fopen("corrections.csv", "r")) !== FALSE) {
 	$i = 0;
@@ -212,6 +271,14 @@ if (($handle = fopen("corrections.csv", "r")) !== FALSE) {
             
             
             
+            
+            if(isset($corrections2[$k][$o][$c])){
+                if($corrections2[$k][$o][$c][14] > strtotime($data[2])){ 
+                    //ak je cas manualnej upravy vyssi ako cas nahlasenia obecnym uradom, zober nahlaseny udaj
+                    // manualne upravene udaje boli zakomponovane vyssie
+                    continue;
+                }
+            }
             
             $data[1] = str_replace(",",";",$data[1]);
 			$emails = explode(";",$data[1]);
