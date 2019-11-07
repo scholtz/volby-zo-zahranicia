@@ -1,4 +1,4 @@
-;(function() {
+﻿;(function() {
 
 
 	"use strict";
@@ -970,7 +970,7 @@ election.cities={
     "779 62 34",
     "0905 207 706",
     "Radatice",
-    "2",
+    "1",
     ""
    ],
    "rokycany": [
@@ -17952,7 +17952,7 @@ election.cities={
     "49 253 512, 49 253 179",
     "",
     "Bratislava - Nové Mesto",
-    "1",
+    "3",
     ""
    ],
    "bratislava-raca": [
@@ -36249,7 +36249,7 @@ election.cities={
     "554 10 08,554 11 42",
     "0918 366 494",
     "Zeleneč",
-    "0",
+    "1",
     ""
    ],
    "zvoncin": [
@@ -39455,12 +39455,12 @@ election.cities={
     "50",
     "013 31",
     "Divina",
-    "starosta@divina.sk",
+    "starosta.divina@gmail.com",
     "041",
     "500 38 07,568 45 77",
     "0903 757 880",
     "Divina",
-    "2",
+    "1",
     ""
    ],
    "divinka": [
@@ -40886,12 +40886,12 @@ election.cities={
     "118",
     "023 31",
     "Rudina",
-    "rudinka@naex.sk",
+    "",
     "041",
     "421 45 31,421 45 51",
     "0905 724 932",
     "Rudinka",
-    "0",
+    "2",
     ""
    ],
    "rudinska": [
@@ -40916,12 +40916,12 @@ election.cities={
     "17",
     "023 32",
     "Snežnica",
-    "sneznica@slovanet.sk",
+    "sneznica@obec-sneznica.sk",
     "041",
-    "422 41 90",
-    "0905 229 347",
+    "422 41 79",
+    "0911 879 721",
     "Snežnica",
-    "0",
+    "1",
     ""
    ]
   },
@@ -42215,7 +42215,7 @@ election.cities={
     "429 51 67",
     "",
     "Šútovo",
-    "0",
+    "2",
     ""
    ],
    "trebostovo": [
@@ -43175,13 +43175,13 @@ election.cities={
     "Abramová",
     "8",
     "038 22",
-    "Slovenské Pravno",
-    "uobecny5@gaya.sk",
+    "Abramova",
+    "uobecny5@gaya.sk;obecabramova@gmail.com",
     "043",
     "496 21 42 ",
-    "0905 817 720",
+    "0905 817 720 0917 508 998",
     "Abramová",
-    "0",
+    "2",
     ""
    ],
    "blazovce": [
@@ -43191,12 +43191,12 @@ election.cities={
     "22",
     "038 44",
     "Jazernica",
-    "michalka@dzd.sk",
+    "obecblazovce@gmail.com",
     "043",
     "494 74 55",
     "0903 890 191",
     "Blažovce",
-    "0",
+    "3",
     ""
    ],
    "bodorova": [
@@ -43235,8 +43235,8 @@ election.cities={
     "Brieštie",
     "76",
     "038 22",
-    "Slovenské Pravno",
-    "uobecny9@gaya.sk",
+    "Brieštie",
+    "uobecny9@gaya.sk;obecbriestie@gmail.com",
     "043",
     "496 21 64",
     "0944 132 643",
@@ -43251,12 +43251,12 @@ election.cities={
     "82",
     "038 23",
     "Dubové",
-    "uobecny@gaya.sk",
+    "podatelna@obecbudis.sk;info@obecbudis.sk;sekretariat@obecbudis.sk",
     "043",
     "496 26 20",
-    "",
+    "0918 629 089",
     "Budiš",
-    "0",
+    "2",
     ""
    ],
    "cremosne": [
@@ -43269,9 +43269,9 @@ election.cities={
     "obec.cremosne@gmail.com",
     "043",
     "492 27 83",
-    "0907 887 156,0908 985 909",
+    "0907 887 156",
     "Čremošné",
-    "0",
+    "2",
     ""
    ],
    "dubove": [
@@ -43301,7 +43301,7 @@ election.cities={
     "492 26 85",
     "",
     "Háj",
-    "0",
+    "3",
     ""
    ],
    "horna-stubna": [
@@ -43331,7 +43331,7 @@ election.cities={
     "496 21 32 ",
     "",
     "Ivančiná",
-    "0",
+    "2",
     ""
    ],
    "jasenovo": [
@@ -43341,12 +43341,12 @@ election.cities={
     "99",
     "038 22",
     "Slovenské Pravno",
-    "uradjasenovo@gaya.sk",
+    "podatelna@jasenovo.sk;info@jasenovo.sk",
     "043",
     "496 26 21",
     "0918 772 250",
     "Jasenovo",
-    "0",
+    "2",
     ""
    ],
    "jazernica": [

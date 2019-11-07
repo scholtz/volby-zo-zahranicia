@@ -126,16 +126,18 @@ function nastavObec(obec) {
 
 	// list/db of all cities comes from external file (js/cities)
   var o = App.cities;
-
+  console.log(window.election.cities['Banskobystrický kraj']['Okres Rimavská Sobota']['1rimavska-sobota']);
   var adresa = "";
   var ico = $("#addressslovakia-city").val();
   var kraj = $("#addressslovakia-kraj").val();
   var okres = $("#addressslovakia-okres").val();
-
+  console.log("Nastavujem obec",ico);
   if (ico) {
 
     if (o[kraj] && o[kraj][okres] && o[kraj][okres][ico]) {
 	  var data = o[kraj][okres][ico];
+      
+
       adresa = data[App.C2N_TYP_URADU] + "\n";
       if (data[App.C2N_TYP_URADU_RIADOK2] != "") {
         adresa += data[App.C2N_TYP_URADU_RIADOK2] + "\n";
@@ -158,7 +160,6 @@ function nastavObec(obec) {
 	  }
 	  
       adresa += data[App.C2N_ADRESA_URADU_PSC] + " " + data[App.C2N_ADRESA_URADU_MESTO] + "\n" + email.replace(/;/i, "\n");
-
 	
     if(App.request_form == 'volbaPostouBezTrvalehoPobytu'){
   	  $("#adresa").val("Ministerstvo vnútra Slovenskej republiky\nodbor volieb, referenda a politických strán\nDrieňová 22\n826 86  Bratislava 29\nSLOVAK REPUBLIC");
@@ -183,12 +184,25 @@ function nastavObec(obec) {
 		$("#sendemail").show();
 		$("#noemail").hide();
 	}
+    
+    $("#emailnepotvrdeny").hide();
+    $("#emailpotvrdeny").hide();
+    $("#emailnezverejneny").hide();
+    $("#emailpotvrdenydobrovolnikom").hide();
+    
+	if(data[App.C2N_POTVRDENE_UDAJE] == "0"){
+		$("#emailnepotvrdeny").show();
+    }
 	if(data[App.C2N_POTVRDENE_UDAJE] == "1"){
 		$("#emailpotvrdeny").show();
-    }else{
-		$("#emailpotvrdeny").hide();
-	}
-	
+    }
+	if(data[App.C2N_POTVRDENE_UDAJE] == "2"){
+		$("#emailnezverejneny").show();
+    }
+	if(data[App.C2N_POTVRDENE_UDAJE] == "3"){
+		$("#emailpotvrdenydobrovolnikom").show();
+    }
+    
 	var subj = "Ziadost";
     var textemailu = "";
 	var meno = $('#basicinfo-name').val()+" "+$('#basicinfo-lastname').val();

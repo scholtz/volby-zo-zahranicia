@@ -1,4 +1,5 @@
 <?php
+echo "tento subor nepouzivat.. aktualny je v bin adresari";exit;
 
 foreach(scandir(".") as $file){
     if(substr($file,-3) != ".js") continue;
@@ -6,9 +7,9 @@ foreach(scandir(".") as $file){
         //unlink($file);
         continue;
     }
-    if(!file_exists($file.".gz")){
-        `gzip < $file > $file.gz`;
-    }
+    //if(!file_exists($file.".gz")){
+    `gzip < $file > $file.gz`;
+    //}
     $md5 = md5_file($file);
     $newname = substr($file,0,-3)."-".$md5.substr($file,-3);
     if(!file_exists($newname)){
