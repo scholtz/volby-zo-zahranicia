@@ -14,11 +14,11 @@ Informácie poskytované prostredníctvom tejto aplikácie týkajúce sa volieb 
 
 Diskusia k vývoju: https://platforma.slovensko.digital/t/registracia-na-volby-postou-zo-zahranicia-alebo-volicsky-preukaz/893/1000
 
-Oficiálne informácie o hlasovacom preukaze: http://www.minv.sk/?nr16-preukaz 
+Oficiálne informácie o hlasovacom preukaze: https://www.minv.sk/?nr20-preukaz 
 
-Oficiálne informácie o hlasovaní poštou pre osobu s trvalým pobytom na Slovensku: http://www.minv.sk/?nr16-posta2
+Oficiálne informácie o hlasovaní poštou pre osobu s trvalým pobytom na Slovensku: http://www.minv.sk/?nr20-posta2
 
-Oficiálne informácie o hlasovaní poštou pre osobu bez trvalého pobytu na Slovensku: http://www.minv.sk/?nr16-posta1
+Oficiálne informácie o hlasovaní poštou pre osobu bez trvalého pobytu na Slovensku: http://www.minv.sk/?nr20-posta1
 
 ---
 **Integračný manuál**
