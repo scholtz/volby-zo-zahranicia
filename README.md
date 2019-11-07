@@ -57,7 +57,7 @@ Tento príkaz stiahne aktualizované súbory, npr emaily obcí, a ponechá vaše
 ---
 **Prispejte nám:**
 
-Tento projekt vytvoril a spravuje Ľudovít Scholtz. Pomôže mi, ak si kúpite licenciu na monitoring firiem a médií v projekte www.cz-fin.com, alebo prispejete na môj kryptoúčet: BTC: 1KxgcfMhSX1St9VjKCKnjnCCAUCQMKUTtP, BCH: 1L7amxYgRTuKCBKu18QxZK7wxjf1o3urrp alebo LTC: LgDHfszjzMY7q3NrddfGw2aBpKPM8MjAT5.
+Tento projekt vytvoril a spravuje Ľudovít Scholtz. Pomôže mi, ak si kúpite licenciu na monitoring firiem a médií v projekte [www.cz-fin.com](https://www.cz-fin.com/Spravy/lang=sk-SK), alebo prispejete na môj kryptoúčet: BTC: 1KxgcfMhSX1St9VjKCKnjnCCAUCQMKUTtP, BCH: 1L7amxYgRTuKCBKu18QxZK7wxjf1o3urrp alebo LTC: LgDHfszjzMY7q3NrddfGw2aBpKPM8MjAT5.
 
 Projekt SrdcomDoma.sk sa výrazne podieľalo na vývoji aplikácie pre voľby do NRSR 2020. SrdcomDoma podporuje iniciatívu o voľbách zo zahraničia nie len pri voľbách do národnej rady.
 
