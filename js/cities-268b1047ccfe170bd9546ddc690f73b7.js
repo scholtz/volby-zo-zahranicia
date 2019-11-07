@@ -1,1 +1,1 @@
-js/cities.js
+cities.js
