@@ -338,11 +338,12 @@ file_put_contents("js/newcities.js",$out);
 
 
 $outcsv = "db-obci.csv";
+file_put_contents($outcsv,"");
 $fp = fopen($outcsv, 'a+');
-
 
 fputcsv($fp, [
     "id obce",
+    "stav",
     "obec",
     "okres",
     "kraj",
@@ -365,6 +366,7 @@ foreach($db as $kraj=>$arr1){
             
             fputcsv($fp, [
                 $obec, // id obce 
+                $D[11], // STAV 
                 $D[10], // obec 
                 $okres, // okres 
                 $kraj, // kraj 
@@ -388,6 +390,7 @@ foreach($db as $kraj=>$arr1){
 }
 fclose($fp);
 
+echo "outcsv: ".filesize($outcsv)."\n";
 
 echo "finished ".date("c")."\n";
 var_dump($overenePostou);
