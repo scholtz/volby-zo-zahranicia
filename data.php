@@ -1,5 +1,10 @@
 <?php
 
+if(!isset($datafile)){
+    $datafile = 'corrections2.csv';
+    $web = "data.php";
+}
+
 if($_REQUEST["save"]){
     
     $fields = [];
@@ -14,10 +19,10 @@ if($_REQUEST["save"]){
     $fields[19] = $_REQUEST["kraj"];
    
 
-    $fp = fopen('corrections2.csv', 'a+');
+    $fp = fopen($datafile, 'a+');
     fputcsv($fp, $fields);
     fclose($fp);
-    header("Location: https://volby.srdcomdoma.sk/data.php?u=".$_REQUEST["u"]."&kraj=".$_REQUEST["kraj"]."&okres=".$_REQUEST["okres"]."&obec=".$_REQUEST["obec"]."&msg=Obec ".$_REQUEST["10"]." bola upravená" );
+    header("Location: https://volby.srdcomdoma.sk/$web?u=".$_REQUEST["u"]."&kraj=".$_REQUEST["kraj"]."&okres=".$_REQUEST["okres"]."&obec=".$_REQUEST["obec"]."&msg=Obec ".$_REQUEST["10"]." bola upravená" );
     exit;
 }
 
@@ -39,8 +44,27 @@ if(!count($db)){
     exit;
 }
 
+if($datafile != "corrections2.csv"){
+    if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
+        $i = 0;
+        while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {$i++;
+            if(isset($data[19])){
+                $db[$data[19]][$data[18]][$data[17]] = $data;
+            }
+        }
+    }
+}
 
-if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
+$stats = [];
+foreach($db as $kraj=>$arr1){
+    foreach($arr1 as $okres=>$arr2){
+        foreach($arr2 as $obec=>$D){
+            @$stats[$D[11]]++;
+        }
+    }
+}
+
+if (($handle = fopen($datafile, "r")) !== FALSE) {
 	$i = 0;
 	while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {$i++;
         if(isset($data[19])){
@@ -58,15 +82,21 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Potvrdenie emailu</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css">
+        
 		<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+
 		<style>
 			body{margin:1em;}
 		</style>
 	</head>
 	<body>
 	<div class="container">
-		<div class="panel panel-primary">
+		<div class="panel panel-primary" style="min-height: 500px">
 			<div class="panel-heading">
 				<h1>Aplikácia pre potvrdenie správnosti údajov obce</h1>
 			</div>
@@ -76,7 +106,14 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
             <?php
             if(!$_REQUEST["u"]){
                 ?>
-            <form method="get" action="/data.php">
+            <p>Toto je aplikácia na priradenie informácí obcí k nahláseniu správnych údajov k voľbám do NRSR 2020</p>
+            <p>Zadajte prosím Vaše celé meno.</p>
+            <form method="get" action="/<?php echo $web;?>">
+                <input type="hidden" name="typ" value="<?php echo htmlspecialchars($_REQUEST["typ"]);?>">
+                <input type="hidden" name="okres" value="<?php echo htmlspecialchars($_REQUEST["okres"]);?>">
+                <input type="hidden" name="kraj" value="<?php echo htmlspecialchars($_REQUEST["kraj"]);?>">
+                <input type="hidden" name="obec" value="<?php echo htmlspecialchars($_REQUEST["obec"]);?>">
+
                 <div class="col-md-12">
                     <div class="input-group">
                       <input type="text" class="form-control" placeholder="Zadajte Vaše meno" name="u" >
@@ -93,22 +130,25 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
             if($_REQUEST["u"]){
                 ?>
             
-            <form method="get" action="/data.php">
-                <input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
+            <form method="get" action="/<?php echo $web;?>">
                 <input type="hidden" name="typ" value="<?php echo htmlspecialchars($_REQUEST["typ"]);?>">
-                
-                <div class="col-md-4">
-                    <div class="input-group">
+                <input type="hidden" name="okres" value="<?php echo htmlspecialchars($_REQUEST["okres"]);?>">
+                <input type="hidden" name="obec" value="<?php echo htmlspecialchars($_REQUEST["obec"]);?>">
+                <input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
 
-                    <select name="kraj" class="form-control"><?php
+                <div class="col-md-4">
+                    <div class="">
+
+                    <select name="kraj" class="form-control submitonchange"><?php
+                    
+                    echo '<option value="all" '.($_REQUEST["kraj"] == "all"?" selected" : "").'>Všetky</option>';
+                    
                     foreach(array_keys($db) as $kraj){
                         echo '<option value="'.$kraj.'" '.($_REQUEST["kraj"] == $kraj?" selected" : "").'>'.$kraj.'</option>';
                     }
                     ?>
                     </select>
-                      <span class="input-group-btn">
-                        <input type="submit" class="btn <?php echo ($_REQUEST["kraj"]?"btn-default":"btn-primary");?>" value="Vyber">
-                      </span>
+                      
                     </div>
                 </div>
             </form>
@@ -119,22 +159,32 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
             if($_REQUEST["kraj"]){
                 ?>
                 
-            <form method="get" action="/data.php">
-                <input type="hidden" name="kraj" value="<?php echo htmlspecialchars($_REQUEST["kraj"]);?>">
-                <input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
+            <form method="get" action="/<?php echo $web;?>">
                 <input type="hidden" name="typ" value="<?php echo htmlspecialchars($_REQUEST["typ"]);?>">
+                <input type="hidden" name="kraj" value="<?php echo htmlspecialchars($_REQUEST["kraj"]);?>">
+                <input type="hidden" name="obec" value="<?php echo htmlspecialchars($_REQUEST["obec"]);?>">
+                <input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
                 <div class="col-md-4">
-                    <div class="input-group">
+                    <div class="">
                       
-                    <select name="okres" class="form-control"><?php
-                    foreach(array_keys($db[$_REQUEST["kraj"]]) as $okres){
-                        echo '<option value="'.$okres.'" '.($_REQUEST["okres"] == $okres?" selected" : "").'>'.$okres.'</option>';
+                    <select name="okres" class="form-control submitonchange"><?php
+                    
+                    echo '<option value="all" '.($_REQUEST["okres"] == "all"?" selected" : "").'>Všetky</option>';
+                    
+                    if($_REQUEST["kraj"] == "all"){
+                        foreach(array_keys($db) as $kraj){
+                            foreach(array_keys($db[$kraj]) as $okres){
+                                echo '<option value="'.$okres.'" '.($_REQUEST["okres"] == $okres?" selected" : "").'>'.$okres.'</option>';
+                            }
+                        }
+                    }else{
+                        foreach(array_keys($db[$_REQUEST["kraj"]]) as $okres){
+                            echo '<option value="'.$okres.'" '.($_REQUEST["okres"] == $okres?" selected" : "").'>'.$okres.'</option>';
+                        }
                     }
                     ?>
                     </select>
-                      <span class="input-group-btn">
-                        <input type="submit" class="btn <?php echo ($_REQUEST["okres"]?"btn-default":"btn-primary");?>" value="Vyber">
-                      </span>
+                      
                     </div>
                 </div>
             </form>
@@ -147,16 +197,23 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
             if($_REQUEST["okres"]){
                 ?>
                 
-            <form method="get" action="/data.php">
+            <form method="get" action="/<?php echo $web;?>">
+                <input type="hidden" name="typ" value="<?php echo htmlspecialchars($_REQUEST["typ"]);?>">
                 <input type="hidden" name="kraj" value="<?php echo htmlspecialchars($_REQUEST["kraj"]);?>">
                 <input type="hidden" name="okres" value="<?php echo htmlspecialchars($_REQUEST["okres"]);?>">
                 <input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
-                <input type="hidden" name="typ" value="<?php echo htmlspecialchars($_REQUEST["typ"]);?>">
                 <div class="col-md-4">
-                    <div class="input-group">
+                    <div class="">
                       
-                    <select name="obec" class="form-control"><?php
-                    foreach($db[$_REQUEST["kraj"]][$_REQUEST["okres"]] as $obec=>$obecdata){
+                    <select name="obec" class="form-control submitonchange" ><?php
+                    
+                    if($_REQUEST["kraj"] == "all"){
+                         foreach(array_keys($db) as $kraj){
+                             if($_REQUEST["okres"] == "all"){
+                                foreach(array_keys($db[$kraj]) as $okres){
+
+
+                    foreach($db[$kraj][$okres] as $obec=>$obecdata){
                         if($_REQUEST["typ"]){
                             if($_REQUEST["typ"] == "mesto"){
                                 if($obecdata[0] != "Mestský úrad") continue;
@@ -182,11 +239,77 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
                         
                         echo '</option>';
                     }
+
+                                }
+                                 
+                             }else{
+                                 $okres = $_REQUEST["okres"];
+
+
+                    foreach($db[$kraj][$okres] as $obec=>$obecdata){
+                        if($_REQUEST["typ"]){
+                            if($_REQUEST["typ"] == "mesto"){
+                                if($obecdata[0] != "Mestský úrad") continue;
+                            }
+                        }
+                        echo '<option value="'.$obec.'" '.($_REQUEST["obec"] == $obec?" selected" : "").'>'.$obecdata[10]." - ";
+                        switch($obecdata[11]){
+                            case "0": 
+                                echo "Neoverené";
+                            break;
+                            case "1": 
+                                echo "Overené obcou";
+                            break;
+                            case "2": 
+                                echo "Obec zatiaľ nezverejnila info";
+                            break;
+                            case "3": 
+                                echo "Overené dobrovoľníkom";
+                            break;
+                            default:
+                             echo "Neznáma hodnota v stave overenia";
+                        }
+                        
+                        echo '</option>';
+                    }
+                                 
+                             }
+                         }
+                    }else{
+                        $kraj = $_REQUEST["kraj"];
+                        $okres = $_REQUEST["okres"];
+                    
+                    foreach($db[$kraj][$okres] as $obec=>$obecdata){
+                        if($_REQUEST["typ"]){
+                            if($_REQUEST["typ"] == "mesto"){
+                                if($obecdata[0] != "Mestský úrad") continue;
+                            }
+                        }
+                        echo '<option value="'.$obec.'" '.($_REQUEST["obec"] == $obec?" selected" : "").'>'.$obecdata[10]." - ";
+                        switch($obecdata[11]){
+                            case "0": 
+                                echo "Neoverené";
+                            break;
+                            case "1": 
+                                echo "Overené obcou";
+                            break;
+                            case "2": 
+                                echo "Obec zatiaľ nezverejnila info";
+                            break;
+                            case "3": 
+                                echo "Overené dobrovoľníkom";
+                            break;
+                            default:
+                             echo "Neznáma hodnota v stave overenia";
+                        }
+                        
+                        echo '</option>';
+                    }
+                    
+                    
+                    }
                     ?>
                     </select>
-                      <span class="input-group-btn">
-                        <input type="submit" class="btn <?php echo ($_REQUEST["obec"]?"btn-default":"btn-primary");?>" value="Vyber">
-                      </span>
                     </div>
                 </div>
             </form>
@@ -198,7 +321,26 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
             
             <?php
             if($_REQUEST["obec"]){
-                $data = $db[$_REQUEST["kraj"]][$_REQUEST["okres"]][$_REQUEST["obec"]];
+                if(isset($db[$_REQUEST["kraj"]][$_REQUEST["okres"]][$_REQUEST["obec"]])){
+                    $data = $db[$_REQUEST["kraj"]][$_REQUEST["okres"]][$_REQUEST["obec"]];
+                }else{
+                    foreach($db as $kraj=>$arr1){
+                        foreach($arr1 as $okres=>$arr2){
+                            foreach($arr2 as $obec=>$D){
+                                if($obec == $_REQUEST["obec"]){
+                                    if($_REQUEST["kraj"] != "all"){
+                                        if($_REQUEST["kraj"] != $kraj) continue;
+                                    }
+                                    if($_REQUEST["okres"] != "all"){
+                                        if($_REQUEST["okres"] != $okres) continue;
+                                    }
+                                    $data = $D;
+                                }
+                            }
+                        }
+                    }
+                }
+                if($data){
                 if(!$data[12]) $data[12] = $data[6];
                 ?>
             <div class="col-md-9 col-md-offset-3">
@@ -214,11 +356,11 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
                 }
                 ?>
             </div>
-            <form method="post" action="/data.php">
+            <form method="post" action="/<?php echo $web;?>">
+                <input type="hidden" name="typ" value="<?php echo htmlspecialchars($_REQUEST["typ"]);?>">
                 <input type="hidden" name="kraj" value="<?php echo htmlspecialchars($_REQUEST["kraj"]);?>">
                 <input type="hidden" name="okres" value="<?php echo htmlspecialchars($_REQUEST["okres"]);?>">
                 <input type="hidden" name="obec" value="<?php echo htmlspecialchars($_REQUEST["obec"]);?>">
-                <input type="hidden" name="typ" value="<?php echo htmlspecialchars($_REQUEST["typ"]);?>">
                 <input type="hidden" name="u" value="<?php echo htmlspecialchars($_REQUEST["u"]);?>">
                 <input type="hidden" name="10" value="<?php echo htmlspecialchars($data["10"]);?>">
                 <input type="hidden" name="save" value="1">
@@ -315,10 +457,31 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
             </form>
                 
                 <?php
-            }?>
+            }}?>
             
 			</div>
 		</div>
 	</div>
+    <footer>
+    <div class="container">
+    <div class="col-md-12">
+        <p>Štatistiky: Nepotvrdené: <b><?php echo $stats['0'];?></b> Potvrdené obcou: <b><?php echo $stats['1'];?></b> Obec nezverejnila info: <b><?php echo $stats['2'];?></b> Potvrdené dobrovoľníkmi: <b><?php echo $stats['3'];?></b></p>
+    </div>
+    </div>
+    </footer>
+    <script>
+    
+    
+     $('select').selectize(/*{
+        plugins: ['typing_mode']
+     }/**/);
+     $('.submitonchange').on('change', function(){
+         if($(this).val()){
+            $(this).closest('form').submit();
+         }
+    });
+     
+     
+    </script>
 	</body>
 </html>

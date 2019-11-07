@@ -52,8 +52,8 @@ election.cities={
     "Kokošovce",
     "obecabranovce@gmail.com",
     "051",
-    "779 83 34",
-    "940 655 466",
+    "7798334",
+    "0940655466",
     "Abranovce",
     "1",
     ""
@@ -1175,7 +1175,7 @@ election.cities={
     "119\/58",
     "082 67",
     "Terňa",
-    "obec@terna.sk",
+    "pokladna@terna.sk",
     "051",
     "459 52 21",
     "0911 868 865",
@@ -8027,7 +8027,7 @@ election.cities={
     "759 43 21",
     "",
     "Belejovce",
-    "0",
+    "2",
     ""
    ],
    "benadikovce": [
@@ -8042,7 +8042,7 @@ election.cities={
     "759 12 09",
     "0903 068 403",
     "Beňadikovce",
-    "0",
+    "2",
     ""
    ],
    "bodruzal": [
@@ -8057,7 +8057,7 @@ election.cities={
     "759 33 19",
     "0903 329 934",
     "Bodružal",
-    "0",
+    "2",
     ""
    ],
    "cernina": [
@@ -8072,7 +8072,7 @@ election.cities={
     "788 12 13",
     "0907 991 406,0911 991 406",
     "Cernina",
-    "0",
+    "2",
     ""
    ],
    "cigla": [
@@ -8087,7 +8087,7 @@ election.cities={
     "756 52 28,756 52 14",
     "0903 776 785",
     "Cigla",
-    "0",
+    "3",
     ""
    ],
    "dlhona": [
@@ -8102,7 +8102,7 @@ election.cities={
     "759 42 83  ",
     "0917 679 513",
     "Dlhoňa",
-    "0",
+    "2",
     ""
    ],
    "dobroslava": [
@@ -8117,7 +8117,7 @@ election.cities={
     "759 42 13  ",
     "0902 722 271",
     "Dobroslava",
-    "0",
+    "2",
     ""
    ],
    "dubova": [
@@ -8130,9 +8130,9 @@ election.cities={
     "obec.dubova@gmail.com",
     "054",
     "756 52 03",
-    "0904 162 898",
+    "0904 162 898; 033\/ 642 9324",
     "Dubová",
-    "0",
+    "2",
     ""
    ],
    "dukovce": [
@@ -8162,7 +8162,7 @@ election.cities={
     "759 81 84,67  ",
     "0907 991 149, 0910 687 375",
     "Fijaš",
-    "0",
+    "2",
     ""
    ],
    "giraltovce": [
@@ -8192,7 +8192,7 @@ election.cities={
     "759 42 73  ",
     "",
     "Havranec",
-    "0",
+    "2",
     ""
    ],
    "hrabovcik": [
@@ -8207,7 +8207,7 @@ election.cities={
     "788 17 52",
     "0903 261 292",
     "Hrabovčík",
-    "0",
+    "2",
     ""
    ],
    "hunkovce": [
@@ -8237,7 +8237,7 @@ election.cities={
     "752 11 23",
     "0944 465 444",
     "Jurkova Voľa",
-    "0",
+    "2",
     ""
    ],
    "kalniste": [
@@ -8250,9 +8250,9 @@ election.cities={
     "kalniste@post.sk",
     "054",
     "732 22 91",
-    "0908 652 017",
+    "904 172 992",
     "Kalnište",
-    "0",
+    "2",
     ""
    ],
    "kapisova": [
@@ -8267,7 +8267,7 @@ election.cities={
     "752 14 22",
     "0905 482 666;0915 971 764",
     "Kapišová",
-    "1",
+    "2",
     ""
    ],
    "keckovce": [
@@ -8282,7 +8282,7 @@ election.cities={
     "759 23 82",
     "",
     "Kečkovce",
-    "0",
+    "2",
     ""
    ],
    "kobylnice": [
@@ -8297,7 +8297,7 @@ election.cities={
     "732 23 73  ",
     "0905 837 671",
     "Kobylnice",
-    "0",
+    "2",
     ""
    ],
    "korejovce": [
@@ -8327,7 +8327,7 @@ election.cities={
     "736 52 83",
     "0918 465 717",
     "Kračúnovce",
-    "0",
+    "2",
     ""
    ],
    "krajna-bystra": [
@@ -8357,7 +8357,7 @@ election.cities={
     "759 33 11",
     "0917 852 703",
     "Krajná Poľana",
-    "0",
+    "2",
     ""
    ],
    "krajna-porubka": [
@@ -8369,7 +8369,7 @@ election.cities={
     "Krajná Poľana",
     "obec.krajnaporubka@centrum.sk",
     "",
-    "",
+    "0917 162 403",
     "",
     "Krajná Porúbka",
     "1",
@@ -8387,7 +8387,7 @@ election.cities={
     "759 33 12  ",
     "0915 124 766",
     "Krajné Čierno",
-    "0",
+    "2",
     ""
    ],
    "kruzlova": [
@@ -8417,7 +8417,7 @@ election.cities={
     "732 28 15",
     "0911 170 048",
     "Kuková",
-    "0",
+    "2",
     ""
    ],
    "kurimka": [
@@ -8447,7 +8447,7 @@ election.cities={
     "752 26 26, 788 25 34",
     "0905 820 680",
     "Ladomirová",
-    "0",
+    "2",
     ""
    ],
    "lucka": [
@@ -8462,7 +8462,7 @@ election.cities={
     "736 51 31",
     "0905 205 129",
     "Lúčka",
-    "1",
+    "2",
     ""
    ],
    "luzany-pri-topli": [
@@ -8475,9 +8475,9 @@ election.cities={
     "obecluzanypritopli@gmail.com",
     "054",
     "732 22 77",
-    "0903 527 264",
+    "0948 597 305; 038 539 2295;  0948 689 633",
     "Lužany pri Topli",
-    "0",
+    "2",
     ""
    ],
    "matovce": [
@@ -8505,7 +8505,7 @@ election.cities={
     "obecmedvedie@centrum.sk",
     "054",
     "759 32 93",
-    "",
+    "0905 341 115",
     "Medvedie",
     "1",
     ""
@@ -8520,9 +8520,9 @@ election.cities={
     "mestisko@vl.sk",
     "054",
     "752 15 98",
-    "",
+    "0911409418",
     "Mestisko",
-    "0",
+    "2",
     ""
    ],
    "micakovce": [
@@ -8537,7 +8537,7 @@ election.cities={
     "732 23 78",
     "0905 837 672",
     "Mičakovce",
-    "0",
+    "2",
     ""
    ],
    "mirola": [
@@ -8552,7 +8552,7 @@ election.cities={
     "759 33 47",
     "",
     "Miroľa",
-    "0",
+    "2",
     ""
    ],
    "mlynarovce": [
@@ -8567,8 +8567,8 @@ election.cities={
     "756 43 12",
     "",
     "Mlynárovce",
-    "0",
-    "obecmlynarovce@gmail.com"
+    "2",
+    ""
    ],
    "nizna-jedlova": [
     "Obecný úrad",
@@ -8582,7 +8582,7 @@ election.cities={
     "752 10 49",
     "0948 304 003,0907 999 426",
     "Nižná Jedľová",
-    "0",
+    "2",
     ""
    ],
    "nizna-pisana": [
@@ -8595,10 +8595,10 @@ election.cities={
     "niznapisana.obec@gmail.com",
     "054",
     "759 42 38  ",
-    "0902 713 339",
+    "0911 448 775",
     "Nižná Písaná",
-    "0",
-    "niznapisana.obec@gmail.com"
+    "2",
+    ""
    ],
    "nizny-komarnik": [
     "Obecný úrad",
@@ -8622,12 +8622,12 @@ election.cities={
     "100",
     "090 11",
     "Vyšný Orlík",
-    "obecniznymirosov@centrum.sk",
+    "",
     "054",
     "759 23 06",
-    "0907 950 708",
+    "0907 977 496",
     "Nižný Mirošov",
-    "0",
+    "3",
     ""
    ],
    "nizny-orlik": [
@@ -8642,7 +8642,7 @@ election.cities={
     "752 50 04",
     "",
     "Nižný Orlík",
-    "0",
+    "2",
     ""
    ],
    "nova-polianka": [
@@ -8657,7 +8657,7 @@ election.cities={
     "752 11 89  ",
     "",
     "Nová Polianka",
-    "0",
+    "2",
     ""
    ],
    "okruhle": [
@@ -8687,7 +8687,7 @@ election.cities={
     "759 33 45",
     "",
     "Príkra",
-    "0",
+    "2",
     ""
    ],
    "pstrina": [
@@ -8702,7 +8702,7 @@ election.cities={
     "759 33 53  ",
     "0918 971 008",
     "Pstriná",
-    "0",
+    "2",
     ""
    ],
    "radoma": [
@@ -8712,12 +8712,12 @@ election.cities={
     "45",
     "090 42",
     "Okrúhle",
-    "radoma@vl.sk",
+    "obecnyuradradoma@gmail.com",
     "054",
     "788 10 57 ",
-    "",
+    " 0903 740 758",
     "Radoma",
-    "0",
+    "3",
     ""
    ],
    "rakovcik": [
@@ -8732,7 +8732,7 @@ election.cities={
     "",
     "0905 841 959",
     "Rakovčík",
-    "0",
+    "2",
     ""
    ],
    "rovne": [
@@ -8747,7 +8747,7 @@ election.cities={
     "788 11 05, 788 11 06 ",
     "0907 519 381",
     "Rovné",
-    "0",
+    "2",
     ""
    ],
    "roztoky": [
@@ -8777,7 +8777,7 @@ election.cities={
     "759 33 49  ",
     "",
     "Šarbov",
-    "0",
+    "2",
     ""
    ],
    "sarissky-stiavnik": [
@@ -8790,9 +8790,9 @@ election.cities={
     "obecsarisskystiavnik@zoznam.sk",
     "054",
     "788 26 30,31,32",
-    "0903 546 512",
+    "0907476268",
     "Šarišský Štiavnik",
-    "0",
+    "2",
     ""
    ],
    "semetkovce": [
@@ -8835,9 +8835,9 @@ election.cities={
     "obecstefurov@gmail.com",
     "054",
     "759 11 35",
-    "0907 350550",
+    "905 580 341",
     "Štefurov",
-    "0",
+    "2",
     ""
    ],
    "strocin": [
@@ -8867,7 +8867,7 @@ election.cities={
     "759 42 35  ",
     "0918 432 680",
     "Svidnička",
-    "0",
+    "2",
     ""
    ],
    "vagrinec": [
@@ -8882,7 +8882,7 @@ election.cities={
     "4566321",
     "0907 907 120 ",
     "Vagrinec",
-    "0",
+    "2",
     ""
    ],
    "valkovce": [
@@ -8897,7 +8897,7 @@ election.cities={
     "759 11 37",
     "",
     "Valkovce",
-    "0",
+    "2",
     ""
    ],
    "vapenik": [
@@ -8910,9 +8910,9 @@ election.cities={
     "peter_pajkos@centrum.sk;pajkos.pe@gmail.com",
     "054",
     "759 42 36  ",
-    "",
+    "0919 020 798, 0910 177 572",
     "Vápeník",
-    "0",
+    "2",
     ""
    ],
    "vysna-jedlova": [
@@ -8942,7 +8942,7 @@ election.cities={
     "759 42 91  ",
     "",
     "Vyšná Písaná",
-    "0",
+    "2",
     ""
    ],
    "vysny-komarnik": [
@@ -8957,7 +8957,7 @@ election.cities={
     "759 33 16",
     "",
     "Vyšný Komárnik",
-    "0",
+    "2",
     ""
    ],
    "vysny-mirosov": [
@@ -8967,12 +8967,12 @@ election.cities={
     "100",
     "090 11",
     "Vyšný Orlík",
-    "vysnymirosov@post.sk",
+    "podatelna@vysnymirosov.sk",
     "054",
     "759 22 19",
-    "0907 222 135",
+    "0948464581",
     "Vyšný Mirošov",
-    "0",
+    "3",
     ""
    ],
    "vysny-orlik": [
@@ -8987,7 +8987,7 @@ election.cities={
     "752 50 81",
     "0908 978 998",
     "Vyšný Orlík",
-    "0",
+    "2",
     ""
    ],
    "zeleznik": [
@@ -9002,7 +9002,7 @@ election.cities={
     "736 53 40",
     "0907 931 720",
     "Železník",
-    "0",
+    "2",
     ""
    ],
    "zelmanovce": [
@@ -9254,12 +9254,12 @@ election.cities={
     "13",
     "094 06",
     "Košarovce",
-    "obecgirovce@mail.t-com.sk",
+    "obecgirovce@gmail.com",
     "057",
     "449 81 25",
     "0917 464 597",
     "Girovce",
-    "0",
+    "1",
     ""
    ],
    "hanusovce-nad-toplou": [
@@ -10073,7 +10073,7 @@ election.cities={
     "418 26 01,418 20 92",
     "0905 499 323",
     "Badín",
-    "0",
+    "3",
     ""
    ],
    "balaze": [
@@ -10098,12 +10098,12 @@ election.cities={
     "360",
     "976 62",
     "Brusno",
-    "obecbrusno@stonline.sk",
+    "obec@brusno.sk",
     "048",
     "419 44 23,24",
     "0905 447 075",
     "Brusno",
-    "0",
+    "2",
     ""
    ],
    "cerin": [
@@ -10118,7 +10118,7 @@ election.cities={
     "419 22 04,419 23 59",
     "0903 390 680",
     "Čerín",
-    "0",
+    "2",
     ""
    ],
    "dolna-micina": [
@@ -10128,12 +10128,12 @@ election.cities={
     "1",
     "974 01",
     "Banská Bystrica",
-    "obecdolna.micina@mail.t-com.sk",
+    "info@dolnamicina.sk",
     "048",
     "419 22 02",
     "0914 120 426",
     "Dolná Mičiná",
-    "0",
+    "3",
     ""
    ],
    "dolny-harmanec": [
@@ -10143,12 +10143,12 @@ election.cities={
     "61",
     "976 03",
     "Harmanec",
-    "obec.dolny.harmanec@zoznam.sk",
+    "ou@dolnyharmanec.sk",
     "048",
     "419 81 29",
     "0902 318 172",
     "Dolný Harmanec",
-    "0",
+    "2",
     ""
    ],
    "donovaly": [
@@ -10178,7 +10178,7 @@ election.cities={
     "419 22 15",
     "0917 877 313 ",
     "Dúbravica",
-    "0",
+    "2",
     ""
    ],
    "harmanec": [
@@ -10188,12 +10188,12 @@ election.cities={
     "6",
     "976 03",
     "Harmanec",
-    "starostka@harmanec.sk",
+    "maria.petrasova@harmanec.sk;obec@harmanec.sk",
     "048",
     "419 82 24",
     "0911 896 022",
     "Harmanec",
-    "0",
+    "3",
     ""
    ],
    "hiadel": [
@@ -10208,7 +10208,7 @@ election.cities={
     "419 11 41,419 11 76",
     "0918 457 267",
     "Hiadeľ",
-    "0",
+    "2",
     ""
    ],
    "horna-micina": [
@@ -10223,7 +10223,7 @@ election.cities={
     "418 09 23",
     "0907087151",
     "Horná Mičiná",
-    "0",
+    "3",
     ""
    ],
    "horne-prsany": [
@@ -10248,12 +10248,12 @@ election.cities={
     "343\/1",
     "976 37",
     "Hrochoť",
-    "anna.cerhynova@stonline.sk",
+    "hrochot@hrochot.sk",
     "048",
     "419 01 60",
     "0907 813 897, 0917818590",
     "Hrochoť",
-    "0",
+    "3",
     ""
    ],
    "hronsek": [
@@ -10263,12 +10263,12 @@ election.cities={
     "26",
     "976 31",
     "Hronsek",
-    "obec@hronsek.sk",
+    "dane@hronsek.sk",
     "048",
     "418 81 07",
     "0917 658 794",
     "Hronsek",
-    "0",
+    "3",
     ""
    ],
    "kordiky": [
@@ -10293,12 +10293,12 @@ election.cities={
     "96\/48",
     "976 34",
     "Tajov",
-    "obec.kraliky@stonline.sk",
+    "obec@obeckraliky.sk",
     "048",
     "419 73 71,419 76 57",
     "0918 844 020 ",
     "Králiky",
-    "0",
+    "3",
     ""
    ],
    "kyncelova": [
@@ -10373,7 +10373,7 @@ election.cities={
     "418 43 39",
     "0917 208 096 ",
     "Medzibrod",
-    "0",
+    "3",
     ""
    ],
    "molca": [
@@ -10429,11 +10429,11 @@ election.cities={
     "974 01",
     "Banská Bystrica",
     "obec@nemce.sk",
-    "048",
-    "414 60 41",
-    "0905 643 357",
+    "",
+    "",
+    "0903 443 545",
     "Nemce",
-    "0",
+    "2",
     ""
    ],
    "oravce": [
@@ -10443,7 +10443,7 @@ election.cities={
     "53",
     "976 33",
     "Poniky",
-    "anna.filipcova@oravce.sk",
+    "obec@oravce.sk",
     "048",
     "419 22 57",
     "0911 109 751",
@@ -10460,10 +10460,10 @@ election.cities={
     "Podkonice",
     "podkonice@podkonice.sk",
     "048",
-    "418 72 17,400,838",
+    "41 87 838",
     "0905 865 594",
     "Podkonice",
-    "0",
+    "3",
     ""
    ],
    "pohronsky-bukovec": [
@@ -10506,9 +10506,9 @@ election.cities={
     "povraznik@povraznik.sk",
     "048",
     "429 52 84",
-    "0918 46 54 72",
+    "0915 074 990",
     "Povrazník",
-    "0",
+    "3",
     ""
    ],
    "priechod": [
@@ -10533,12 +10533,12 @@ election.cities={
     "125",
     "974 01",
     "Banská Bystrica",
-    "ouriecka@stonline.sk",
+    "petranova@riecka.sk",
     "048",
-    "419 72 03",
+    "419 7203",
     "0905 634 151",
     "Riečka",
-    "0",
+    "3",
     ""
    ],
    "sebedin-becov": [
@@ -10553,7 +10553,7 @@ election.cities={
     "419 22 11",
     "0907 227 714",
     "Sebedín - Bečov",
-    "0",
+    "3",
     ""
    ],
    "selce": [
@@ -10563,12 +10563,12 @@ election.cities={
     "132",
     "976 11",
     "Selce",
-    "starosta@selce.sk",
+    "ouselce@selce.sk",
     "048",
     "418 12 23",
     "0905 252 336",
     "Selce",
-    "0",
+    "3",
     ""
    ],
    "slovenska-lupca": [
@@ -10593,12 +10593,12 @@ election.cities={
     "132",
     "974 01",
     "Banská Bystrica",
-    "spaniadolina@spaniadolina.sk",
+    "spania.dolina@mail.t-com.sk;spania.dolina@stonline.sk",
     "048",
     "419 82 71",
     "0907 821 148",
     "Špania Dolina",
-    "0",
+    "2",
     ""
    ],
    "stare-hory": [
@@ -10608,12 +10608,12 @@ election.cities={
     "317",
     "976 02",
     "Staré Hory",
-    "oustarehory@stonline.sk",
+    "info@starehory.sk",
     "048",
     "419 92 02",
     "0918 383 832",
     "Staré Hory",
-    "0",
+    "2",
     ""
    ],
    "strelniky": [
@@ -10623,12 +10623,12 @@ election.cities={
     "63",
     "976 55",
     "Ľubietová",
-    "starosta@strelniky.sk",
+    "strelniky@strelniky.sk",
     "048",
     "429 53 31",
     "0907 829 410",
     "Strelníky",
-    "0",
+    "2",
     ""
    ],
    "tajov": [
@@ -10653,12 +10653,12 @@ election.cities={
     "341",
     "976 02",
     "Staré Hory",
-    "starosta@obecturecka.sk",
+    "info@obecturecka.sk;turcanova@obecturecka.sk",
     "048",
     "419 92 70",
     "0905 534 939",
     "Turecká",
-    "0",
+    "2",
     ""
    ],
    "vlkanova": [
@@ -10668,12 +10668,12 @@ election.cities={
     "53",
     "976 31",
     "Vlkanová",
-    "starosta@vlkanova.sk",
+    "podatelna@vlkanova.sk",
     "048",
     "418 83 88",
     "0905 965 661",
     "Vlkanová",
-    "0",
+    "3",
     ""
    ]
   },
@@ -11032,12 +11032,12 @@ election.cities={
     "588\/2",
     "976 68",
     "Heľpa",
-    "ouhelpa@stonline.sk",
+    "anna.babelova@helpa.sk",
     "048",
     "618 61 50,670 09 41,618 62 37",
     "0905 651 122,0905 310 490,0911 318 459",
     "Heľpa",
-    "0",
+    "3",
     ""
    ],
    "horna-lehota": [
@@ -11379,12 +11379,12 @@ election.cities={
     "102",
     "962 06",
     "Detvianska Huta",
-    "detvianskahuta@polana.eu",
+    "obec.dh@gmail.com",
     "045",
     "537 63 86",
     "0905 950 405",
     "Detvianska Huta",
-    "0",
+    "3",
     ""
    ],
    "dubravy": [
@@ -11399,7 +11399,7 @@ election.cities={
     "545 95 20, 545 98 60-1",
     "0903 493 917",
     "Dúbravy",
-    "0",
+    "3",
     ""
    ],
    "horny-tisovnik": [
@@ -11414,7 +11414,7 @@ election.cities={
     "538 99 11",
     "0902 259 257,0903 259 171",
     "Horný Tisovník",
-    "0",
+    "3",
     ""
    ],
    "hrinova": [
@@ -11454,7 +11454,7 @@ election.cities={
     "215",
     "962 04",
     "Kriváň",
-    "ocukorytarky@mail.t-com.sk",
+    "starosta@korytarky.sk",
     "045",
     "546 60 10",
     "0908 928 215",
@@ -11499,7 +11499,7 @@ election.cities={
     "87",
     "985 51",
     "Podkriváň",
-    "podkrivan@polana.eu",
+    "obecpodkrivan@gmail.com",
     "047",
     "449 31 01",
     "0907 237 596",
@@ -11579,7 +11579,7 @@ election.cities={
     "540 25 57,58",
     "0915 819 075",
     "Vígľašská Huta-Kalinka",
-    "0",
+    "2",
     ""
    ]
   },
@@ -12148,12 +12148,12 @@ election.cities={
     "95",
     "985 13",
     "Ábelová ",
-    "korosi.abelova@zoznam.sk",
+    "obec@abelova.sk",
     "047",
     "437 95 10",
     "0917 871 289",
     "Ábelová",
-    "0",
+    "2",
     ""
    ],
    "belina": [
@@ -12228,7 +12228,7 @@ election.cities={
     "438 17 72",
     "",
     "Bulhary",
-    "0",
+    "2",
     ""
    ],
    "buzitka": [
@@ -12273,7 +12273,7 @@ election.cities={
     "438 91 01",
     "0908 902 547",
     "Čamovce",
-    "0",
+    "2",
     ""
    ],
    "divin": [
@@ -12283,12 +12283,12 @@ election.cities={
     "654\/3",
     "985 52",
     "Divín",
-    "obecdivin@zoznam.sk",
+    "starosta@divin.sk",
     "047",
     "439 73 01,451 25 52,43 97 207",
     "",
     "Divín",
-    "0",
+    "3",
     ""
    ],
    "dobroc": [
@@ -12331,9 +12331,9 @@ election.cities={
     "filkovace@gmail.com",
     "047",
     "438 02 33",
-    "",
+    "905 548 287",
     "Fiľakovské Kováče",
-    "0",
+    "2",
     ""
    ],
    "gregorova-vieska": [
@@ -12358,12 +12358,12 @@ election.cities={
     "66",
     "985 11",
     "Halič",
-    "obec.halic@novohrad.sk",
+    "matrika@obechalic.sk",
     "047",
     "439 23 56,439 26 37",
     "0911 338 307,0907 858 440",
     "Halič",
-    "0",
+    "3",
     ""
    ],
    "holisa": [
@@ -12373,12 +12373,12 @@ election.cities={
     "61",
     "985 57",
     "Holiša",
-    "starosta@ocuholisa.sk",
+    "starosta@ocuholisa.sk;info@ocuholisa.sk",
     "047",
     "439 42 22",
     "",
     "Holiša",
-    "0",
+    "2",
     ""
    ],
    "jelsovec": [
@@ -12388,12 +12388,12 @@ election.cities={
     "74",
     "985 32",
     "Veľká nad Ipľom",
-    "obecjelsovec@stonline.sk",
+    "obecjelsovec@stonline.sk;obecjelsovec@gmail.com",
     "047",
     "437 41 08 ",
     "0903 493 451",
     "Jelšovec",
-    "0",
+    "2",
     ""
    ],
    "kalonda": [
@@ -12408,7 +12408,7 @@ election.cities={
     "439 81 08",
     "0905 234 936",
     "Kalonda",
-    "0",
+    "2",
     ""
    ],
    "kotmanova": [
@@ -12478,12 +12478,12 @@ election.cities={
     "356\/1",
     "985 54",
     "Lovinobaňa",
-    "podatelna@lovinobana.sk",
+    "obeclovinobana@stonline.sk",
     "047",
     "451 25 15,16,439 64 02",
     "0905 270 914",
     "Lovinobaňa",
-    "0",
+    "3",
     ""
    ],
    "luborec": [
@@ -12513,7 +12513,7 @@ election.cities={
     "439 23 45 ",
     "0911252799",
     "Lupoč",
-    "0",
+    "2",
     ""
    ],
    "maskova": [
@@ -12523,12 +12523,12 @@ election.cities={
     "76",
     "985 11",
     "Halič",
-    "obec.maskova@stonline.sk",
+    "obec.maskova@gmail.com",
     "047",
     "439 23 62",
     "0918 474 127",
     "Mašková",
-    "0",
+    "1",
     ""
    ],
    "mikusovce": [
@@ -12538,12 +12538,12 @@ election.cities={
     "14",
     "984 01",
     "Lučenec ",
-    "mikusovce@centrum.sk",
+    "obecnyurad@mikusovce.sk",
     "047",
     "432 91 32 ",
     "0905 270 432",
     "Mikušovce",
-    "0",
+    "3",
     ""
    ],
    "mucin": [
@@ -12573,7 +12573,7 @@ election.cities={
     "439 71 07",
     "0905 642 225",
     "Mýtna",
-    "0",
+    "2",
     ""
    ],
    "nitra-nad-iplom": [
@@ -12583,12 +12583,12 @@ election.cities={
     "96",
     "985 57",
     "Holiša",
-    "obecnitranadiplom@post.sk",
+    "obecnitra@gmail.com",
     "047",
     "439 41 97",
     "0908 559 894",
     "Nitra nad Ipľom",
-    "0",
+    "2",
     ""
    ],
    "nove-hony": [
@@ -12628,12 +12628,12 @@ election.cities={
     "174",
     "985 53",
     "Mýtna",
-    "ingmido@post.sk",
+    "info@pila-obec.sk",
     "047",
     "439 71 04",
     "0908 626 817",
     "Píla",
-    "0",
+    "2",
     ""
    ],
    "pincina": [
@@ -12663,7 +12663,7 @@ election.cities={
     "439 98 41",
     "0905 820 116",
     "Pleš",
-    "0",
+    "2",
     ""
    ],
    "podrecany": [
@@ -15801,12 +15801,12 @@ election.cities={
     "76",
     "991 27",
     "Kamenné Kosihy",
-    "obec@durkovce.gityposta.sk",
+    "obec.durkovce@gmail.com",
     "047",
     "488 41 12",
     "0905 378 943",
     "Ďurkovce",
-    "0",
+    "1",
     ""
    ],
    "glabusovce": [
@@ -23785,7 +23785,7 @@ election.cities={
     "652 23 17",
     "0918 519 218",
     "Hlivištia",
-    "0",
+    "1",
     ""
    ],
    "horna": [
@@ -23800,7 +23800,7 @@ election.cities={
     "652 22 93",
     "",
     "Horňa",
-    "0",
+    "1",
     ""
    ],
    "husak": [
@@ -26638,12 +26638,12 @@ election.cities={
     "931\/7",
     "951 15",
     "Mojmírovce",
-    "starosta@mojmirovce.sk",
+    "starosta@mojmirovce.sk;matrika@mojmirovce.sk",
     "037",
     "779 81 01,02, 779 82 68",
     "0905 503 828,0908 440 035 ",
     "Mojmírovce",
-    "2",
+    "1",
     ""
    ],
    "nitrianske-hrnciarovce": [
@@ -27063,9 +27063,9 @@ election.cities={
     "ocubajc@stonline.sk",
     "035",
     "768 11 39",
-    "0918 458 076",
+    "",
     "Bajč",
-    "0",
+    "2",
     ""
    ],
    "batorove-kosihy": [
@@ -27080,7 +27080,7 @@ election.cities={
     "761 17 20,21,22,30,31",
     "0905 625 600",
     "Bátorove Kosihy",
-    "0",
+    "2",
     ""
    ],
    "bodza": [
@@ -27090,12 +27090,12 @@ election.cities={
     "108",
     "946 16",
     "Bodza",
-    "bodza@real-net.sk",
+    "obec@bodza.info",
     "035",
     "778 00 22",
-    "0905 400 881",
+    "",
     "Bodza",
-    "0",
+    "2",
     ""
    ],
    "bodzianske-luky": [
@@ -27120,12 +27120,12 @@ election.cities={
     "86",
     "946 17",
     "Soklovce na Ostrove",
-    "brestovec@reol-net.sk",
+    "obec@brestovec.eu",
     "035",
     "778 00 83",
     "",
     "Brestovec",
-    "0",
+    "3",
     ""
    ],
    "buc": [
@@ -27137,10 +27137,10 @@ election.cities={
     "Búč",
     "info@obecbuc.sk",
     "035",
-    "777 60 00,01",
-    "0905 645 200",
+    "777 60 01",
+    "0911 817 887",
     "Búč",
-    "0",
+    "2",
     ""
    ],
    "calovec": [
@@ -27152,10 +27152,10 @@ election.cities={
     "Čalovec",
     "ocucalovec@gutanet.sk",
     "035",
-    "779 01 21,772 11 35",
-    "0907 053 987,0917 863 813",
+    "772 11 35",
+    "0917 863 813",
     "Čalovec",
-    "1",
+    "3",
     ""
    ],
    "chotin": [
@@ -27165,12 +27165,12 @@ election.cities={
     "486",
     "946 31",
     "Chotín",
-    "ouchotin@nz.psg.sk",
+    "helena.csintalanova@chotin.sk",
     "035",
-    "778 62 01,788 60 90,91,92",
+    "788 60 90",
     "0905 236 729",
     "Chotín",
-    "0",
+    "3",
     ""
    ],
    "cicov": [
@@ -27180,12 +27180,12 @@ election.cities={
     "41",
     "946 19",
     "Číčov",
-    "ocucicov@stonline.sk",
+    "posta.obec@gmail.com",
     "035",
     "779 51 03",
-    "0908 789 782",
+    "",
     "Číčov",
-    "0",
+    "3",
     ""
    ],
    "dedina-mladeze": [
@@ -27195,12 +27195,12 @@ election.cities={
     "7\/8",
     "946 03",
     "Kolárovo",
-    "ocu_dedinamlaeze@gutanet.sk",
+    "podatelna@obecdedinamladeze.sk",
     "035",
     "777 91 31",
-    "0918 873 241,0917 610 187",
+    "0918 873 241",
     "Dedina Mládeže",
-    "0",
+    "2",
     ""
    ],
    "dulovce": [
@@ -27242,10 +27242,10 @@ election.cities={
     "Hurbanovo ",
     "mesto.hurbanovo@hurbanovo.sk",
     "035",
-    "760 22 02,03,25 24",
+    "3700 222",
     "0903 218 654",
     "Hurbanovo",
-    "0",
+    "3",
     ""
    ],
    "imel": [
@@ -27320,7 +27320,7 @@ election.cities={
     "790 09 10,11,12,13",
     "0907 896 224",
     "Kolárovo",
-    "0",
+    "2",
     ""
    ],
    "kravany-nad-dunajom": [
@@ -27365,7 +27365,7 @@ election.cities={
     "779 83 01",
     "0917 818 157",
     "Marcelová",
-    "0",
+    "2",
     ""
    ],
    "martovce": [
@@ -27440,7 +27440,7 @@ election.cities={
     "769 28 10,23 25",
     "0905 521 482",
     "Nesvady",
-    "0",
+    "2",
     ""
    ],
    "okolicna-na-ostrove": [
@@ -27480,12 +27480,12 @@ election.cities={
     "113",
     "946 55",
     "Pribeta",
-    "obecpribeta@stonline.sk",
+    "obec@pribeta.sk",
     "035",
     "769 31 01",
     "0917 815 650",
     "Pribeta",
-    "0",
+    "3",
     ""
    ],
    "radvan-nad-dunajom": [
@@ -28207,7 +28207,7 @@ election.cities={
     "639 51 09,635 03 73,74",
     "0944 559 945",
     "Kalná nad Hronom",
-    "0",
+    "2",
     ""
    ],
    "ket": [
@@ -28742,12 +28742,12 @@ election.cities={
     "43",
     "935 41",
     "Tekovské Lužany",
-    "tekluzany@gmail.com",
+    "starosta@tekovskeluzany.sk",
     "036",
     "772 35 01",
     "0903 515 863",
     "Tekovské Lužany",
-    "0",
+    "2",
     ""
    ],
    "tekovsky-hradok": [
@@ -29019,7 +29019,7 @@ election.cities={
     "648 31 01",
     "",
     "Andovce",
-    "0",
+    "2",
     ""
    ],
    "bajtava": [
@@ -29029,12 +29029,12 @@ election.cities={
     "86",
     "943 65",
     "Kamenica nad Hronom",
-    "oubajtava@stonline.sk",
+    "ekonom@bajtava.sk;starosta@bajtava.sk",
     "036",
     "757 51 28",
     "0905 573 035",
     "Bajtava",
-    "0",
+    "3",
     ""
    ],
    "banov": [
@@ -29049,7 +29049,7 @@ election.cities={
     "657 11 42,650 60 21,22",
     "0905 420 283",
     "Bánov",
-    "0",
+    "2",
     ""
    ],
    "bardonovo": [
@@ -29074,12 +29074,12 @@ election.cities={
     "32",
     "943 53",
     "Ľubá",
-    "oubela@mail.viapvt.sk",
+    "oubela@mail.viapvt.sk;sekretariat@obec-bela.sk",
     "036",
     "758 61 11",
     "0917 323 961",
     "Belá",
-    "0",
+    "3",
     ""
    ],
    "besenov": [
@@ -29094,7 +29094,7 @@ election.cities={
     "648 71 21",
     "",
     "Bešeňov",
-    "0",
+    "2",
     ""
    ],
    "bina": [
@@ -29104,12 +29104,12 @@ election.cities={
     "107",
     "943 56",
     "Bíňa",
-    "obecbina@stonline.sk",
+    "obecbina@obecbina.sk",
     "036",
     "759 91 01",
     "0905 349 243",
     "Bíňa",
-    "0",
+    "2",
     ""
    ],
    "branovo": [
@@ -29124,7 +29124,7 @@ election.cities={
     "648 51 26",
     "0905 621 363",
     "Branovo",
-    "0",
+    "2",
     ""
    ],
    "bruty": [
@@ -29139,7 +29139,7 @@ election.cities={
     "759 11 10,11",
     "0905 613 315",
     "Bruty",
-    "0",
+    "2",
     ""
    ],
    "cechy": [
@@ -29169,7 +29169,7 @@ election.cities={
     "657 81 05",
     "0907 720 675",
     "Černík",
-    "0",
+    "2",
     ""
    ],
    "chlaba": [
@@ -29199,7 +29199,7 @@ election.cities={
     "651 81 11",
     "0903 241 697",
     "Dedinka",
-    "0",
+    "3",
     ""
    ],
    "dolny-ohaj": [
@@ -29229,7 +29229,7 @@ election.cities={
     "649 53 01,54 04",
     "0917 612 168,0918 582 185",
     "Dubník",
-    "0",
+    "3",
     ""
    ],
    "dvory-nad-zitavou": [
@@ -29256,10 +29256,10 @@ election.cities={
     "Gbelce",
     "prednosta@gbelce.sk",
     "036",
-    "759 22 12,11",
+    "28580 11",
     "0907 728 991",
     "Gbelce",
-    "0",
+    "2",
     ""
    ],
    "hul": [
@@ -29304,7 +29304,7 @@ election.cities={
     "648 21 31,21 21",
     "0905 922 108",
     "Jatov",
-    "0",
+    "3",
     ""
    ],
    "kamenica-nad-hronom": [
@@ -29779,12 +29779,12 @@ election.cities={
     "1",
     "943 01",
     "Štúrovo 1",
-    "sekretariat@sturovo.sk",
+    "eva.kusa@sturovo.sk",
     "036",
     "751 10 73",
     "",
     "Štúrovo",
-    "0",
+    "3",
     ""
    ],
    "surany": [
@@ -29811,10 +29811,10 @@ election.cities={
     "Svodín",
     "svodin@svodin.sk",
     "036",
-    "759 41 01,756 60 00",
+    "75 66 001",
     "0905 795 710",
     "Svodín",
-    "0",
+    "2",
     ""
    ],
    "travnica": [
@@ -29919,7 +29919,7 @@ election.cities={
     "647 61 01,16",
     "0905 636 275",
     "Zemné",
-    "0",
+    "2",
     ""
    ]
   },
@@ -32882,13 +32882,13 @@ election.cities={
     "Bohunice ",
     "103",
     "018 52",
-    "Pruské",
+    "Bohunice ",
     "info@obecbohunice.sk",
     "042",
     "449 22 74",
-    "",
+    "0911 092 274",
     "Bohunice",
-    "0",
+    "2",
     ""
    ],
    "bolesov": [
@@ -32901,9 +32901,9 @@ election.cities={
     "podatelna@bolesov.eu",
     "042",
     "449 31 34",
-    "0907 630 317",
+    "",
     "Bolešov",
-    "0",
+    "2",
     ""
    ],
    "borcice": [
@@ -32958,12 +32958,12 @@ election.cities={
     "39",
     "018 35 ",
     "Horná Poruba ",
-    "obechp@naex.sk",
+    "obechp@gmail.com",
     "042",
     "446 00 10",
     "",
     "Horná Poruba",
-    "0",
+    "2",
     ""
    ],
    "ilava": [
@@ -32991,9 +32991,9 @@ election.cities={
     "obecnyurad@kamenicany.sk",
     "042",
     "449 32 53",
-    "0915 031 047",
+    "",
     "Kameničany",
-    "0",
+    "2",
     ""
    ],
    "koseca": [
@@ -33113,7 +33113,7 @@ election.cities={
     "449 26 06",
     "0904 594 453",
     "Sedmerovec",
-    "0",
+    "2",
     ""
    ],
    "slavnica": [
@@ -33141,9 +33141,9 @@ election.cities={
     "ocu.tuchyna@slovanet.sk",
     "042",
     "449 25 63",
-    "0907 772 848",
+    "0915 393 459",
     "Tuchyňa",
-    "0",
+    "2",
     ""
    ],
    "vrsatske-podhradie": [
@@ -33152,14 +33152,14 @@ election.cities={
     "Vršatské Podhradie",
     "54",
     "018 52 ",
-    "Pruské ",
+    "Vršatské Podhradie",
     "obec@vrsatskepodhradie.sk",
     "042",
     "446 43 88 ",
-    "0904 654 409",
+    "",
     "Vršatské Podhradie",
-    "0",
-    "obec@vrsatskepodhradie.sk"
+    "3",
+    ""
    ],
    "zliechov": [
     "Obecný úrad",
@@ -33205,7 +33205,7 @@ election.cities={
     "621 59 22",
     "0908 783 804",
     "Brestovec",
-    "0",
+    "3",
     ""
    ],
    "brezova-pod-bradlom": [
@@ -33217,10 +33217,10 @@ election.cities={
     "Brezová pod Bradlom",
     "mesto@brezova.sk",
     "034",
-    "694 22 11, 20;624 21 51",
-    "0905 384 982,0905 722 856",
+    "694 22 11",
+    "0948 497 070",
     "Brezová pod Bradlom",
-    "0",
+    "2",
     ""
    ],
    "bukovec": [
@@ -33230,12 +33230,12 @@ election.cities={
     "50",
     "906 14",
     "Bukovec",
-    "obecnyurad.bukovec@mail.t-com.sk",
+    "podatelna@bukovec.eu",
     "034",
-    "624 39 20,624 39 29",
-    "",
+    "624 39 20",
+    "0905 112 341",
     "Bukovec",
-    "0",
+    "2",
     ""
    ],
    "chvojnica": [
@@ -33260,12 +33260,12 @@ election.cities={
     "3",
     "916 14",
     "Hrašné",
-    "obec.hrasne@gmail.com",
+    "obec@obechrasne.sk",
     "032",
     "779 03 22",
-    "0908 587 246",
+    "",
     "Hrašné",
-    "0",
+    "2",
     ""
    ],
    "jablonka": [
@@ -33275,12 +33275,12 @@ election.cities={
     "51",
     "906 21",
     "Jablonka",
-    "obecjablonka@centrum.sk",
+    "podatelna@jablonka.sk",
     "034",
-    "621 52 22,654 10 10,20",
-    "0908 783 900,0911 960 825",
+    "621 52 22, 20",
+    "0908 783 900",
     "Jablonka",
-    "0",
+    "3",
     ""
    ],
    "kosariska": [
@@ -33320,12 +33320,12 @@ election.cities={
     "52",
     "916 16",
     "Krajné",
-    "starosta@krajne.sk",
+    "sekretariat@krajne.sk",
     "032",
-    "740 85 21-26,740 85 66",
-    "0908 958 479",
+    "740 85 21",
+    "0905 777 230",
     "Krajné",
-    "0",
+    "3",
     ""
    ],
    "podkylava": [
@@ -33350,12 +33350,12 @@ election.cities={
     "91",
     "907 01",
     "Myjava",
-    "ObecPolianka@stonline.sk",
+    "obecpolianka@obecpolianka.sk",
     "034",
     "622 84 21",
     "0905 214 071",
     "Polianka",
-    "0",
+    "2",
     ""
    ],
    "poriadie": [
@@ -33379,13 +33379,13 @@ election.cities={
     "Priepasné",
     "109",
     "906 15",
-    "Košariská",
-    "priepasne@post.sk",
-    "034",
-    "624 44 26,654 74 35",
-    "0918 913 180,0911 335 543 ",
     "Priepasné",
-    "0",
+    "kancelaria@priepasne.sk",
+    "034",
+    "654 74 35",
+    "0907 747 667",
+    "Priepasné",
+    "2",
     ""
    ],
    "rudnik": [
@@ -33410,12 +33410,12 @@ election.cities={
     "145",
     "907 01",
     "Myjava",
-    "staramyjava@nextra.sk",
+    "obec@staramyjava.sk",
     "034",
     "621 55 79",
     "0907 983 556",
     "Stará Myjava",
-    "0",
+    "3",
     ""
    ],
    "vrbovce": [
@@ -33427,10 +33427,10 @@ election.cities={
     "Vrbovce",
     "hornakova.urad@vrbovce.sk",
     "034",
-    "628 32 11,654 06 61",
-    "0908 782 764,0908 782 765",
+    "628 32 29, 654 06 61",
+    "0908 782 764, 0908 782 765",
     "Vrbovce",
-    "0",
+    "3",
     ""
    ]
   },
@@ -33447,7 +33447,7 @@ election.cities={
     "740 22 19,20,24",
     "",
     "Nové Mesto nad Váhom",
-    "1",
+    "3",
     ""
    ],
    "beckov": [
@@ -33459,10 +33459,10 @@ election.cities={
     "Beckov",
     "beckov@obec-beckov.sk",
     "032",
-    "777 71 25 ,774 27 20",
+    "777 71 25 ,774 27 21",
     "0915 736 779,0905 506 021",
     "Beckov",
-    "1",
+    "3",
     ""
    ],
    "bosaca": [
@@ -33477,22 +33477,22 @@ election.cities={
     "778 11 29,778 12 25",
     "0903 248 615 ",
     "Bošáca",
-    "0",
+    "3",
     ""
    ],
    "brunovce": [
     "Obecný úrad",
     "",
     "Brunovce",
-    "106",
+    "126",
     "916 25",
-    "Potvorice",
-    "obecbrunovce@stonline.sk",
+    "Brunovce",
+    "podatelna@brunovce.sk",
     "032",
     "779 71 38",
     "0911 572 350",
     "Brunovce",
-    "0",
+    "3",
     ""
    ],
    "bzince-pod-javorinou": [
@@ -33507,7 +33507,7 @@ election.cities={
     "779 32 72,779 32 35",
     "0907 776 580 ",
     "Bzince pod Javorinou",
-    "1",
+    "3",
     ""
    ],
    "cachtice": [
@@ -33522,7 +33522,7 @@ election.cities={
     "740 10 24,25",
     "0905 227 829",
     "Čachtice",
-    "1",
+    "3",
     ""
    ],
    "castkovce": [
@@ -33537,7 +33537,7 @@ election.cities={
     "779 41 93",
     "0905 906 718",
     "Častkovce",
-    "1",
+    "3",
     ""
    ],
    "dolne-srnie": [
@@ -33552,7 +33552,7 @@ election.cities={
     "779 24 31",
     "0908 770 529",
     "Dolné Srnie",
-    "1",
+    "3",
     ""
    ],
    "haluzice": [
@@ -33562,12 +33562,12 @@ election.cities={
     "703",
     "913 07",
     "Bošáca",
-    "obec.haluzice@centrum.sk",
+    "haluzice@centrum.sk",
     "032",
     "778 12 36",
     "0908 225 676,0905 437 414",
     "Haluzice",
-    "1",
+    "2",
     ""
    ],
    "horka-nad-vahom": [
@@ -33582,7 +33582,7 @@ election.cities={
     "779 81 22",
     "0905 715 621",
     "Hôrka nad Váhom",
-    "0",
+    "2",
     ""
    ],
    "horna-streda": [
@@ -33597,7 +33597,7 @@ election.cities={
     "777 31 13,32 23,32 33,32 52",
     "0905 220 267",
     "Horná Streda",
-    "1",
+    "3",
     ""
    ],
    "hrachoviste": [
@@ -33612,7 +33612,7 @@ election.cities={
     "779 03 02",
     "",
     "Hrachovište",
-    "1",
+    "3",
     ""
    ],
    "hradok": [
@@ -33627,7 +33627,7 @@ election.cities={
     "777 61 21",
     "0915 732 135 ",
     "Hrádok",
-    "0",
+    "2",
     ""
    ],
    "kalnica": [
@@ -33642,7 +33642,7 @@ election.cities={
     "779 88 32,83 97",
     "0905 636 972,0917 916 426",
     "Kálnica",
-    "1",
+    "2",
     ""
    ],
    "kocovce": [
@@ -33657,8 +33657,8 @@ election.cities={
     "746 12 21,22,23,24",
     "0907 783 651",
     "Kočovce",
-    "0",
-    "starosta@kocovce.sk"
+    "2",
+    ""
    ],
    "lubina": [
     "Obecný úrad",
@@ -33672,7 +33672,7 @@ election.cities={
     "777 81 51,65,69,75",
     "0905 985 508,0917 108 604",
     "Lubina",
-    "0",
+    "2",
     ""
    ],
    "luka": [
@@ -33682,12 +33682,12 @@ election.cities={
     "205",
     "916 33",
     "Hrádok",
-    "obecluka@stonline.sk",
+    "kancelaria@obecluka.sk",
     "033",
     "773 05 66",
     "0905 551 145",
     "Lúka",
-    "0",
+    "2",
     ""
    ],
    "modrova": [
@@ -33702,8 +33702,8 @@ election.cities={
     "778 51 24",
     "0908 789 593",
     "Modrová",
-    "1",
-    "modrova@modrova.eu.sk"
+    "2",
+    ""
    ],
    "modrovka": [
     "Obecný úrad",
@@ -33717,7 +33717,7 @@ election.cities={
     "778 52 15",
     "",
     "Modrovka",
-    "1",
+    "2",
     ""
    ],
    "moravske-lieskove": [
@@ -33787,12 +33787,12 @@ election.cities={
     "177",
     "916 22",
     "Podolie",
-    "obec.ockov@stonline.sk",
+    "obec.ockov@gmail.com",
     "032",
     "779 48 21,53 13",
     "",
     "Očkov",
-    "0",
+    "2",
     ""
    ],
    "pobedim": [
@@ -33852,7 +33852,7 @@ election.cities={
     "779 72 05",
     "0905 260 280",
     "Považany",
-    "0",
+    "2",
     ""
    ],
    "stara-lehota": [
@@ -33862,12 +33862,12 @@ election.cities={
     "35",
     "916 35",
     "Modrová",
-    "staralehota@nextra.sk",
+    "obec@staralehota.sk",
     "033",
     "778 93 24",
     "0905 415 912",
     "Stará Lehota",
-    "0",
+    "2",
     ""
    ],
    "stara-tura": [
@@ -34274,7 +34274,7 @@ election.cities={
     "542 92 22",
     "",
     "Veľký Klíž",
-    "0",
+    "1",
     ""
    ],
    "zabokreky-nad-nitrou": [
@@ -35919,8 +35919,8 @@ election.cities={
     "557 10 20 - 29 ",
     "0917 814 918",
     "Jaslovské Bohunice",
-    "0",
-    ""
+    "3",
+    "obec@jaslovske-bohunice.sk;podatelna@jaslovske-bohunice.sk"
    ],
    "katlovce": [
     "Obecný úrad",
@@ -36109,7 +36109,7 @@ election.cities={
     "30",
     "919 42",
     "Voderady",
-    "ousnves@stonline.sk",
+    "ousnves@stonline.sk;klcovanskamaria@gmail.com",
     "033",
     "559 94 17",
     "0910 993 901",
@@ -36210,8 +36210,8 @@ election.cities={
    "voderady": [
     "Obecný úrad",
     "",
-    "Voderady",
-    "262",
+    "Obecný úrad Voderady",
+    "Voderady č. 262",
     "919 42",
     "Voderady",
     "pittova@voderady.sk",
@@ -36255,14 +36255,14 @@ election.cities={
    "zvoncin": [
     "Obecný úrad",
     "",
-    "Zvončín",
+    "Obec Zvončín – obecný úrad",
     "82",
     "919 01",
-    "Suchá nad Parnou",
-    "ouzvoncin@stonline.sk",
+    "Zvončín",
+    "ouzvoncin@zvoncin.sk",
     "033",
     "558 03 06",
-    "0903 703 806",
+    "0911 486 773",
     "Zvončín",
     "0",
     ""
@@ -36336,12 +36336,12 @@ election.cities={
     "75",
     "930 52",
     "Blahová",
-    "obecbellova@stonline.sk",
+    "obecbellova@gmail.com",
     "031",
     "558 71 26",
-    "0911 759 719",
+    "",
     "Bellova Ves",
-    "0",
+    "2",
     ""
    ],
    "blahova": [
@@ -36369,9 +36369,9 @@ election.cities={
     "obec@blatnanaostrove.sk",
     "031",
     "559 81 15",
-    "0918 500 470",
+    "",
     "Blatná na Ostrove",
-    "0",
+    "2",
     ""
    ],
    "bodiky": [
@@ -36396,12 +36396,12 @@ election.cities={
     "12",
     "929 01",
     "Dunajská Streda",
-    "bohelov@nextra.sk",
+    "bohelov@real-net.sk",
     "031",
     "559 05 89",
     "0905 409 382",
     "Boheľov",
-    "0",
+    "3",
     ""
    ],
    "cakany": [
@@ -36411,12 +36411,12 @@ election.cities={
     "115",
     "930 40",
     "Štvrtok na Ostrove",
-    "ocucakany@stonline.sk",
+    "livia.bugarova@ocu.cakany.sk",
     "031",
-    "569 35 13,560 23 51,52",
-    "0904 506 528",
+    "569 35 13",
+    "",
     "Čakany",
-    "0",
+    "2",
     ""
    ],
    "cenkovce": [
@@ -36441,12 +36441,12 @@ election.cities={
     "285",
     "930 08",
     "Čiližská Radvaň",
-    "obec.cilizskar@stonline.sk",
+    "obec.radvan@gmail.com",
     "031",
-    "554 12 02,550 69 01",
-    "0908 787 824,0915 895 163",
+    "5541183",
+    "",
     "Čiližská Radvaň",
-    "0",
+    "3",
     ""
    ],
    "dobrohost": [
@@ -36459,9 +36459,9 @@ election.cities={
     "obec@dobrohost.sk",
     "031",
     "554 81 62",
-    "0907 319 918",
+    "",
     "Dobrohošť",
-    "0",
+    "3",
     ""
    ],
    "dolny-bar": [
@@ -36471,12 +36471,12 @@ election.cities={
     "30",
     "930 14",
     "Dolný Bar",
-    "obec.dolnybar@stonline.sk",
+    "obereczk@gmail.com",
     "031",
     "551 31 05",
-    "0905 513 191",
+    "",
     "Dolný Bar",
-    "0",
+    "2",
     ""
    ],
    "dolny-stal": [
@@ -36486,12 +36486,12 @@ election.cities={
     "676",
     "930 10",
     "Dolný Štál",
-    "alistal1@alistal.sk",
+    "podatelna@dolnystal.sk",
     "031",
-    "590 27 40,41,42,43,44",
-    "0903 415 610,0918 503 991",
+    "590 27 40, 590 27 41, 590 27 42, 590 27 43, 590 27 44",
+    "",
     "Dolný Štál",
-    "0",
+    "2",
     ""
    ],
    "dunajsky-klatov": [
@@ -36518,10 +36518,10 @@ election.cities={
     "Gabčíkovo",
     "gabcikovo@gabcikovo.sk",
     "031",
-    "559 41 01,43 01",
-    "0905 310 652 ",
+    "5594101, 5594301",
+    "",
     "Gabčíkovo",
-    "0",
+    "1",
     ""
    ],
    "holice": [
@@ -36578,10 +36578,10 @@ election.cities={
     "Horný bar",
     "ouhornybar@stonline.sk",
     "031",
-    "559 71 25, 559 71 14",
+    "559 71 14",
     "0918 344 484",
     "Horný Bar",
-    "0",
+    "2",
     ""
    ],
    "hubice": [
@@ -36591,12 +36591,12 @@ election.cities={
     "28",
     "930 39",
     "Zlaté Klasy",
-    "obechubice@stonline.sk",
+    "hubice@hubice.sk",
     "031",
-    "569 35 08,560 15 42",
+    "569 35 08",
     "",
     "Hubice",
-    "0",
+    "2",
     ""
    ],
    "hviezdoslavov": [
@@ -36623,10 +36623,10 @@ election.cities={
     "Jahodná",
     "sekretariat@obecjahodna.sk",
     "031",
-    "559 11 59,559 12 58,550 63 81",
-    "",
+    "55 91 159",
+    "0911 891 567",
     "Jahodná",
-    "0",
+    "2",
     ""
    ],
    "janiky": [
@@ -36638,10 +36638,10 @@ election.cities={
     "Zlaté Klasy",
     "obec@janiky.sk",
     "031",
-    "569 21 79",
+    "56 92 179, 56 02 721",
     "",
     "Janíky",
-    "0",
+    "3",
     ""
    ],
    "jurova": [
@@ -36653,10 +36653,10 @@ election.cities={
     "Baka",
     "obecjurova@stonline.sk",
     "031",
-    "559 72 09",
-    "0905 753 089",
+    "559 72 09, 551 12 15",
+    "0918 401 326",
     "Jurová",
-    "0",
+    "3",
     ""
    ],
    "klucovec": [
@@ -36668,10 +36668,10 @@ election.cities={
     "Medveďov",
     "ouklucovec@panelnet.sk",
     "031",
-    "554 12 36",
-    "0905 878 479",
+    "5530815, 5541236",
+    "",
     "Kľúčovec",
-    "0",
+    "2",
     ""
    ],
    "kostolne-kracany": [
@@ -36683,10 +36683,10 @@ election.cities={
     "Kráľovičove Kračany",
     "kostolnekracany@nextra.sk",
     "031",
-    "552 23 91",
+    "552 23 91, 550 32 62",
     "0903 239 668",
     "Kostolné Kračany",
-    "0",
+    "3",
     ""
    ],
    "kralovicove-kracany": [
@@ -36696,12 +36696,12 @@ election.cities={
     "109",
     "930 03",
     "Kráľovičove Kračany",
-    "kralkracany@nextra.sk",
+    "kral.kracany@nextra.sk",
     "031",
-    "551 41 29,551 42 75",
+    "551 41 29, 551 42 75",
     "",
     "Kráľovičove Kračany",
-    "0",
+    "3",
     ""
    ],
    "kutniky": [
@@ -36741,12 +36741,12 @@ election.cities={
     "60",
     "930 30",
     "Rohovce",
-    "kormoran@nextra.sk",
+    "obeckyselica@gmail.com",
     "031",
-    "559 88 39",
-    "0905 859 099",
+    "55 988 39",
+    "",
     "Kyselica",
-    "0",
+    "3",
     ""
    ],
    "lehnice": [
@@ -36756,12 +36756,12 @@ election.cities={
     "89",
     "930 37",
     "Lehnice",
-    "ocu.lehnice@madnet.sk",
+    "lehnice@lehnice.sk",
     "031",
-    "558 61 17,558 61 27",
-    "0905 234 561",
+    "",
+    "0918 325 652, 0905 409 422",
     "Lehnice",
-    "0",
+    "2",
     ""
    ],
    "luc-na-ostrove": [
@@ -36771,12 +36771,12 @@ election.cities={
     "20",
     "930 03",
     "Kráľovičove Kračany",
-    "starosta@lucnaostrove.sk",
+    "sekretariat@lucnaostrove.sk",
     "031",
-    "554 52 06",
-    "0905 900 403",
+    "5545206",
+    "0905900403",
     "Lúč na Ostrove",
-    "0",
+    "2",
     ""
    ],
    "macov": [
@@ -36801,12 +36801,12 @@ election.cities={
     "200",
     "930 14",
     "Dolný Bar",
-    "obecnyuradmad@mail.t-com.sk",
+    "info@obecmad.sk",
     "031",
-    "551 31 26",
+    "5513126",
     "0907 716 031",
     "Mad",
-    "0",
+    "2",
     ""
    ],
    "male-dvorniky": [
@@ -36816,12 +36816,12 @@ election.cities={
     "153",
     "929 01",
     "Malé Dvorníky",
-    "obecmaledvorniky@post.sk",
+    "obecmaledvorniky@slovanet.sk;obecmaledvorniky@post.sk",
     "031",
-    "552 30 96,550 40 22",
-    "0905 440 568",
+    "552 30 96",
+    "",
     "Malé Dvorníky",
-    "0",
+    "2",
     ""
    ],
    "medvedov": [
@@ -36831,12 +36831,12 @@ election.cities={
     "90",
     "930 07",
     "Medveďov",
-    "info@medvedov.sk",
+    "ocumedvedov@stonline.sk",
     "031",
-    "554 12 37",
-    "0903 411 776",
+    "5541 237",
+    "",
     "Medveďov",
-    "0",
+    "3",
     ""
    ],
    "michal-na-ostrove": [
@@ -36848,10 +36848,10 @@ election.cities={
     "Michal na Ostrove",
     "ocumichal@mail.t-com.sk",
     "031",
-    "554 31 03",
-    "",
+    "5543103, 5543104",
+    "0905406997",
     "Michal na Ostrove",
-    "0",
+    "3",
     ""
    ],
    "mierovo": [
@@ -36878,10 +36878,10 @@ election.cities={
     "Sap",
     "obec.narad@gmail.com",
     "031",
-    "554 92 02, 550 99 49",
-    "0905 813 223",
+    "5549202",
+    "",
     "Ňárad",
-    "0",
+    "2",
     ""
    ],
    "novy-zivot": [
@@ -36908,10 +36908,10 @@ election.cities={
     "Ohrady",
     "ocuohrady@stonline.sk",
     "031",
-    "558 51 25,558 52 08",
-    "0911 177 285",
+    "5585125",
+    "",
     "Ohrady",
-    "0",
+    "3",
     ""
    ],
    "okoc": [
@@ -36921,12 +36921,12 @@ election.cities={
     "833\/57",
     "930 28",
     "Okoč",
-    "starosta@okoc.sk",
+    "info@okoc.sk",
     "031",
-    "555 82 96,550 69 21,22",
-    "0908 781 283",
+    "555 81 04, 555 82 96, 550 69 21",
+    "",
     "Okoč",
-    "0",
+    "2",
     ""
    ],
    "oldza": [
@@ -36966,12 +36966,12 @@ election.cities={
     "289",
     "929 01",
     "Dunajská Streda",
-    "oupadanstarosta@panelnet.sk",
+    "volby2020@oupadan.sk",
     "031",
-    "558 91 69",
-    "0911 400 821,0905 443 102",
+    "55 89 169",
+    "0903 525 820",
     "Padáň",
-    "0",
+    "3",
     ""
    ],
    "patas": [
@@ -36983,10 +36983,10 @@ election.cities={
     "Dunajská Streda",
     "oupatas@stonline.sk",
     "031",
-    "554 22 24,554 94 04",
-    "0905 409 381",
+    "5542 224, 5549 404",
+    "0905 435 644",
     "Pataš",
-    "0",
+    "3",
     ""
    ],
    "potonske-luky": [
@@ -36996,12 +36996,12 @@ election.cities={
     "41",
     "930 52",
     "Blahová",
-    "obec@potonske-luky.sk",
+    "obec@potonske-luky.sk;potonskeluky@gmail.com",
     "031",
     "558 71 81",
-    "0908 781 631",
+    "",
     "Potônske Lúky",
-    "0",
+    "2",
     ""
    ],
    "povoda": [
@@ -37011,12 +37011,12 @@ election.cities={
     "87",
     "929 01",
     "Dunajská Streda",
-    "oupovoda@madnet.sk",
+    "oupovoda@obecpovoda.sk",
     "031",
     "552 56 50",
     "0903 415 608",
     "Povoda",
-    "0",
+    "2",
     ""
    ],
    "rohovce": [
@@ -37026,12 +37026,12 @@ election.cities={
     "164",
     "930 30",
     "Rohovce",
-    "ocurohovce@stonline.sk",
+    "piroska.orbanova@mail.t-com.sk",
     "031",
-    "559 82 27,559 82 82",
+    "5598282, 5598227",
     "0903 415 624",
     "Rohovce",
-    "0",
+    "3",
     ""
    ],
    "samorin": [
@@ -37043,10 +37043,10 @@ election.cities={
     "Šamorín",
     "evidencia@samorin.sk",
     "031",
-    "590 04 11,18",
-    "0903 216 802",
+    "59 00 418, 59 00 400",
+    "",
     "Šamorín",
-    "0",
+    "3",
     ""
    ],
    "sap": [
@@ -37116,12 +37116,12 @@ election.cities={
     "168",
     "930 32",
     "Blatná na Ostrove",
-    "trnavka.ocu@centrum.sk",
+    "herbergerova@obectrnavka.sk;koleszarova@obectrnavka.sk",
     "031",
-    "559 81 06,559 84 21",
-    "0903 415 617",
+    "5598106, 5598421",
+    "",
     "Trnávka",
-    "0",
+    "2",
     ""
    ],
    "trstena-na-ostrove": [
@@ -37146,12 +37146,12 @@ election.cities={
     "189",
     "930 51",
     "Veľká Paka",
-    "a.hunka@zoznam.sk",
+    "referent@velkapaka.sk",
     "031",
-    "558 67 01,558 67 05",
+    "55 86 705",
     "0905 449 781",
     "Veľká Paka",
-    "0",
+    "3",
     ""
    ],
    "velke-blahovo": [
@@ -37161,12 +37161,12 @@ election.cities={
     "72",
     "930 01",
     "Veľké Blahovo",
-    "obec.velkeblahovo@stonline.sk",
+    "starosta@velkeblahovo.sk",
     "031",
     "552 20 93",
     "",
     "Veľké Blahovo",
-    "0",
+    "2",
     ""
    ],
    "velke-dvorniky": [
@@ -37176,12 +37176,12 @@ election.cities={
     "190",
     "929 01",
     "Veľké Dvorníky",
-    "aghova1956@gmail.com",
+    "jan.urogi@velkedvorniky.sk",
     "031",
-    "552 27 90,550 62 71",
+    "552 2790",
     "0918 668 758",
     "Veľké Dvorníky",
-    "0",
+    "2",
     ""
    ],
    "velky-meder": [
@@ -37193,10 +37193,10 @@ election.cities={
     "Veľký Meder",
     "primator@velkymeder.sk",
     "031",
-    "555 22 01,31 80",
+    "555 22 01, 555 24 25",
     "",
     "Veľký Meder",
-    "0",
+    "2",
     ""
    ],
    "vieska": [
@@ -37236,12 +37236,12 @@ election.cities={
     "474\/1",
     "930 25",
     "Vrakúň",
-    "obecnyurad@vrakun.sk",
+    "vrakun@panelnet.sk;o.u.vrakun@panelnet.sk",
     "031",
-    "552 31 25,552 04 39,550 97 31",
-    "0905 033 403",
+    "5520439, 5523125",
+    "0905281855",
     "Vrakúň",
-    "0",
+    "2",
     ""
    ],
    "vydrany": [
@@ -37253,10 +37253,10 @@ election.cities={
     "Vydrany",
     "ocu@vydrany.sk",
     "031",
-    "552 21 25,552 91 44,552 14 82",
-    "0905 309 200",
+    "552 21 25",
+    "",
     "Vydrany",
-    "0",
+    "2",
     ""
    ],
    "zlate-klasy": [
@@ -37266,12 +37266,12 @@ election.cities={
     "550\/1",
     "930 39",
     "Zlaté Klasy",
-    "ocuzlateklasy@stonline.sk",
+    "zuzana.bothova@obec.zlateklasy.sk;info@obec.zlateklasy.sk",
     "031",
-    "569 22 25",
-    "0903 457 391",
+    "59 12401, 59 12402",
+    "",
     "Zlaté Klasy",
-    "0",
+    "3",
     ""
    ]
   },
@@ -39520,7 +39520,7 @@ election.cities={
     "557 21 20",
     "0910 907 089",
     "Dolný Hričov",
-    "2",
+    "1",
     ""
    ],
    "durcina": [
@@ -40736,12 +40736,12 @@ election.cities={
     "123",
     "023 45",
     "Horný Vadičov",
-    "obecdolnyvadicov@zoznam.sk",
+    "obec@dolny-vadicov.sk",
     "041",
     "422 92 31",
     "0908 090 144",
     "Dolný Vadičov",
-    "0",
+    "1",
     ""
    ],
    "horny-vadicov": [
@@ -40771,7 +40771,7 @@ election.cities={
     "423 11 21",
     "0905 526 272",
     "Kysucký Lieskovec",
-    "0",
+    "2",
     ""
    ],
    "lodno": [
@@ -40786,7 +40786,7 @@ election.cities={
     "423 17 21",
     "0903 508 339",
     "Lodno",
-    "0",
+    "2",
     ""
    ],
    "lopusne-pazite": [
@@ -40801,7 +40801,7 @@ election.cities={
     "422 92 34",
     "0911 697 083",
     "Lopušné Pažite",
-    "0",
+    "2",
     ""
    ],
    "neslusa": [
@@ -40811,12 +40811,12 @@ election.cities={
     "978",
     "023 41",
     "Nesluša",
-    "ou@neslusa.sk",
+    "janka.sidlova@neslusa.sk",
     "041",
     "428 11 28,11 21",
     "0903 510 303",
     "Nesluša",
-    "0",
+    "3",
     ""
    ],
    "ochodnica": [
@@ -40828,10 +40828,10 @@ election.cities={
     "Ochodnica",
     "obec@ochodnica.sk",
     "041",
-    "423 31 21,97",
-    "0902 748 575,0902 748 577,0907 886 944",
+    "423 31 21",
+    "0902 748 575, 0902 748 577, 0907 886 944",
     "Ochodnica",
-    "0",
+    "1",
     ""
    ],
    "povina": [
@@ -40841,12 +40841,12 @@ election.cities={
     "155",
     "023 33",
     "Povina",
-    "obecpovina@stonline.sk",
+    "",
     "041",
-    "421 36 85,14 21",
-    "0905 460 631",
+    "421 14 21",
+    "0905 470 631 0911 841 206",
     "Povina",
-    "0",
+    "1",
     ""
    ],
    "radola": [
@@ -40858,10 +40858,10 @@ election.cities={
     "Radoľa",
     "podatelna@radola.sk",
     "041",
-    "421 32 33,421 10 04",
-    "0903 265 776,0911 951 305",
+    "4213233 4211004",
+    "0903 265 776 0911 951 305",
     "Radoľa",
-    "0",
+    "1",
     ""
    ],
    "rudina": [
@@ -40948,12 +40948,12 @@ election.cities={
     "17",
     "032 04 ",
     "Liptovský Ondrej ",
-    "oubenadikova@alconet.sk",
+    "oubenadikova@alconet.sk;oubenadikova@benadikova.sk",
     "044",
     "559 52 37",
     "0905 455 543",
     "Beňadiková",
-    "0",
+    "2",
     ""
    ],
    "bobrovcek": [
@@ -40962,13 +40962,13 @@ election.cities={
     "Bobrovček",
     "26",
     "032 21 ",
-    "Bobrovec ",
+    "Bobrovček",
     "obec@bobrovcek.sk",
     "044",
     "559 65 37",
-    "0903 581 147",
+    "",
     "Bobrovček",
-    "0",
+    "2",
     ""
    ],
    "bobrovec": [
@@ -41008,12 +41008,12 @@ election.cities={
     "56",
     "032 23 ",
     "Liptovská Sielnica ",
-    "bukovina@citycom.sk",
+    "bukovina0@gmail.com",
     "044",
     "559 72 21 ",
     "",
     "Bukovina",
-    "0",
+    "1",
     ""
    ],
    "demanovska-dolina": [
@@ -41038,12 +41038,12 @@ election.cities={
     "191",
     "032 12",
     "Dúbrava pri Liptovskom Mikuláši",
-    "obecdubravalm@stonline.sk",
+    "podatelna@obecdubrava.sk;starosta@obecdubrava.sk",
     "044",
     "559 32 51,557 07 08 ",
     "",
     "Dúbrava",
-    "0",
+    "2",
     ""
    ],
    "galovany": [
@@ -41116,9 +41116,9 @@ election.cities={
     "obec.izipovce@stonline.sk",
     "044",
     "559 72 40",
-    "0905 753 418",
+    "0905 725 325",
     "Ižipovce",
-    "0",
+    "2",
     ""
    ],
    "jakubovany": [
@@ -41126,14 +41126,14 @@ election.cities={
     "",
     "Jakubovany",
     "21",
-    "032 04",
+    "032 04  ",
     "Liptovský Ondrej",
-    "jakubovany@imafex.sk",
+    "jakubovany@imafex.sk;obec@jakubovany.sk",
     "044",
-    "559 52 51",
+    "55 95 251",
     "",
     "Jakubovany",
-    "0",
+    "3",
     ""
    ],
    "jalovec": [
@@ -41148,7 +41148,7 @@ election.cities={
     "559 67 26",
     "0911 267 927",
     "Jalovec",
-    "0",
+    "3",
     ""
    ],
    "jamnik": [
@@ -41158,12 +41158,12 @@ election.cities={
     "192",
     "033 01",
     "Liptovský Hrádok",
-    "obecjamnik@magnetcity.sk",
+    "starosta@jamnik.sk",
     "044",
     "522 20 69",
     "0903 564 507",
     "Jamník",
-    "0",
+    "2",
     ""
    ],
    "konska": [
@@ -41178,7 +41178,7 @@ election.cities={
     "559 52 42",
     "0911 595 242",
     "Konská",
-    "0",
+    "3",
     ""
    ],
    "kralova-lehota": [
@@ -41188,12 +41188,12 @@ election.cities={
     "39",
     "032 33",
     "Kraľova Lehota",
-    "obec.klehota@stonline.sk",
+    "obec.klehota@hradok.net;obec.klehota@mag-net.sk",
     "044",
     "522 28 01",
     "",
     "Kráľova Lehota",
-    "0",
+    "2",
     ""
    ],
    "kvacany": [
@@ -41218,12 +41218,12 @@ election.cities={
     "140",
     "032 11",
     "Svätý Kríž",
-    "oulazisko@alconet.sk",
+    "oulazisko@alconet.sk;lazisko@lazisko.sk",
     "044",
-    "559 26 21, 557 04 97-8",
+    "559 26 21, 557 04 97",
     "0904 164 422",
     "Lazisko",
-    "0",
+    "2",
     ""
    ],
    "liptovska-anna": [
@@ -41233,12 +41233,12 @@ election.cities={
     "20",
     "032 23",
     "Liptovská Sielnica",
-    "obecliptovskaanna@post.sk",
+    "liptovskaanna@citycom.sk",
     "044",
     "559  72 42",
     "",
     "Liptovská Anna",
-    "0",
+    "2",
     ""
    ],
    "liptovska-kokava": [
@@ -41251,24 +41251,24 @@ election.cities={
     "obec.lk@stonline.sk",
     "044",
     "529 71 00,33",
-    "0918 706 189,0917 406 956, 0902 059 377",
+    "0918 706 189, 0902 059 377",
     "Liptovská Kokava",
-    "0",
+    "2",
     ""
    ],
    "liptovska-porubka": [
     "Obecný úrad",
     "",
     "Liptovská Porúbka",
-    "149",
+    "170",
     "033 01",
     "Liptovský Hrádok",
-    "obecny.urad@liponet.sk",
+    "obec.lporubka@gmail.com",
     "044",
-    "522 27 17,20 67",
-    "0907 833 482,0911 974 741",
+    "522 27 17",
+    "",
     "Liptovská Porúbka",
-    "0",
+    "2",
     ""
    ],
    "liptovska-sielnica": [
@@ -41278,12 +41278,12 @@ election.cities={
     "75",
     "032 23",
     "Liptovská Sielnica",
-    "obec-sielnica@citycom.sk",
+    "obecls@liptsielnica.sk;ouls@liptsielnica.sk",
     "044",
     "559 72 11",
-    "0903 175 268,0911 930 221",
+    "0911 930 221",
     "Liptovská Sielnica",
-    "0",
+    "2",
     ""
    ],
    "liptovske-beharovce": [
@@ -41293,12 +41293,12 @@ election.cities={
     "9",
     "032 21",
     "Bobrovec",
-    "obec@liptovskebeharovce.sk",
+    "liptovskebeharovce@alconet.sk",
     "044",
     "559 60 77",
     "0918 455 950 ",
     "Liptovské Beharovce",
-    "0",
+    "2",
     ""
    ],
    "liptovske-klacany": [
@@ -41308,12 +41308,12 @@ election.cities={
     "72",
     "032 14",
     "Ľubeľa",
-    "liptovske.klacany@zoznam.sk",
+    "liptovske.klacany@gmail.com",
     "044",
     "559 32 58",
-    "0918 627 114,0948 095 094",
+    "0918 625 060",
     "Liptovské Kľačany",
-    "0",
+    "2",
     ""
    ],
    "liptovske-matiasovce": [
@@ -41328,7 +41328,7 @@ election.cities={
     "559 72 47",
     "",
     "Liptovské Matiašovce",
-    "0",
+    "3",
     ""
    ],
    "liptovsky-hradok": [
@@ -41413,12 +41413,12 @@ election.cities={
     "346",
     "032 14",
     "Ľubeľa",
-    "obeclubela@imafex.sk",
+    "lubela@lubela.sk",
     "044",
-    "559 32 21,46",
+    " 55 932 46",
     "",
     "Ľubeľa",
-    "0",
+    "2",
     ""
    ],
    "malatiny": [
@@ -41431,9 +41431,9 @@ election.cities={
     "obec.malatiny@gmail.com",
     "044",
     "559 33 20",
-    "0918 627 290",
+    "0905 563 461",
     "Malatíny",
-    "0",
+    "3",
     ""
    ],
    "male-borove": [
@@ -41461,9 +41461,9 @@ election.cities={
     "obecmaluzina@stonline.sk",
     "044",
     "529 22 21",
-    "0918 461 680,0918 641 694",
+    "0910 292 120",
     "Malužiná",
-    "0",
+    "3",
     ""
    ],
    "nizna-boca": [
@@ -41473,12 +41473,12 @@ election.cities={
     "3",
     "032 34",
     "Malužiná",
-    "niznaboca@boca.sk",
+    "obec@niznaboca.sk",
     "044",
     "529 12 40",
-    "0910 957 372",
+    "",
     "Nižná Boca",
-    "0",
+    "3",
     ""
    ],
    "partizanska-lupca": [
@@ -41490,10 +41490,10 @@ election.cities={
     "Partizánska Ľupča",
     "ou@partizanskalupca.com",
     "044",
-    "557 07 53,54,55",
-    "0905 920 763,0911 920 763 ",
+    "557 07 55, 54",
+    "904 209 605",
     "Partizánska Ľupča",
-    "0",
+    "2",
     ""
    ],
    "pavcina-lehota": [
@@ -41517,13 +41517,13 @@ election.cities={
     "Pavlova Ves",
     "26",
     "032 21",
-    "Bobrovec",
-    "obec@pavlovaves.gityposta.sk",
+    "Pavlova Ves",
+    "oupavlovaves@stuffnet.sk",
     "044",
     "559 65 90",
     "0911 346 564",
     "Pavlova Ves",
-    "0",
+    "2",
     ""
    ],
    "podturen": [
@@ -41532,13 +41532,13 @@ election.cities={
     "Hlavná",
     "164",
     "033 01",
-    "Liptovský Hrádok",
+    "Podtureň",
     "obec.podturen@imafex.sk",
     "044",
     "522 22 10",
-    "0905 805 845;0918 621 667",
+    "",
     "Podtureň",
-    "0",
+    "3",
     ""
    ],
    "pribylina": [
@@ -41563,12 +41563,12 @@ election.cities={
     "57",
     "032 23",
     "Liptovská Sielnica",
-    "obec@prosiek.sk",
+    "prosiek@stonline.s;ouprosiek.starosta@gmail.com",
     "044",
     "559 72 43",
     "0903 043 794,0904 459 799",
     "Prosiek",
-    "0",
+    "2",
     ""
    ],
    "smrecany": [
@@ -41578,12 +41578,12 @@ election.cities={
     "48",
     "032 05",
     " Smrečany  ",
-    "smrecany@smrecany.sk",
+    "smrecany@smrecany.sk;starosta@smrecany.sk",
     "044",
     "558 61 26 ",
     "0907 804 870",
     "Smrečany",
-    "0",
+    "2",
     ""
    ],
    "svaty-kriz": [
@@ -41595,10 +41595,10 @@ election.cities={
     "Svätý Kríž",
     "ousvatykriz@alconet.sk",
     "044",
-    "559 25 21,559 26 36",
+    "559 25 21",
     "",
     "Svätý Kríž",
-    "0",
+    "2",
     ""
    ],
    "trstene": [
@@ -41607,13 +41607,13 @@ election.cities={
     "Trstené",
     "52",
     "032 21",
-    "Bobrovec",
+    "Trstené",
     "obectrstene@stonline.sk",
     "044",
     "559 65 38 ",
     "0902 26 00 26",
     "Trstené",
-    "0",
+    "3",
     ""
    ],
    "uhorska-ves": [
@@ -41622,13 +41622,13 @@ election.cities={
     "Stará",
     "53",
     "032 03",
-    "Liptovský Ján",
-    "obecuhorskaves@alconet.sk",
+    "Uhorská Ves",
+    "ouuhorskaves@alconet.sk",
     "044",
     "526 31 20",
     "0918 840 206",
     "Uhorská Ves",
-    "0",
+    "3",
     ""
    ],
    "vavrisovo": [
@@ -41658,7 +41658,7 @@ election.cities={
     "529 41 21",
     "0918 112 569,0908 933 309,0905 600 252",
     "Važec",
-    "0",
+    "2",
     ""
    ],
    "velke-borove": [
@@ -41683,12 +41683,12 @@ election.cities={
     "37",
     "031 04",
     "Liptovský Mikuláš",
-    "vetporuba@stonline.sk",
+    "vetporuba@alconet.sk",
     "044",
     "558 62 47",
     "0918 459 622",
     "Veterná Poruba",
-    "0",
+    "3",
     ""
    ],
    "vlachy": [
@@ -41697,13 +41697,13 @@ election.cities={
     "Vlachy",
     "126",
     "032 13",
-    "Vlašky",
-    "vlachy@citycom.sk",
+    "Vlachy",
+    "info@obecvlachy.sk",
     "044",
     "559 31 21",
-    "0905 321 194,0948 707 067",
+    "",
     "Vlachy",
-    "0",
+    "3",
     ""
    ],
    "vychodna": [
@@ -41727,13 +41727,13 @@ election.cities={
     "Vyšná Boca",
     "50",
     "032 34",
-    "Malužiná",
+    "Vyšná Boca",
     "vboca@stonline.sk",
     "044",
     "529 12 49",
     "0915 736 694",
     "Vyšná Boca",
-    "0",
+    "2",
     ""
    ],
    "zavazna-poruba": [
@@ -41743,12 +41743,12 @@ election.cities={
     "135",
     "032 02",
     "Závažná Poruba",
-    "obeczav@stonline.sk",
+    "obec@zavaznaporuba.sk;starosta@zavaznaporuba.sk",
     "044",
-    "554 71 75,554 73 69,554 74 60",
+    "55 47 369, 5547 175",
     "0905 644 695",
     "Závažná Poruba",
-    "0",
+    "2",
     ""
    ],
    "ziar": [
@@ -42135,12 +42135,12 @@ election.cities={
     "108",
     "038 03",
     "Sklabiňa",
-    "sklabina.ou@inmail.sk",
+    "bibiana.truchlikova@obecsklabina.sk;posta@obecsklabina.sk",
     "043",
     "426 21 86",
     "0905 277 063",
     "Sklabiňa",
-    "2",
+    "3",
     ""
    ],
    "sklabinsky-podzamok": [
@@ -42452,19 +42452,19 @@ election.cities={
     "66",
     "029 63",
     "Mútne",
-    "benadovo@zoznam.sk",
+    "benadovo@gmail.com",
     "043",
     "559 81 30",
-    "0918 631 982",
+    "0907 253 962",
     "Beňadovo",
-    "0",
+    "3",
     ""
    ],
    "bobrov": [
     "Obecný úrad",
     "",
-    "Vyšný koniec",
-    "173",
+    "Námestie sv. Jakuba",
+    "173\/3",
     "029 42",
     "Bobrov",
     "starosta@obecbobrov.sk",
@@ -42472,7 +42472,7 @@ election.cities={
     "552 43 97,98",
     "0905 937 775,0911 937 775",
     "Bobrov",
-    "0",
+    "2",
     ""
    ],
    "breza": [
@@ -42599,7 +42599,7 @@ election.cities={
     "Obecný úrad",
     "",
     "Oravská Jasenica",
-    "148",
+    "126",
     "029 64",
     "Oravská Jasenica",
     "ouorjasenica@stonline.sk",
@@ -42607,7 +42607,7 @@ election.cities={
     "552 51 21",
     "0905 355 624",
     "Oravská Jasenica",
-    "0",
+    "2",
     ""
    ],
    "oravska-lesna": [
@@ -42622,7 +42622,7 @@ election.cities={
     "559 31 22,27",
     "0917 874 184,0907 827 445,915 740 217",
     "Oravská Lesná",
-    "0",
+    "2",
     ""
    ],
    "oravska-polhora": [
@@ -42647,12 +42647,12 @@ election.cities={
     "374",
     "029 62",
     "Oravské Veselé",
-    "starosta.borak@oravskevesele.sk",
+    "starosta.maslanak@oravskevesele.sk;matrika.stasakova@oravskevesele.sk",
     "043",
     "559 61 23,88",
-    "0918 560 971,0918 631 100",
+    "0905 802 885, 0918 560 971",
     "Oravské Veselé",
-    "0",
+    "3",
     ""
    ],
    "rabca": [
@@ -42662,12 +42662,12 @@ election.cities={
     "426",
     "029 44",
     "Rabča",
-    "podatelna@rabca.sk",
+    "podatelna@rabca.sk;rabca@rabca.sk",
     "043",
-    "559 42 19,559 41 01",
+    "28 121 11, 55 942 19",
     "0903 538 529,0903 659 113",
     "Rabča",
-    "0",
+    "3",
     ""
    ],
    "rabcice": [
@@ -42692,12 +42692,12 @@ election.cities={
     "217",
     "029 46",
     "Sihelné",
-    "obecsihelne@max.euroweb.sk",
+    "ousihelne@orava.sk",
     "043",
     "559 42 36,14",
     "0911 527 434",
     "Sihelné",
-    "0",
+    "2",
     ""
    ],
    "tapesovo": [
@@ -42709,10 +42709,10 @@ election.cities={
     "Lokca",
     "tapesovo@stonline.sk",
     "043",
-    "552 52 24,552 49 87",
+    "552 52 24",
     "0918 527 579,0915 833 787",
     "Ťapešovo",
-    "0",
+    "2",
     ""
    ],
    "vasilov": [
@@ -42737,12 +42737,12 @@ election.cities={
     "203",
     "029 01",
     "Námestovo",
-    "starosta@vavrecka.sk",
+    "ouvavrecka@orava.sk",
     "043",
     "552 23 87,558 13 83",
     "0905 243 223",
     "Vavrečka",
-    "0",
+    "3",
     ""
    ],
    "zakamenne": [
@@ -42829,12 +42829,12 @@ election.cities={
     "7",
     "034 83",
     "Liptovská Teplá",
-    "ou@ivachnova.sk",
+    "obec.ivachnova@inetbox.sk",
     "044",
     "439 22 15",
     "0905 458 354",
     "Ivachnová",
-    "0",
+    "2",
     ""
    ],
    "kalameny": [
@@ -42858,13 +42858,13 @@ election.cities={
     "Komjatná",
     "292",
     "034 96",
-    "Valaská Dubová",
-    "obec.komjatna@gmail.com",
+    "Komjatná",
+    "podatelna@komjatna.sk",
     "044",
     "437 32 35",
     "0907 931 702",
     "Komjatná",
-    "0",
+    "3",
     ""
    ],
    "likavka": [
@@ -42909,22 +42909,22 @@ election.cities={
     "439 62 04,62 41",
     "0917 470 954,0907 845 539 ",
     "Liptovská Osada",
-    "0",
+    "2",
     ""
    ],
    "liptovska-stiavnica": [
     "Obecný úrad",
     "",
-    "Stará ulica",
+    "Hlavná",
     "39\/53",
     "034 01",
-    "Ružomberok",
+    "Liptovská Štiavnica",
     "obec@liptovskastiavnica.sk",
     "044",
     "435 21 75",
     "0903 520 644",
     "Liptovská Štiavnica",
-    "0",
+    "2",
     ""
    ],
    "liptovska-tepla": [
@@ -42949,12 +42949,12 @@ election.cities={
     "386",
     "034 74",
     "Liptovské Revúce",
-    "obec@liptovskerevuce.sk",
+    "",
     "044",
     "439 71 71",
     "0905 237 774",
     "Liptovské Revúce",
-    "0",
+    "2",
     ""
    ],
    "liptovske-sliace": [
@@ -42969,7 +42969,7 @@ election.cities={
     "437 21 71",
     "0918 432 830,0905 625 085",
     "Liptovské Sliače",
-    "0",
+    "2",
     ""
    ],
    "liptovsky-michal": [
@@ -42984,7 +42984,7 @@ election.cities={
     "439 22 27",
     "0908 929 955 ",
     "Liptovský Michal",
-    "0",
+    "3",
     ""
    ],
    "liskova": [
@@ -43003,18 +43003,18 @@ election.cities={
     ""
    ],
    "lubochna": [
-    "Obecný úrad",
+    "Obecný úrad ",
     "",
-    "Ľubochňa",
-    "143",
+    "Nám. akad. Ľ. Nováka",
+    "143\/1",
     "034 91",
     "Lubochňa",
-    "obeclubochna@stonline.sk",
+    "obeclubochna@centrum.sk;starosta@lubochna.sk",
     "044",
     "439 12 15 ",
-    "0908 929 730",
+    "",
     "Ľubochňa",
-    "0",
+    "3",
     ""
    ],
    "lucky": [
@@ -43024,12 +43024,12 @@ election.cities={
     "141",
     "034 82",
     "Lúčky",
-    "ou@obeclucky.sk",
+    "obeclucky@stonline.sk",
     "044",
     "439 22 52",
     "0907 504 222",
     "Lúčky",
-    "0",
+    "2",
     ""
    ],
    "ludrova": [
@@ -43041,10 +43041,10 @@ election.cities={
     "Ludrová",
     "ludrova@ludrova.sk",
     "044",
-    "430 36 82,435 21 89",
+    "435 21 89",
     "0903 896 174",
     "Ludrová",
-    "0",
+    "3",
     ""
    ],
    "martincek": [
@@ -43053,13 +43053,13 @@ election.cities={
     "Martinček",
     "83",
     "034 95",
-    "Likavka",
+    "Martinček",
     "ou@martincek.sk",
     "044",
     "435 12 03",
     "0904 692 859",
     "Martinček",
-    "0",
+    "3",
     ""
    ],
    "potok": [
@@ -43084,12 +43084,12 @@ election.cities={
     "133",
     "034 92",
     "Stankovany",
-    "kralikova@stankovany.sk",
+    "obec@stankovany.sk",
     "044",
     "439 12 31,430 40 89,90",
-    "0908 930 749,0908 156 522",
+    "0908 930 749",
     "Stankovany",
-    "0",
+    "3",
     ""
    ],
    "stiavnicka": [
@@ -43113,13 +43113,13 @@ election.cities={
     "Školská",
     "70\/2",
     "034 91",
-    "Lubochňa",
-    "obec_svosov@stonline.sk",
+    "Švošov",
+    "obec@svosov.sk",
     "044",
     "439 12 30",
     "0918 722 017",
     "Švošov",
-    "0",
+    "3",
     ""
    ],
    "turik": [
@@ -43144,12 +43144,12 @@ election.cities={
     "39",
     "034 96",
     "Valaská Dubová",
-    "obec@valaskadubova.sk",
+    "starosta@valaskadubova.sk",
     "044",
     "435 71 71",
-    "0915 859 551",
+    "",
     "Valaská Dubová",
-    "0",
+    "2",
     ""
    ]
   },
@@ -43481,7 +43481,7 @@ election.cities={
     "496 26 14 ",
     "",
     "Rudno",
-    "0",
+    "1",
     ""
    ],
    "sklene": [
@@ -43795,12 +43795,12 @@ election.cities={
     "189",
     "023 13",
     "Čierne",
-    "obeccierne@stonline.sk",
+    "obeccierne@stonline.sk;matrika@obeccierne.sk;mbsvancarova@gmail.com",
     "041",
     "437 32 22,36",
     "0907 063 372",
     "Čierne",
-    "2",
+    "3",
     ""
    ],
    "dlha-nad-kysucou": [

@@ -335,5 +335,61 @@ $div = '// data';
 
 $out = $parts[0].$div."\n".'election.cities='.str_replace("    "," ",json_encode($db,JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)).';'."\n$div".$parts[2];
 file_put_contents("js/newcities.js",$out);
+
+
+$outcsv = "db-obci.csv";
+$fp = fopen($outcsv, 'a+');
+
+
+fputcsv($fp, [
+    "id obce",
+    "obec",
+    "okres",
+    "kraj",
+    "email pre volbu postou",
+    "email pre hlas. listky",
+    "predvolba",
+    "tel",
+    "mobil",
+    "adresa",
+    "c. domu",
+    "psc",
+    "mesto",
+    "web",
+    "typ uradu"
+    ]);
+
+foreach($db as $kraj=>$arr1){
+    foreach($arr1 as $okres=>$arr2){
+        foreach($arr2 as $obec=>$D){
+            
+            fputcsv($fp, [
+                $obec, // id obce 
+                $D[10], // obec 
+                $okres, // okres 
+                $kraj, // kraj 
+                $D[6], // email pre volbu postou
+                $D[12], // email pre hlas. listky
+                $D[7], // predvolba
+                $D[8], // tel
+                $D[9], // mobil
+                $D[2], // adresa
+                $D[3], // c. domu
+                $D[4], // psc
+                $D[5], // mesto
+                $D[13], // web
+                $D[0] // typ uradu
+                
+                ]
+            );
+            @$stats[$D[11]]++;
+        }
+    }
+}
+fclose($fp);
+
+
 echo "finished ".date("c")."\n";
 var_dump($overenePostou);
+
+
