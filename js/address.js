@@ -207,10 +207,10 @@ function nastavObec(obec) {
     var textemailu = "";
 	var meno = $('#basicinfo-name').val()+" "+$('#basicinfo-lastname').val();
 	var identifikacia_volica = 
-	"Meno: "+$('#basicinfo-name').val()+decodeURIComponent("%0D%0A%0D%0A")+
-	"Priezvisko: "+$('#basicinfo-lastname').val()+decodeURIComponent("%0D%0A%0D%0A")+
-	"Rodné číslo: "+$('#basicinfo-birthno').val()+decodeURIComponent("%0D%0A%0D%0A")+
-	"Ulica: "+$('#basicinfo-birthno').val()+decodeURIComponent("%0D%0A%0D%0A")
+	"Meno: "+$('#basicinfo-name').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
+	"Priezvisko: "+$('#basicinfo-lastname').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
+	"Rodné číslo: "+$('#basicinfo-birthno').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
+	"Ulica: "+$('#basicinfo-birthno').val()+decodeURIComponent("%0D%0A%0D%0A")". "+
 	;
 
     if(App.request_form == 'volbaPostouSTrvalymPobytom'){
