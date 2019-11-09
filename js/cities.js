@@ -2904,13 +2904,13 @@ election.cities={
     "75",
     "067 13",
     "Rokytov pri Humennom",
-    "",
+    "v.koscelnikstarosta@gmail.com",
     "057",
     "779 75 47",
     "0907 081 226",
     "Jabloň",
     "3",
-    "v.koscelnikstarosta@gmail.com"
+    ""
    ],
    "jankovce": [
     "Obecný úrad",
@@ -11606,12 +11606,12 @@ election.cities={
     "299",
     "962 41",
     "Bzovík",
-    "obecbzovik@stonline.sk",
+    "bzovik.starosta@gmail.com",
     "045",
-    "551 93 97,98,99",
-    "0907 852 925",
+    "55 19 397",
+    "",
     "Bzovík",
-    "0",
+    "2",
     ""
    ],
    "cabradsky-vrbovok": [
@@ -11621,12 +11621,12 @@ election.cities={
     "59",
     "962 51",
     "Čabradský Vrbovok",
-    "cabrad@post.sk",
+    "obec@cabradskyvrbovok.sk",
     "045",
-    "559 71 12",
+    "5597112",
     "0911 567 029",
     "Čabradský Vrbovok",
-    "0",
+    "2",
     ""
    ],
    "cekovce": [
@@ -11653,10 +11653,10 @@ election.cities={
     "Cerovo",
     "cerovo3@gmail.com",
     "045",
-    "557 32 82",
-    "0905 973 749",
+    "5573282",
+    "",
     "Cerovo",
-    "0",
+    "3",
     ""
    ],
    "devicie": [
@@ -11668,10 +11668,10 @@ election.cities={
     "Hontianske Nemce",
     "ocudevicie@gmail.com",
     "045",
-    "559 14 80",
+    "55 914 80",
     "0905 758 895",
     "Devičie",
-    "0",
+    "2",
     ""
    ],
    "dolne-mladonice": [
@@ -11681,12 +11681,12 @@ election.cities={
     "3",
     "962 41",
     "Bzovík ",
-    "ocudm@stonline.sk",
+    "sekretariat@dolnemladonice.sk",
     "045",
     "559 51 64",
-    "0903 806 823",
+    "",
     "Dolné Mladonice",
-    "0",
+    "2",
     ""
    ],
    "dolny-badin": [
@@ -11701,8 +11701,8 @@ election.cities={
     "559 71 15",
     "0911 933 655",
     "Dolný Badín",
-    "0",
-    "obecdolnybadin@zvnet.net"
+    "3",
+    ""
    ],
    "domaniky": [
     "Obecný úrad",
@@ -11711,12 +11711,12 @@ election.cities={
     "78",
     "962 65",
     "Hontianske Nemce",
-    "obecdomaniky@gmail.com",
+    "obecdomaniky@gmail.com;starosta@domaniky.sk",
     "045",
-    "559 11 20",
-    "0903 767 558",
+    "5591120",
+    "",
     "Domaníky",
-    "0",
+    "2",
     ""
    ],
    "drazovce": [
@@ -11743,10 +11743,10 @@ election.cities={
     "Čabradský Vrbovok",
     "obecdrienovo@gmail.com",
     "045",
-    "559 71 30",
+    "55 971 30",
     "0915 875 022",
     "Drienovo",
-    "0",
+    "2",
     ""
    ],
    "dudince": [
@@ -11801,12 +11801,12 @@ election.cities={
     "66",
     "962 68",
     "Hontianske Tesáre",
-    "obec@Honttesare.sk",
+    "obec@honttesare.sk",
     "045",
-    "559 60 15,16,559 61 51",
-    "0905 392 545",
+    "55 960 15",
+    "0915360292",
     "Hontianske Tesáre",
-    "0",
+    "3",
     ""
    ],
    "horne-mladonice": [
@@ -11816,12 +11816,12 @@ election.cities={
     "40",
     "962 43",
     "Senohrad",
-    "obechornemladonice@centrum.sk",
+    "info@hornemladonice.sk;podatelna@hornemladonice.sk;sekretariat@hornemladonice.sk",
     "045",
     "559 52 30",
-    "0911 839 283",
+    "0905 508 664",
     "Horné Mladonice",
-    "0",
+    "2",
     ""
    ],
    "horny-badin": [
@@ -11851,7 +11851,7 @@ election.cities={
     "552 41 32",
     "",
     "Jalšovík",
-    "0",
+    "2",
     ""
    ],
    "kozi-vrbovok": [
@@ -11876,12 +11876,12 @@ election.cities={
     "38",
     "962 65",
     "Hontianske Nemce",
-    "juznesitnokk@stonline.sk",
+    "obecnyurad@kralovce-krnisov.sk",
     "045",
-    "558 16 19",
+    "55 81 619",
     "0918 898 338",
     "Kráľovce - Krnišov",
-    "0",
+    "2",
     ""
    ],
    "lackov": [
@@ -11893,10 +11893,10 @@ election.cities={
     "Litava",
     "obeclackov@hotmail.sk",
     "045",
-    "557 45 28",
+    "",
     "0918 530 327",
     "Lackov",
-    "0",
+    "2",
     ""
    ],
    "ladzany": [
@@ -11954,9 +11954,9 @@ election.cities={
     "obecmedovarce@gmail.com",
     "045",
     "559 45 15",
-    "0911 930 106,0904 947 083",
+    "0911 930 106",
     "Medovarce",
-    "0",
+    "2",
     ""
    ],
    "rykyncice": [
@@ -11966,12 +11966,12 @@ election.cities={
     "60",
     "962 55",
     "Rykynčice",
-    "obecrykyncice@gmail.com",
+    "obecrykyncice@gmail.com;info@rykyncice.sk;podatelna@rykyncice.sk",
     "045",
     "559 31 15",
-    "0903 287 739",
+    "0948 828 418",
     "Rykynčice",
-    "0",
+    "2",
     ""
    ],
    "sebechleby": [
@@ -11983,10 +11983,10 @@ election.cities={
     "Sebechleby",
     "obecsebechleby@gmail.com",
     "045",
-    "559 17 13",
+    "55 917 13",
     "0903 418 966",
     "Sebechleby",
-    "0",
+    "3",
     ""
    ],
    "selce": [
@@ -12001,7 +12001,7 @@ election.cities={
     "559 71 63",
     "",
     "Selce",
-    "0",
+    "3",
     ""
    ],
    "senohrad": [
@@ -12058,10 +12058,10 @@ election.cities={
     "Hontianske Tesáre",
     "obecterany@obecterany.sk",
     "045",
-    "558 32 25",
-    "0903 944 492",
+    "55 832 25",
+    "",
     "Terany",
-    "0",
+    "3",
     ""
    ],
    "trpin": [
@@ -12089,9 +12089,9 @@ election.cities={
     "obec.unatin@azet.sk",
     "045",
     "551 25 95",
-    "0904 049 312",
+    "0918 476 560",
     "Uňatín",
-    "0",
+    "2",
     ""
    ],
    "zemiansky-vrbovok": [
@@ -12103,10 +12103,10 @@ election.cities={
     "Bzovík",
     "obeczemianskyvrbovok@gmail.com",
     "045",
-    "559 53 80",
-    "0904 479 748",
+    "",
+    "0918 495 082",
     "Zemiansky Vrbovok",
-    "0",
+    "2",
     ""
    ],
    "zibritov": [
@@ -13324,11 +13324,11 @@ election.cities={
     "Revúca",
     "volba_postou_nrsr_2016@revuca.sk",
     "058",
-    "28 688 88",
-    "0908 938 688",
+    "28 515 21",
+    "0905 448 204",
     "Revúca",
-    "2",
-    ""
+    "3",
+    "volba_postou_ra@revuca.sk"
    ],
    "chvalova": [
     "Obecný úrad",
@@ -17022,10 +17022,10 @@ election.cities={
     "Nová Baňa",
     "msu@novabana.sk",
     "045",
-    "678 28 00",
+    "6782 800",
     "0905 436 381",
     "Nová Baňa",
-    "0",
+    "2",
     ""
    ],
    "brehy": [
@@ -17900,7 +17900,7 @@ election.cities={
     "21",
     "827 05",
     "Bratislava 2",
-    "volby@ruzinov.sk",
+    "volby@ruzinov.sk;ruzinov@ruzinov.sk",
     "02",
     "4828 41 11,4333 12 84, 4828 43 68,4333 12 84",
     "0917 812 951,917 524 660",
@@ -21193,7 +21193,7 @@ election.cities={
     "636 04 30;636 25 82",
     "0917 707 112",
     "Košice - sídlisko Ťahanovce",
-    "0",
+    "2",
     ""
    ],
    "kosice-barca": [

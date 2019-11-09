@@ -219,7 +219,8 @@ function nastavObec(obec) {
 	"Meno: "+$('#basicinfo-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Priezvisko: "+$('#basicinfo-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Rodné číslo / dát. nar. (len ak rod. číslo nebolo pridelené): "+$('#basicinfo-birthno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
+	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
+	"Štátna príslušnosť: SR. "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;	
 	var adresa_na_slovensku = ""+
 	"Adresa trvalého bydliska v SR: "+decodeURIComponent("%0D%0A%0D%0A")+
