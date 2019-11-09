@@ -38833,13 +38833,13 @@ election.cities={
     "E. Lehotského",
     "38",
     "906 12",
-    "Hradište pod Vrátnom",
+    "Osuské",
     "obec.osuske@gmail.com",
     "034",
     "658 72 17",
     "0904 368 060",
     "Osuské",
-    "0",
+    "2",
     ""
    ],
    "plavecky-peter": [
