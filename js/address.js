@@ -211,14 +211,14 @@ function nastavObec(obec) {
 	"Meno: "+$('#basicinfo-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Priezvisko: "+$('#basicinfo-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Rodné číslo / dát. nar. (len ak rod. číslo nebolo pridelené): "+$('#basicinfo-birthno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+". "+decodeURIComponent("%0D%0A%0D%0A")
+	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;	
 	var adresa_na_slovensku = ""+
 	"Adresa trvalého bydliska v SR: "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Ulica: "+$('#addressslovakia-street').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Číslo domu: "+$('#addressslovakia-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Mesto: "+$('#addressslovakia-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"PSČ: "+$('#addressslovakia-zip').val()+". "+decodeURIComponent("%0D%0A%0D%0A")
+	"PSČ: "+$('#addressslovakia-zip').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;
 	var adresa_v_cudzine = ""+
 	"Adresa v cudzine: "+decodeURIComponent("%0D%0A%0D%0A")+
@@ -226,7 +226,7 @@ function nastavObec(obec) {
 	"Číslo domu: "+$('#addressforeign-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Mesto: "+$('#addressforeign-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"PSČ: "+$('#addressforeign-zip').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Štát: "+$('#addressforeign-country').val()+". "+decodeURIComponent("%0D%0A%0D%0A")
+	"Štát: "+$('#addressforeign-country').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;
 	var proxy = ""+
 	"Splomocnenec:"
