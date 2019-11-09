@@ -37161,12 +37161,12 @@ election.cities={
     "72",
     "930 01",
     "Veľké Blahovo",
-    "starosta@velkeblahovo.sk",
+    "dane@velkeblahovo.sk",
     "031",
     "552 20 93",
     "",
     "Veľké Blahovo",
-    "2",
+    "3",
     ""
    ],
    "velke-dvorniky": [
@@ -37256,7 +37256,7 @@ election.cities={
     "552 21 25",
     "",
     "Vydrany",
-    "2",
+    "3",
     ""
    ],
    "zlate-klasy": [
