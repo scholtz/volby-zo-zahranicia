@@ -225,14 +225,14 @@ function nastavObec(obec) {
 	"Adresa trvalého bydliska v SR: "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Ulica: "+$('#addressslovakia-street').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Číslo domu: "+$('#addressslovakia-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Mesto: "+getObec()+", "+decodeURIComponent("%0D%0A%0D%0A")+
+	"Obec: "+getObec()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"PSČ: "+$('#addressslovakia-zip').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;
 	var adresa_pre_dorucenie = ""+
 	"Adresa pre doručenie: "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Ulica: "+$('#addressforeign-street').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Číslo domu: "+$('#addressforeign-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Mesto: "+$('#addressforeign-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
+	"Obec: "+$('#addressforeign-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"PSČ: "+$('#addressforeign-zip').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Štát: "+$('#addressforeign-country').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;

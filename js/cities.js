@@ -36411,12 +36411,12 @@ election.cities={
     "115",
     "930 40",
     "Štvrtok na Ostrove",
-    "livia.bugarova@ocu.cakany.sk",
+    "hajnalka.polacsekova@ocu.cakany.sk",
     "031",
     "569 35 13",
     "",
     "Čakany",
-    "2",
+    "3",
     ""
    ],
    "cenkovce": [
@@ -36626,7 +36626,7 @@ election.cities={
     "55 91 159",
     "0911 891 567",
     "Jahodná",
-    "2",
+    "3",
     ""
    ],
    "janiky": [
@@ -36801,12 +36801,12 @@ election.cities={
     "200",
     "930 14",
     "Dolný Bar",
-    "info@obecmad.sk",
+    "obecnyuradmad@mail.t-com.sk",
     "031",
     "5513126",
     "0907 716 031",
     "Mad",
-    "2",
+    "3",
     ""
    ],
    "male-dvorniky": [
@@ -36881,7 +36881,7 @@ election.cities={
     "5549202",
     "",
     "Ňárad",
-    "2",
+    "3",
     ""
    ],
    "novy-zivot": [
