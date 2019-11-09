@@ -220,8 +220,8 @@ function nastavObec(obec) {
 	"Mesto: "+$('#addressslovakia-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"PSČ: "+$('#addressslovakia-zip').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;
-	var adresa_v_cudzine = ""+
-	"Adresa v cudzine: "+decodeURIComponent("%0D%0A%0D%0A")+
+	var adresa_pre_dorucenie = ""+
+	"Adresa pre doručenie: "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Ulica: "+$('#addressforeign-street').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Číslo domu: "+$('#addressforeign-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Mesto: "+$('#addressforeign-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
@@ -242,7 +242,7 @@ function nastavObec(obec) {
 			identifikacia_volica+
 			adresa_na_slovensku+
 			"Hlasovacie lístky s návratovou obálkou prosím zašlite na adresu:"+decodeURIComponent("%0D%0A%0D%0A")+
-			adresa_v_cudzine+
+			adresa_pre_dorucenie+
 			"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
 			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
 			meno+
@@ -252,7 +252,7 @@ function nastavObec(obec) {
 		var subj = "Žiadosť o voľbu poštou pre voľby do NRSR - "+meno;
 		var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 59 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku 2020 a o zaslanie hlasovacích lístkov a obálok na adresu uvedenú v žiadosti. "+decodeURIComponent("%0D%0A%0D%0A")+
 	      	identifikacia_volica+
-	      	adresa_v_cudzine+
+	      	adresa_pre_dorucenie+
 	      	"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
 			"ČESTNÉ VYHLÁSENIE"+decodeURIComponent("%0D%0A%0D%0A")+
 			"Na účely voľby poštou do Národnej rady Slovenskej republiky v roku 2020"+decodeURIComponent("%0D%0A%0D%0A")+
@@ -269,7 +269,7 @@ function nastavObec(obec) {
 			identifikacia_volica+
 			adresa_na_slovensku+
 			"Hlasovací preukaz prosím zašlite na adresu:"+decodeURIComponent("%0D%0A%0D%0A")+
-			adresa_v_cudzine+
+			adresa_pre_dorucenie+
 			"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
 			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
 			meno+
