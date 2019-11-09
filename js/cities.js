@@ -38800,16 +38800,16 @@ election.cities={
    "laksarska-nova-ves": [
     "Obecný úrad",
     "",
-    "Lakšárska Nová Ves",
+    "Obecný úrad Lakšárska Nová Ves ",
     "90",
     "908 76 ",
     "Lakšárska Nová Ves ",
     "laksar@stonline.sk",
     "034",
-    "654 98 17-19",
+    "654 98 17-9",
     "0903 170 004",
     "Lakšárska Nová Ves",
-    "0",
+    "3",
     ""
    ],
    "moravsky-svaty-jan": [

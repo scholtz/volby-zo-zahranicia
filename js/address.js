@@ -206,6 +206,12 @@ function nastavObec(obec) {
 	var subj = "Ziadost";
     var textemailu = "";
 	var meno = $('#basicinfo-name').val()+" "+$('#basicinfo-lastname').val();
+	var identifikacia_volica = ""+
+	"Meno: "+$('#basicinfo-name').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
+	"Priezvisko: "+$('#basicinfo-lastname').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
+	"Rodné číslo: "+$('#basicinfo-birthno').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
+	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+decodeURIComponent("%0D%0A%0D%0A")". ";
+
     if(App.request_form == 'volbaPostouSTrvalymPobytom'){
       var subj = "Žiadosť o voľbu poštou pre voľby do NRSR";
       var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 60 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku 2020. "+decodeURIComponent("%0D%0A%0D%0A")+
@@ -215,13 +221,14 @@ function nastavObec(obec) {
 	  $("#emailpotvrdeny").hide();
       var subj = "Žiadosť o voľbu poštou pre voľby do NRSR";
       var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 59 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku 2020 a o zaslanie hlasovacích lístkov a obálok na adresu uvedenú v žiadosti. "+decodeURIComponent("%0D%0A%0D%0A")+
+      	identifikacia_volica+
       	"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
 		"ČESTNÉ VYHLÁSENIE"+decodeURIComponent("%0D%0A%0D%0A")+
 		"Na účely voľby poštou do Národnej rady Slovenskej republiky v roku 2020"+decodeURIComponent("%0D%0A%0D%0A")+
 		"čestne vyhlasujem,"+decodeURIComponent("%0D%0A%0D%0A")+
 		"že nemám trvalý pobyt na území Slovenskej republiky."+decodeURIComponent("%0D%0A%0D%0A")+
 		"Príloha:"+decodeURIComponent("%0D%0A%0D%0A")+
-		"- fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča, ktorého dátum vydania nie je starší ako 6 mesiacov)."+decodeURIComponent("%0D%0A%0D%0A")+
+		"- fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča , alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča, ktorého dátum vydania nie je starší ako 6 mesiacov)."+decodeURIComponent("%0D%0A%0D%0A")+
 		"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
 		meno;
     }else if(App.request_form == "ziadostOPreukazPostou"){
