@@ -225,7 +225,7 @@ function nastavObec(obec) {
 	"Adresa trvalého bydliska v SR: "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Ulica: "+$('#addressslovakia-street').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Číslo domu: "+$('#addressslovakia-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Mesto: "+$('#addressslovakia-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
+	"Mesto: "+getObec()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"PSČ: "+$('#addressslovakia-zip').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;
 	var adresa_pre_dorucenie = ""+
