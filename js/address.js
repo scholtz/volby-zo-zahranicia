@@ -207,7 +207,7 @@ function nastavObec(obec) {
     var textemailu = "";
 	var meno = $('#basicinfo-name').val()+" "+$('#basicinfo-lastname').val();
 	var identifikacia_volica = ""+
-	"Osobné údaje voliča:"+
+	"Osobné údaje voliča: "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Meno: "+$('#basicinfo-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Priezvisko: "+$('#basicinfo-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Rodné číslo / dát. nar. (len ak rod. číslo nebolo pridelené): "+$('#basicinfo-birthno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
@@ -229,7 +229,7 @@ function nastavObec(obec) {
 	"Štát: "+$('#addressforeign-country').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
 	;
 	var proxy = ""+
-	"Splomocnenec:"
+	"Splomocnenec:"+decodeURIComponent("%0D%0A%0D%0A")+
 	"Meno: "+$('#proxy-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Priezvisko: "+$('#proxy-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Číslo občianskeho preukazu: "+$('#proxy-idno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")
@@ -259,7 +259,7 @@ function nastavObec(obec) {
 			"čestne vyhlasujem,"+decodeURIComponent("%0D%0A%0D%0A")+
 			"že nemám trvalý pobyt na území Slovenskej republiky."+decodeURIComponent("%0D%0A%0D%0A")+
 			"Príloha:"+decodeURIComponent("%0D%0A%0D%0A")+
-			"- fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča , alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča, ktorého dátum vydania nie je starší ako 6 mesiacov)."+decodeURIComponent("%0D%0A%0D%0A")+
+			"- fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča, alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča, ktorého dátum vydania nie je starší ako 6 mesiacov)."+decodeURIComponent("%0D%0A%0D%0A")+
 			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
 			meno+
 			dodatok;
