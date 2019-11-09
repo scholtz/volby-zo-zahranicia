@@ -240,7 +240,7 @@ function nastavObec(obec) {
 	"Splomocnenec:"+decodeURIComponent("%0D%0A%0D%0A")+
 	"Meno: "+$('#proxy-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Priezvisko: "+$('#proxy-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Číslo občianskeho preukazu: "+$('#proxy-idno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")
+	"Číslo občianskeho preukazu: "+$('#proxy-idno').val()+". "+decodeURIComponent("%0D%0A%0D%0A")
 	;
 	var dodatok = decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")+"[Táto žiadosť bola vytvorená pomocou aplikácie https://volby.srdcomdoma.sk Podnety nám môžete posielať na info@srdcomdoma.sk. Ďakujeme]";
 
@@ -276,7 +276,7 @@ function nastavObec(obec) {
       var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 46 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o vydanie hlasovacieho preukazu pre voľby do Národnej rady Slovenskej republiky v roku 2020. "+decodeURIComponent("%0D%0A%0D%0A")+
 			identifikacia_volica_tp_v_sr+
 			adresa_na_slovensku+
-			"Hlasovací preukaz prosím zašlite na adresu:"+decodeURIComponent("%0D%0A%0D%0A")+
+			"Hlasovací preukaz prosím zašlite na adresu: "+decodeURIComponent("%0D%0A%0D%0A")+
 			adresa_pre_dorucenie+
 			"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
 			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
@@ -287,7 +287,7 @@ function nastavObec(obec) {
       var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 46 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o vydanie hlasovacieho preukazu pre voľby do Národnej rady Slovenskej republiky v roku 2020. "+decodeURIComponent("%0D%0A%0D%0A")+
 			identifikacia_volica_tp_v_sr+
 			adresa_na_slovensku+
-			"Hlasovací preukaz za mňa preberie:"+decodeURIComponent("%0D%0A%0D%0A")+
+			"Pre prevzatie Hlasovacieho preukazu splnomocňujem touto cestou: "+decodeURIComponent("%0D%0A%0D%0A")+
 			proxy+
 			"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
 			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+" "+
