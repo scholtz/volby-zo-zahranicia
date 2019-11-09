@@ -207,7 +207,7 @@ function nastavObec(obec) {
     var textemailu = "";
 	var meno = $('#basicinfo-name').val()+" "+$('#basicinfo-lastname').val();
 	var identifikacia_volica = ""+
-	"Osobné údaje voliča:"
+	"Osobné údaje voliča:"+
 	"Meno: "+$('#basicinfo-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Priezvisko: "+$('#basicinfo-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
 	"Rodné číslo / dát. nar. (len ak rod. číslo nebolo pridelené): "+$('#basicinfo-birthno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
