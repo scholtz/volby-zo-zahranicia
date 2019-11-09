@@ -210,7 +210,7 @@ function nastavObec(obec) {
 	"Meno: "+$('#basicinfo-name').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
 	"Priezvisko: "+$('#basicinfo-lastname').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
 	"Rodné číslo: "+$('#basicinfo-birthno').val()+decodeURIComponent("%0D%0A%0D%0A")+", "+
-	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+decodeURIComponent("%0D%0A%0D%0A")". ";
+	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+decodeURIComponent("%0D%0A%0D%0A")+". ";
 
     if(App.request_form == 'volbaPostouSTrvalymPobytom'){
       var subj = "Žiadosť o voľbu poštou pre voľby do NRSR";
