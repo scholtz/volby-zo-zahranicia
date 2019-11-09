@@ -216,7 +216,6 @@ function nastavObec(obec) {
 	var adresa_v_cudzine = ""+
 	"Ulica: "+$('#addressforeign-street').val()+", "+
 	"Číslo domu: "+$('#addressforeign-streetno').val()+", "+
-	"Rodné číslo: "+$('#basicinfo-birthno').val()+", "+
 	"Mesto: "+$('#addressforeign-city').val()+". "+
 	"PSČ: "+$('#addressforeign-zip').val()+". "+
 	"Štát: "+$('#addressforeign-country').val()+". "+
