@@ -24667,12 +24667,12 @@ election.cities={
     "2",
     "053 61",
     "Spišské Vlachy",
-    "olcnava@stonline.sk",
+    "ouolcnava@gmail.com",
     "053",
     "449 56 28",
     "0917 941 678",
     "Olcnava",
-    "0",
+    "1",
     ""
    ],
    "olsavka": [
@@ -40841,7 +40841,7 @@ election.cities={
     "155",
     "023 33",
     "Povina",
-    "",
+    "info@obec-povina.sk;obecpovina@stonline.sk",
     "041",
     "421 14 21",
     "0905 470 631 0911 841 206",
