@@ -1,3 +1,4 @@
+echo "START"
 php bin/update-db-obci.php
 mv js/newcities.js js/cities.js -f
 php bin/makehash.php

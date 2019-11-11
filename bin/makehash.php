@@ -27,6 +27,17 @@ foreach(scandir("js") as $file){
             var_dump("index updated with $newname");
         }
     }
+    if($file == "address.js"){
+        $index = file_get_contents("index.html");
+        $pos = strpos($index,"js/address");
+        $pos2 = strpos($index,'"',$pos+1);
+        $new = substr($index,0,$pos)."js/$newname".substr($index,$pos2);
+        if($new != $index){
+            file_put_contents("index.html",$new);
+            var_dump("index updated with $newname");
+        }
+    }
+
     if(!file_exists("js/$newname.gz")){
         symlink("$file.gz","js/$newname.gz");
     }

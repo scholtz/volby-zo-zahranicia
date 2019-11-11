@@ -166,6 +166,7 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
                         if($i == 6 || $i == 12){
                             
                             $emails = str_replace(",",";",$data[$i]);
+                            $emails = str_replace(" ",";",$emails);
                             $emails = explode(";",$emails);
                             
                             foreach($emails as $key=>$v){
@@ -281,6 +282,7 @@ if (($handle = fopen("corrections.csv", "r")) !== FALSE) {
             }
             
             $data[1] = str_replace(",",";",$data[1]);
+            $data[1] = str_replace(" ",";",$data[1]);
 			$emails = explode(";",$data[1]);
 			foreach($emails as $key=>$v){
 				$emails[$key] = $em = trim($v);
@@ -307,6 +309,7 @@ if (($handle = fopen("corrections.csv", "r")) !== FALSE) {
             $db[$k][$o][$c][11] = '1';			
 			if(isset($data[4]) && $data[4]){
                 $data[4] = str_replace(",",";",$data[4]);
+                $data[4] = str_replace(" ",";",$data[4]);
 				$emails = explode(";",$data[4]);
 				foreach($emails as $key=>$v){
 					$emails[$key] = $em = trim($v);

@@ -388,9 +388,9 @@ if (($handle = fopen($datafile, "r")) !== FALSE) {
                     </div>
                 </div>
                 <div class="">
-                    <label for="tel" class="col-md-3">Tel. predvoľba</label>
+                    <label for="predvolba" class="col-md-3">Tel. predvoľba</label>
                     <div class="col-md-9">
-                        <input id="tel" name="7" class="form-control" value="<?php echo htmlspecialchars($data[7]);?>"> 
+                        <input id="predvolba" name="7" class="form-control" value="<?php echo htmlspecialchars($data[7]);?>"> 
                     </div>
                 </div>
                 <div class="">
