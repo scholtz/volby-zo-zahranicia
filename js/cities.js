@@ -40886,7 +40886,7 @@ election.cities={
     "118",
     "023 31",
     "Rudina",
-    "",
+    "info@rudinka.sk;rudinka.obec@gmail.com",
     "041",
     "421 45 31,421 45 51",
     "0905 724 932",
