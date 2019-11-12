@@ -26923,12 +26923,12 @@ election.cities={
     "1",
     "951 05",
     "Veľký Cetín",
-    "obecnyurad.velkycetin@stonline.sk",
+    "obecnyurad@velkycetin.sk",
     "037",
     "659 74 90,659 74 88",
     "911 597 490,0907 727 824",
     "Veľký Cetín",
-    "2",
+    "1",
     ""
    ],
    "velky-lapas": [
@@ -31844,12 +31844,12 @@ election.cities={
     "972 13",
     "Nitrianské Pravno",
     "",
-    "malinova@prievidzanet.sk",
+    "obec@malinova.sk",
     "046",
     "544 31 09,30 00,30 01",
     "0910 718 048",
     "Malinová",
-    "2",
+    "1",
     ""
    ],
    "nedozery-brezany": [
