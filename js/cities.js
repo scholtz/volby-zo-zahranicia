@@ -21455,7 +21455,7 @@ election.cities={
    ]
   },
   "Okres Košice 3": {
-   "2kosice-dargovskych-hrdinov": [
+   "1kosice-dargovskych-hrdinov": [
     "Miestny úrad",
     "",
     "Dvorkinova",
@@ -21466,7 +21466,7 @@ election.cities={
     "055",
     "300 90 01,02,04,05-26  ",
     "",
-    "Košice - Dargovských Hrdinov2",
+    "Košice - Dargovských Hrdinov",
     "0",
     ""
    ]
