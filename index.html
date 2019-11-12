@@ -140,7 +140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</ul>
 
 					<p>
-	                Všetky náležitosti <b>odošlete e-&#x2060;mailom</b> na adresu, ktorá sa zobrazí <b>v poslednom kroku</b> (závisí od miesta Vášho trvalého pobytu). Ak&nbsp;nedostanete odpoveď na e-&#x2060;mail, doporučujeme overiť si prijatie žiadosti <b>telefonicky</b>.
+	                Všetky náležitosti <b>odošlete e-mailom</b> na adresu, ktorá sa zobrazí <b>v poslednom kroku</b> (závisí od miesta Vášho trvalého pobytu). Ak&nbsp;nedostanete odpoveď na e-mail, doporučujeme overiť si prijatie žiadosti <b>telefonicky</b>.
 					</p>
 					</div>			
 					<div class="text-center" style="margin: 50px;"> 
@@ -151,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<li>Celý proces trvá menej ako <b>3 min.</b></li>
 					<li>Formulár je vyplnený len vo <b>vašom zariadení</b> (mobile, počítači,..).</li>
 					<li>Žiadne z údajov, ktoré zadáte sa <b>u nás neukladajú</b>.</li>
-					<li>Vytvorenú žiadosť si <b>uložíte u seba</b> a odošlete <b>z vášho e-&#x2060;mailu</b>.</li>
+					<li>Vytvorenú žiadosť si <b>uložíte u seba</b> a odošlete <b>z vášho e-mailu</b>.</li>
 	                <li>Ukladáme si len <b>anonymné štatistiky</b> návštevnosti stránky.</li>
 					</ul>
 
@@ -482,7 +482,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<!-- STEP 4 FORM ADDRESS FOREIGN -->
 				<!-- ----- ----- -->
 				<form id="address-foreign" action="/" method="post">
-					<div class="form-group field-addressforeign-format posta-tp nemam-tp">
+					<div class="form-group field-addressforeign-format posta-tp nemam-tp preukaz-tp">
 						<label class="control-label" for="addressforeign-format">Formát adresy<sup>*</sup></label>
 						<select id="addressforeign-format" class="form-control" name="AddressForeign[format]" onchange="nastavPosteRestante()">
 							<option value="sk">SK formát - Ulica číslo, PSČ Mesto, Štát</option>
@@ -521,10 +521,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</form>
 			</div>
 
-			<p class="preukaz-ps posta-tp preukaz-tp nemam-tp">
-				<a class="btn btn-volby-blue btn-block btn-submit-form" href="#pdf" id="preview-button" role="button">Vytvoriť náhľad žiadosti</a>
+			<p class="preukaz-ps posta-tp preukaz-tp nemam-tp col-md-6">
+				<a class="btn btn-volby-blue btn-block btn-submit-form" href="#pdf" id="preview-button" role="button">Vytvoriť PDF žiadosti s podpisom</a>
 			</p>
 
+            <p class="col-md-6">
+                <a class="btn btn-volby-blue btn-block btn-show-final-info" id="step6but2" href="#sendsection" role="button">Vytvoriť emailovú žiadosť</a>
+            </p>
 
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 					<p>Vyplňte všetky políčka formulára a kliknite na tlačidlo "<b>Vytvoriť náhľad žiadosti</b>". </p>
@@ -560,7 +563,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 					<p class="nemam-tp">                  
-	                    Nezabudnite do e-&#x2060;mailu priložiť scan / fotografiu cestovného pasu! Žiadosť bez scanu / fotografie cestovného pasu by nebola úplná!
+	                    Nezabudnite do e-mailu priložiť scan / fotografiu cestovného pasu! Žiadosť bez scanu / fotografie cestovného pasu by nebola úplná!
 					</p>
 					<p>
 						Po podpísaní dokumentu sa zobrazia ďalšie pokyny.
@@ -618,7 +621,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</small>
 			</p>
 			<p>
-				Kliknutím na tlačidlo "<b>Uložiť</b>" uložte súbor so žiadosťou. Potom kliknite na tlačidlo "Odoslať žiadosť". 
+				Kliknutím na tlačidlo "<b>Uložiť</b>" uložte súbor so žiadosťou. Potom kliknite na tlačidlo "Vytvoriť email". 
 			</p>
 
 			<div class="row">
@@ -629,13 +632,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<div class="col-sm-6">
 					<p>
-						<a class="btn btn-volby-gray btn-block btn-show-final-info" id="step6but2" href="#sendsection" role="button">Odoslať žiadosť</a>
+						<a class="btn btn-volby-gray btn-block btn-show-final-info" id="step6but2" href="#sendsection" role="button">Vytvoriť email</a>
 					</p>
 				</div>
 			</div>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 				<p id="download-final-ios-text" class="hidden">
-					<b>Na iOS podržte prst na vygenerovanom dokumente a uložte si ho do knižnice obrázkov. Ak&nbsp;Vám možnosť uloženia ako obrázok neponúka, stlačte tlačítko uložiť a pomocou aplikácie iBooks alebo inej na prezeranie PDF dokumentov si ju uložte. Z nej budete môcť následne priložiť tento PDF dokument do e-&#x2060;mailu.</b>
+					<b>Na iOS podržte prst na vygenerovanom dokumente a uložte si ho do knižnice obrázkov. Ak&nbsp;Vám možnosť uloženia ako obrázok neponúka, stlačte tlačítko uložiť a pomocou aplikácie iBooks alebo inej na prezeranie PDF dokumentov si ju uložte. Z nej budete môcť následne priložiť tento PDF dokument do e-mailu.</b>
 				</p>
 				
 
@@ -643,8 +646,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     Čestné prehlásenie nie je potrebné nikam posielať. Vytlačte ho na tlačiarni v deň volieb ho vezmite so sebou do ktorejkoľvek volebnej miestnosti, kde chcete voliť.  
 				</p>
 				<p>
-					Uložte si žiadosť kliknutím na tlačidlo "Uložiť" a  potom kliknite na tlačidlo "Odoslať žiadosť".
-
+					Uložte si žiadosť kliknutím na tlačidlo "Uložiť" a  potom kliknite na tlačidlo "Vytvoriť email".
 				</p>
 
 			</div></div>
@@ -657,7 +659,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- ----- ----- -->
 		<div class="section krok7 sendsection" id="sendsection">
 			<div class="" id="sendemail">
-				<h2>Odošlite e-&#x2060;mail</h2>
+				<h2>Odošlite e-mail</h2>
 				<div class="alert alert-warning" role="alert">
 					V predchádzajúcich krokoch ste vytvorili a podpísali <b>žiadosť</b>.
 				</div>
@@ -665,33 +667,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					V tomto kroku odošlete žiadosť s prílohami e-mailom.
 				</p>
 				<div id="emailpotvrdeny" class="alert alert-info" role="alert">
-					Vaša obec alebo mesto nám potvrdili e-&#x2060;mail adresu pre účel podávania žiadostí k voľbám do NRSR v roku <span class="elections_year"></span>. <br/>Vaša žiadosť by sa teda nemala stratiť.
+					Vaša obec alebo mesto nám potvrdili e-mail adresu pre účel podávania žiadostí k voľbám do NRSR v roku <span class="elections_year"></span>. <br/>Vaša žiadosť by sa teda nemala stratiť. <b>Nezabudnite ju odoslať.</b> Môžete použiť tlačítko nižšie ktoré otvorí mailový program alebo u skopírujte. Ak ste generovali PDF súbor nezabudnite ho priložiť.
+				</div>
+				<div id="emailnepotvrdeny" class="alert alert-danger" role="alert">
+					Vaša obec alebo mesto nám túto emailvú adresu nepotvrdili. Dajte si pozor, aby Vám obec do 3 dní potvrdila prijatie Vašej žiadosti.
+				</div>
+				<div id="emailnezverejneny" class="alert alert-danger" role="alert">
+					Vaša obec alebo mesto nám túto emailvú adresu nepotvrdili a zároveň sme nezaznamenali zverejnenie správnej emailovej adresy žiadostí k voľbám do NRSR v roku <span class="elections_year"></span>. Dajte si pozor, aby Vám obec do 3 dní potvrdila prijatie Vašej žiadosti.
+				</div>
+				<div id="emailpotvrdenydobrovolnikom" class="alert alert-info" role="alert">
+					Vaša obec alebo mesto nám túto emailvú adresu nepotvrdili ale dobrovoľníci ju našli na webovej stránke obce. Dajte si pozor, aby Vám obec do 3 dní potvrdila prijatie Vašej žiadosti.
 				</div>
 
 				<div class="alert alert-warning" role="alert">
-					<p><b>Po odoslaní e-&#x2060;mailu s prílohou</b> počkajte tri pracovné dni. Ak&nbsp;nedostanete potvrdenie o prijatí žiadosti e-&#x2060;mailom do troch pracovných dní, <b>doporučujeme overiť si telefonicky</b>, či Vaša žiadosť bola spracovaná.</p>
+					<p><b>Po odoslaní e-mailu s prílohou</b> počkajte tri pracovné dni. Ak&nbsp;nedostanete potvrdenie o prijatí žiadosti e-mailom do troch pracovných dní, <b>doporučujeme overiť si telefonicky</b>, či Vaša žiadosť bola spracovaná.</p>
 					<p id="phonetext">Informácie o stave Vašej žiadosti Vám poskytnú na t. čísle obce / mesta: (+421) <b><span class="bold" id="phone"></span></b> (ak tel. číslo neodpovedá, budete si musieť nájsť správne t. číslo cez internet).</p>
 				</div>
 				
 				<p>
-					Kliknutím na tlačidlo "Vytvoriť e-&#x2060;mail", by sa mal vytvoriť nový e-&#x2060;mail. </p>
+					Kliknutím na tlačidlo "Vytvoriť e-mail", by sa mal vytvoriť nový e-mail. </p>
 				<p>
-					<b>Do e-&#x2060;mailu vložte:</b> 
+					<b>Do e-mailu vložte:</b> 
 					<ul>
 						<li><b>žiadosť</b> <span class="nemam-tp">(vrátane čestného prehlásenia)</span> vytvorenú v&nbsp;predchádzajúcich krokoch</li>
 						<li class="nemam-tp"><b>foto / scan</b> Vášho <b>cestovného pasu</b> roztvorený na stránkach s&nbsp;osobnými údajmi <b>alebo</b> foto / scan <b>osvedčenia o štátnom občianstve Slovenskej republiky</b>, ktorého dátum vydania nie&nbsp;je starší ako 6 mesiacov (Osvedčenie o štátnom občianstve v&nbsp;zahraničí vybavíte na <a href="https://www.mzv.sk/ministerstvo/slovenske_zastupitelstva-vsetky_zastupitelstva" target="_blank">zastupiteľských úradoch SR</a>, na Slovensku na okresnom úrade v sídle kraja).</li>
 					</ul>
 				</p>
-				<a id="send" class="btn btn-volby-blue btn-block" target="_blank" href="" role="button">Vytvoriť e-&#x2060;mail</a>
+				<a id="send" class="btn btn-volby-blue btn-block" target="_blank" href="" role="button">Vytvoriť e-mail</a>
 				<p>
 				</p>
 				<p class="email-paragraph">
-					Ak sa e-&#x2060;mail kliknutím na tlačidlo nevytvoril, vytvorte e-&#x2060;mail manuálne:</p>
+					Ak sa e-mail kliknutím na tlačidlo nevytvoril, vytvorte e-mail manuálne:</p>
 				<p>
 					<button type="button" class="copy-btn" data-clipboard-target="#sendto" title="Skopírovať E-mail adresáta">
 						<img src="images/copy.png" alt="Skopíruj" width="16" />
 					</button>
-					<b>E-&#x2060;mail adresáta:</b> <span id="sendto" class="type"></span>
+					<b>E-mail adresáta:</b> <span id="sendto" class="type"></span>
 				</p>
 				<p class="email-paragraph">
 					<button type="button" class="copy-btn" data-clipboard-target="#emailsubject" title="Skopírovať Predmet">
@@ -703,7 +714,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<button type="button" class="copy-btn" data-clipboard-target="#emailbody" title="Skopírovať Text e-mailu">
 						<img src="images/copy.png" alt="Skopíruj" width="16"/>
 					</button>
-					<b>Telo / Text e-&#x2060;mailu: </b><span id="emailbody" class="type"></span>
+					<b>Telo / Text e-mailu: </b><span id="emailbody" class="type"></span>
 				</p>
 
 				<hr>
@@ -732,12 +743,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="row hidden justify" id="noemail">
 				<div class="col-lg-12">
 					<h2>Odošlite žiadosť</h2>
-					<p>Bohužiaľ sme nenašli e-&#x2060;mail pre Vašu obec. Vygenerovanú žiadosť v PDF si však stále môžete vytlačiť a odoslať poštou na adresu úradu v hlavičke žiadosti. Ak&nbsp;im pošlete žiadosť poštou, prosím upovedomte ich, aby si zriadili e-&#x2060;mailovú</span> adresu, aby ste pre prípadné ďalšie voľby takúto žiadosť nemuseli odosielať poštou.</p>
+					<p>Bohužiaľ sme nenašli e-mail pre Vašu obec. Vygenerovanú žiadosť v PDF si však stále môžete vytlačiť a odoslať poštou na adresu úradu v hlavičke žiadosti. Ak&nbsp;im pošlete žiadosť poštou, prosím upovedomte ich, aby si zriadili e-mailovú</span> adresu, aby ste pre prípadné ďalšie voľby takúto žiadosť nemuseli odosielať poštou.</p>
 				</div>
 			</div>
 			<div class="help panel panel-info"><div class="panel-heading">Pomoc</div><div class="panel-body">
 					<p>
-						Odošlite Vašu žiadosť e-&#x2060;mailom. Nezabudnite priložiť 
+						Odošlite Vašu žiadosť e-mailom. Nezabudnite priložiť 
 					</p>
 						<ul>
 							<li><b>žiadosť</b> <span class="nemam-tp">(vrátane čestného prehlásenia)</span> vytvorenú v&nbsp;predchádzajúcich krokoch</li>
@@ -745,10 +756,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</ul>
 					<p>
 						
-						<b>Ak</b> kliknutie na tlačidlo "Vytvoriť e-mail" <b>nevytvorilo e-mail</b>, pravdepodobne nemáte nakonfigurovaného e-&#x2060;mailového klienta. 
+						<b>Ak</b> kliknutie na tlačidlo "Vytvoriť e-mail" <b>nevytvorilo e-mail</b>, pravdepodobne nemáte nakonfigurovaného e-mailového klienta. 
 					</p>
 					<p>
-						V takom prípade <b>vytvorte e-&#x2060;mail ručne</b>. Adresujte ho na vyššie uvedenú e-mailovú <b>adresu</b> a vložte doň vyššie zobrazený <b>predmet</b> a <b>text</b>. 
+						V takom prípade <b>vytvorte e-mail ručne</b>. Adresujte ho na vyššie uvedenú e-mailovú <b>adresu</b> a vložte doň vyššie zobrazený <b>predmet</b> a <b>text</b>. 
 					</p>
 					<p>
 						Kliknutím na ikonku naľavo od textov skopírujete text, ktorý potom ľahko vložíte do emailu.
@@ -915,13 +926,13 @@ window.election.psc = {};
 <script src="js/countdown-f783626ab2094f3970068d7a55e8fe94.js"></script>
 <script src="js/validation-c64fbce196b4d674897b47ad011150d8.js"></script>
 <script src="js/analytics-27d0c4b3c0de7655b9bf62b1ccd7e4c4.js"></script>
-<script src="js/request-generator-app-51f3b8533fd28d138ab88b5fa9acfcb8.js"></script>
+<script src="js/request-generator-app-96929ab748c7922dd659d62a4deb51d2.js"></script>
 
-<script src="js/address-5d3f84eac23cfa51457b35014e9cbf41.js"></script>
+<script src="js/address-57e79381125c125ebe1cdc5671ea9b16.js"></script>
 
 <script src="js/request-0f1581fa1b0f54de06274a4eaa93088f.js"></script>
 <script src="js/os-detection-2b839833e988aca01613b28fa5dbf558.js"></script>
-<script src="js/app-c7c27fdefe270c17a6a0d360c188d52b.js"></script>
+<script src="js/app-8c6392ffc813654f2adb8bf95c59b051.js"></script>
 <script src="js/ga-b272bc9659ac0f2eb6b13f80e6ec18ec.js"></script>
 <script src="js/custom-modifications.js"></script>
 

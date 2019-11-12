@@ -68,7 +68,7 @@ function formatDate(date) {
     if (day.length < 2) 
         day = '0' + day;
     var ret = [day, month, year].join('.');
-    console.log("Format date",date,ret);
+    //console.log("Format date",date,ret);
     return ret;
 }
 
@@ -145,7 +145,7 @@ $(document).ready(function ()
   for(let i = 1;i <= 5;i++){
       $(".show_period_"+i).hide();
       if(i === period){
-        console.log(".hide_period_"+i+" : hide");
+        //console.log(".hide_period_"+i+" : hide");
         $(".show_period_"+i).show();
         $(".hide_period_"+i).hide();
       }else{

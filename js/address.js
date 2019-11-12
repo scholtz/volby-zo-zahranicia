@@ -126,12 +126,12 @@ function nastavObec(obec) {
 
 	// list/db of all cities comes from external file (js/cities)
   var o = App.cities;
-  console.log(window.election.cities['Banskobystrický kraj']['Okres Rimavská Sobota']['1rimavska-sobota']);
+  //console.log(window.election.cities['Banskobystrický kraj']['Okres Rimavská Sobota']['1rimavska-sobota']);
   var adresa = "";
   var ico = $("#addressslovakia-city").val();
   var kraj = $("#addressslovakia-kraj").val();
   var okres = $("#addressslovakia-okres").val();
-  console.log("Nastavujem obec",ico);
+  //console.log("Nastavujem obec",ico);
   if (ico) {
 
     if (o[kraj] && o[kraj][okres] && o[kraj][okres][ico]) {
@@ -203,106 +203,6 @@ function nastavObec(obec) {
 		$("#emailpotvrdenydobrovolnikom").show();
     }
     
-	var subj = "Ziadost";
-    var textemailu = "";
-	var meno = $('#basicinfo-name').val()+" "+$('#basicinfo-lastname').val();
-	
-	var identifikacia_volica_tp_v_sr = ""+
-	"Osobné údaje voliča: "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Meno: "+$('#basicinfo-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Priezvisko: "+$('#basicinfo-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Rodné číslo: "+$('#basicinfo-birthno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
-	;	
-	var identifikacia_volica_tp_odhlaseny = ""+
-	"Osobné údaje voliča: "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Meno: "+$('#basicinfo-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Priezvisko: "+$('#basicinfo-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Rodné číslo / dát. nar. (len ak rod. číslo nebolo pridelené): "+$('#basicinfo-birthno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Rodné priezvisko: "+$('#basicinfo-maidenlastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Štátna príslušnosť: SR. "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
-	;	
-	var adresa_na_slovensku = ""+
-	"Adresa trvalého bydliska v SR: "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Ulica: "+$('#addressslovakia-street').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Číslo domu: "+$('#addressslovakia-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Obec: "+getObec()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"PSČ: "+$('#addressslovakia-zip').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
-	;
-	var adresa_pre_dorucenie = ""+
-	"Adresa pre doručenie: "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Ulica: "+$('#addressforeign-street').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Číslo domu: "+$('#addressforeign-streetno').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Obec: "+$('#addressforeign-city').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"PSČ: "+$('#addressforeign-zip').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Štát: "+$('#addressforeign-country').val()+". "+decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")
-	;
-	var proxy = ""+
-	"Splomocnenec:"+decodeURIComponent("%0D%0A%0D%0A")+
-	"Meno: "+$('#proxy-name').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Priezvisko: "+$('#proxy-lastname').val()+", "+decodeURIComponent("%0D%0A%0D%0A")+
-	"Číslo občianskeho preukazu: "+$('#proxy-idno').val()+". "+decodeURIComponent("%0D%0A%0D%0A")
-	;
-	var dodatok = decodeURIComponent("%0D%0A%0D%0A")+decodeURIComponent("%0D%0A%0D%0A")+"[Táto žiadosť bola vytvorená pomocou aplikácie https://volby.srdcomdoma.sk Podnety nám môžete posielať na info@srdcomdoma.sk. Ďakujeme]";
-
-    if(App.request_form == 'volbaPostouSTrvalymPobytom'){
-      	var subj = "Žiadosť o voľbu poštou pre voľby do NRSR - "+meno;
-      	var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 60 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku 2020. "+decodeURIComponent("%0D%0A%0D%0A")+
-			identifikacia_volica_tp_v_sr+
-			adresa_na_slovensku+
-			"Hlasovacie lístky s návratovou obálkou prosím zašlite na adresu:"+decodeURIComponent("%0D%0A%0D%0A")+
-			adresa_pre_dorucenie+
-			"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
-			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
-			meno+
-			dodatok;
-    }else if(App.request_form == 'volbaPostouBezTrvalehoPobytu'){
-		$("#emailpotvrdeny").hide();
-		var subj = "Žiadosť o voľbu poštou pre voľby do NRSR - "+meno;
-		var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 59 ods. 1 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o voľbu poštou pre voľby do Národnej rady Slovenskej republiky v roku 2020 a o zaslanie hlasovacích lístkov a obálok na adresu uvedenú v žiadosti. "+decodeURIComponent("%0D%0A%0D%0A")+
-	      	identifikacia_volica_tp_odhlaseny+
-	      	adresa_pre_dorucenie+
-	      	"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
-			"ČESTNÉ VYHLÁSENIE"+decodeURIComponent("%0D%0A%0D%0A")+
-			"Na účely voľby poštou do Národnej rady Slovenskej republiky v roku 2020"+decodeURIComponent("%0D%0A%0D%0A")+
-			"čestne vyhlasujem,"+decodeURIComponent("%0D%0A%0D%0A")+
-			"že nemám trvalý pobyt na území Slovenskej republiky."+decodeURIComponent("%0D%0A%0D%0A")+
-			"Príloha:"+decodeURIComponent("%0D%0A%0D%0A")+
-			"- fotokópia časti cestovného dokladu Slovenskej republiky s osobnými údajmi voliča, alebo fotokópia osvedčenia o štátnom občianstve Slovenskej republiky voliča, ktorého dátum vydania nie je starší ako 6 mesiacov)."+decodeURIComponent("%0D%0A%0D%0A")+
-			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
-			meno+
-			dodatok;
-    }else if(App.request_form == "ziadostOPreukazPostou"){
-      var subj = "Žiadosť o hlasovací preukaz - "+meno;
-      var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 46 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o vydanie hlasovacieho preukazu pre voľby do Národnej rady Slovenskej republiky v roku 2020. "+decodeURIComponent("%0D%0A%0D%0A")+
-			identifikacia_volica_tp_v_sr+
-			adresa_na_slovensku+
-			"Hlasovací preukaz prosím zašlite na adresu: "+decodeURIComponent("%0D%0A%0D%0A")+
-			adresa_pre_dorucenie+
-			"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
-			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+
-			meno+
-			dodatok;
-    }else if(App.request_form =="ziadostOPreukaPreSplnomocnenca"){
-      var subj = "Žiadosť o hlasovací preukaz - "+meno;
-      var textemailu = "Dobrý deň, "+decodeURIComponent("%0D%0A%0D%0A")+"podľa § 46 zákona č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o vydanie hlasovacieho preukazu pre voľby do Národnej rady Slovenskej republiky v roku 2020. "+decodeURIComponent("%0D%0A%0D%0A")+
-			identifikacia_volica_tp_v_sr+
-			adresa_na_slovensku+
-			"Pre prevzatie Hlasovacieho preukazu splnomocňujem touto cestou: "+decodeURIComponent("%0D%0A%0D%0A")+
-			proxy+
-			"Zároveň Vás chcem poprosiť o potvrdenie e-mailom, že žiadosť bola prijatá a spracovaná. "+decodeURIComponent("%0D%0A%0D%0A")+" "+decodeURIComponent("%0D%0A%0D%0A")+
-			"Ďakujem,"+decodeURIComponent("%0D%0A%0D%0A")+" "+
-			meno+
-			dodatok;
-    }
-
-    $("#emailsubject").html(subj);
-    $("#emailbody").html(textemailu);
-	if(jQuery.data( document.body, "psc-locked")){}else{
-		//$("#addressslovakia-zip").val(data[4]);
-	}
-    $("#send").attr("href", "mailto:" + $("#sendto").html() + "?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(textemailu));
-
     }
   }
 }
