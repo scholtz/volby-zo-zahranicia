@@ -435,10 +435,11 @@ fputcsv($fp, [
     "typ uradu"
     ]);
 
+/*
 usort($csvout, function($a, $b){
     return strcmp($a[0], $b[0]);
 });
-
+/**/
 
 foreach($csvout as $line){
     fputcsv($fp,$line);
