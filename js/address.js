@@ -3,6 +3,7 @@ var App = window.election;
 function findZIP(){
 	var psc = $("#addressslovakia-zip").val().replace(' ','');
 	if( psc.length == 5 ){
+        let formattedPsc = psc.substring(0,3)+" "+psc.substring(3);
 		if( psc in App.psc){
 			kraj = App.psc[psc][2] + " kraj";
 			okres = "Okres "+ App.psc[psc][1];
@@ -22,6 +23,16 @@ function findZIP(){
 		}else{
 			$('.wrong-psc').html('PSČ nie je v zozname. Vyberte z možností nižšie, alebo opravte.');
 		}
+        if($("#addressslovakia-zip").val() != formattedPsc){
+            $("#addressslovakia-zip").val(formattedPsc);
+        }
+        console.log("App.psccounter[psc]",App.psccounter[psc]);
+        if(App.psccounter[psc] !== undefined && App.psccounter[psc] === 1 ){
+            $(".multiplepsc").addClass("hidden");
+        }else{
+            $(".multiplepsc").removeClass("hidden");
+        }
+        
 	}else{
 		$('.wrong-psc').html('');
 	}

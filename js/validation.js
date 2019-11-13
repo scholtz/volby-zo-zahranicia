@@ -44,10 +44,9 @@ function fixBirthNumberSlash(){
 } 
 
 var validatePSC = function(value, messages) {
-	if( value.length != 5 ) yii.validation.addMessage(messages, "Vaše domáce PSČ by malo byť dlhé 5 číslic.", value);
-	else yii.validation.regularExpression(value, messages, {
-			"pattern":/^\d{5}$/,
-			"message":"Vaše domáce PSČ by malo obsahovať iba číslice."
+    yii.validation.regularExpression(value, messages, {
+			"pattern":/^\d{5}$|^\d{3} \d{2}$/,
+			"message":"Vaše domáce PSČ by malo obsahovať iba číslice vo formáte 12345 alebo 123 45."
 		});
 }
 

@@ -336,12 +336,84 @@ if (($handle = fopen("corrections.csv", "r")) !== FALSE) {
 
 $div = '// data';
 
+
+
+
+$psc = [];
+
+foreach($db as $kraj=>$arr1){
+    foreach($arr1 as $okres=>$arr2){
+        foreach($arr2 as $obec=>$D){
+            $thispsc= str_replace(" ","",$D[4]);
+            
+            if(strlen($thispsc) == 5){
+                @$psc[$thispsc]++;
+            }else{
+                $thispsc= str_replace(" ","",$D[3]);
+                if(strlen($thispsc) == 5){
+                    $db[$kraj][$okres][$obec][5] = $db[$kraj][$okres][$obec][4];
+                    $db[$kraj][$okres][$obec][4] = $db[$kraj][$okres][$obec][3];
+                    $db[$kraj][$okres][$obec][3] = $db[$kraj][$okres][$obec][2];
+                    $db[$kraj][$okres][$obec][2] = $db[$kraj][$okres][$obec][1];
+                    $db[$kraj][$okres][$obec][1] = "";
+                    @$psc[$thispsc]++;
+                }else{
+                    
+                    var_dump($thispsc);
+                    var_dump($D);exit;
+
+                }
+            }
+        }
+    }
+}
+$pscout = "{";
+ksort($psc);
+$i = 0;
+foreach($psc as $p=>$v){$i++;
+    if($i > 1)$pscout.=",\n";
+    $pscout .="'$p':$v";
+}
+$pscout .= "}";
+echo "\npscs.json: " .file_put_contents("pscs.json",$pscout)."\n";
+
+
 $out = $parts[0].$div."\n".'election.cities='.str_replace("    "," ",json_encode($db,JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)).';'."\n$div".$parts[2];
 file_put_contents("js/newcities.js",$out);
 
 
 $outcsv = "db-obci.csv";
 file_put_contents($outcsv,"");
+
+$csvout = [];
+
+foreach($db as $kraj=>$arr1){
+    foreach($arr1 as $okres=>$arr2){
+        foreach($arr2 as $obec=>$D){
+            $csvout[] = [
+                $obec, // id obce 
+                $D[11], // STAV 
+                $D[10], // obec 
+                $okres, // okres 
+                $kraj, // kraj 
+                $D[6], // email pre volbu postou
+                $D[12], // email pre hlas. listky
+                $D[7], // predvolba
+                $D[8], // tel
+                $D[9], // mobil
+                $D[2], // adresa
+                $D[3], // c. domu
+                $D[4], // psc
+                $D[5], // mesto
+                $D[13], // web
+                $D[0] // typ uradu
+                
+                ];
+            @$stats[$D[11]]++;
+        }
+    }
+}
+
 $fp = fopen($outcsv, 'a+');
 
 fputcsv($fp, [
@@ -363,35 +435,20 @@ fputcsv($fp, [
     "typ uradu"
     ]);
 
-foreach($db as $kraj=>$arr1){
-    foreach($arr1 as $okres=>$arr2){
-        foreach($arr2 as $obec=>$D){
-            
-            fputcsv($fp, [
-                $obec, // id obce 
-                $D[11], // STAV 
-                $D[10], // obec 
-                $okres, // okres 
-                $kraj, // kraj 
-                $D[6], // email pre volbu postou
-                $D[12], // email pre hlas. listky
-                $D[7], // predvolba
-                $D[8], // tel
-                $D[9], // mobil
-                $D[2], // adresa
-                $D[3], // c. domu
-                $D[4], // psc
-                $D[5], // mesto
-                $D[13], // web
-                $D[0] // typ uradu
-                
-                ]
-            );
-            @$stats[$D[11]]++;
-        }
-    }
+usort($csvout, function($a, $b){
+    return strcmp($a[0], $b[0]);
+});
+
+
+foreach($csvout as $line){
+    fputcsv($fp,$line);
 }
+
 fclose($fp);
+
+
+
+
 
 echo "outcsv: ".filesize($outcsv)."\n";
 
