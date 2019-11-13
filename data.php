@@ -73,6 +73,8 @@ if (($handle = fopen($datafile, "r")) !== FALSE) {
 	}
 }
 
+if(!isset($_REQUEST["kraj"]) || !$_REQUEST["kraj"]) $_REQUEST["kraj"] = "all";
+if(!isset($_REQUEST["okres"]) || !$_REQUEST["okres"]) $_REQUEST["okres"] = "all";
 
 ?><!DOCTYPE html>
 <html lang="sk">
@@ -207,13 +209,18 @@ if (($handle = fopen($datafile, "r")) !== FALSE) {
                       
                     <select name="obec" class="form-control submitonchange" ><?php
                     
-                    if($_REQUEST["kraj"] == "all"){
+                    if($_REQUEST["kraj"] == "all" || $_REQUEST["okres"] == "all"){
                          foreach(array_keys($db) as $kraj){
                              if($_REQUEST["okres"] == "all"){
                                 foreach(array_keys($db[$kraj]) as $okres){
 
 
                     foreach($db[$kraj][$okres] as $obec=>$obecdata){
+                        
+                        if($_REQUEST["kraj"] != "all"){
+                            if($_REQUEST["kraj"] != $kraj) continue;
+                        }
+                        
                         if($_REQUEST["typ"]){
                             if($_REQUEST["typ"] == "mesto"){
                                 if($obecdata[0] != "Mestský úrad") continue;
