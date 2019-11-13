@@ -6516,12 +6516,12 @@ election.cities={
     "89",
     "067 72",
     "Klenová",
-    "obecruskavolova@mail.t-com.sk",
+    "obecruskavolova@mail.t-com.sk;obecruskavolova@lekosonline.sk",
     "057",
     "767 31 31",
     "0917 399 120",
     "Ruská Volová",
-    "0",
+    "1",
     ""
    ],
    "rusky-potok": [
@@ -18750,12 +18750,12 @@ election.cities={
     "111",
     "900 27",
     "Bernolákovo",
-    "elena.molnarova@bernolakovo.sk",
+    "volby@bernolakovo.sk",
     "02",
     "4599 3911, 4599 3763",
     "",
     "Bernolákovo",
-    "2",
+    "1",
     ""
    ],
    "blatne": [
@@ -23483,7 +23483,7 @@ election.cities={
     "788 36 50",
     "0905 598 626",
     "Silica",
-    "0",
+    "1",
     ""
    ],
    "silicka-brezova": [
