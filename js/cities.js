@@ -1210,7 +1210,7 @@ election.cities={
     "779 01 31",
     "0905 518 724",
     "Tuhrina",
-    "2",
+    "1",
     ""
    ],
    "tulcik": [
@@ -12663,7 +12663,7 @@ election.cities={
     "439 98 41",
     "0905 820 116",
     "Pleš",
-    "2",
+    "1",
     ""
    ],
    "podrecany": [
@@ -23990,12 +23990,12 @@ election.cities={
     "57",
     "072 51",
     "Krčava",
-    "obecorechova@slovanet.sk",
+    "obecorechova@lekosonline.sk",
     "056",
     "652 23 69",
     "0908 379 264",
     "Orechová",
-    "0",
+    "1",
     ""
    ],
    "ostrov": [
@@ -42949,7 +42949,7 @@ election.cities={
     "386",
     "034 74",
     "Liptovské Revúce",
-    "",
+    "podatelna@liptovskerevuce.sk",
     "044",
     "439 71 71",
     "0905 237 774",
