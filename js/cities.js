@@ -5417,12 +5417,12 @@ election.cities={
     "269\/33",
     "059 21 ",
     "Svit",
-    "msu@svit.sk",
+    "petronela.bockova@svit.sk",
     "052",
     "787 51 11, 7756 140",
     "0907 916 145",
     "Svit",
-    "0",
+    "1",
     ""
    ],
    "tatranska-javorina": [
@@ -8012,7 +8012,7 @@ election.cities={
     "752 11 54,752 10 98",
     "",
     "Svidník",
-    "2",
+    "1",
     ""
    ],
    "belejovce": [
@@ -19224,7 +19224,7 @@ election.cities={
     "696 28 74 ",
     "0918 402 818",
     "Belža",
-    "3",
+    "1",
     ""
    ],
    "beniakovce": [
@@ -25664,7 +25664,7 @@ election.cities={
     "679 13 09",
     "0911 262 987,0915 856 734",
     "Slivník",
-    "0",
+    "1",
     ""
    ],
    "slovenske-nove-mesto": [
@@ -36806,7 +36806,7 @@ election.cities={
     "5513126",
     "0907 716 031",
     "Mad",
-    "3",
+    "1",
     ""
    ],
    "male-dvorniky": [
@@ -40539,7 +40539,7 @@ election.cities={
     "290",
     "027 54",
     "Veličná",
-    "ekonom@oravskaporuba.sk",
+    "oravskaporuba@oravskaporuba.sk",
     "043",
     "588 23 25",
     "0905 509 175,0918 887 784,0918 887 776",
