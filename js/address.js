@@ -138,6 +138,14 @@ function getObec(){
 }
 function nastavObec(obec) {
 
+    if(App.request_form == 'volbaPostouBezTrvalehoPobytu'){
+      $("#adresa").val("Ministerstvo vnútra Slovenskej republiky\nodbor volieb, referenda a politických strán\nDrieňová 22\n826 86  Bratislava 29\nSLOVAK REPUBLIC");
+      $("#sendto").html("volby@minv.sk");
+      $("#phone").html("");
+      $("#phonetext").hide();
+      return;
+    }
+
 	// list/db of all cities comes from external file (js/cities)
   var o = App.cities;
   //console.log(window.election.cities['Banskobystrický kraj']['Okres Rimavská Sobota']['1rimavska-sobota']);
@@ -175,12 +183,6 @@ function nastavObec(obec) {
 	  
       adresa += data[App.C2N_ADRESA_URADU_PSC] + " " + data[App.C2N_ADRESA_URADU_MESTO] + "\n" + email.replace(/;/i, "\n");
 	
-    if(App.request_form == 'volbaPostouBezTrvalehoPobytu'){
-  	  $("#adresa").val("Ministerstvo vnútra Slovenskej republiky\nodbor volieb, referenda a politických strán\nDrieňová 22\n826 86  Bratislava 29\nSLOVAK REPUBLIC");
-      $("#sendto").html("volby@minv.sk");
-	  $("#phone").html("");
-	  $("#phonetext").hide();
-    }else{
       $("#adresa").val(adresa);
 	  $("#sendto").html(email);
 	  if(data[App.C2N_TELEFON] != ""){
@@ -190,7 +192,6 @@ function nastavObec(obec) {
 		  $("#phone").html("");
 		  $("#phonetext").hide();
 	  }
-    }
 	if($("#sendto").html().indexOf("@") == -1){
 		$("#sendemail").hide();
 		$("#noemail").show();

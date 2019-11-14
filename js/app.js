@@ -26,8 +26,7 @@ function nemamTP() {
   $('.nemam-tp').show();
 
   App.request_form = 'volbaPostouBezTrvalehoPobytu';
-  $("#adresa").val("Ministerstvo vnútra Slovenskej republiky\nodbor volieb, referenda a politických strán\nDrieňová 22\n826 86  Bratislava 29\nSLOVAK REPUBLIC");
-
+  nastavObec(null);
 }
 
 function postaTP() {
