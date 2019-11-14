@@ -88,6 +88,7 @@ function getAddressOneLine(id) {
 function nacitajKraje(){
 	var options = $("#addressslovakia-kraj");
 	options.find('option').remove();
+    options.append($("<option />").val('no-value').text('Vyberte kraj'));
 	for (var key in App.cities) {
 		options.append($("<option />").val(key).text(key));
 	}
@@ -99,6 +100,7 @@ function nacitajKraje(){
 function nastavKraj(){
 	var options = $("#addressslovakia-okres");
 	options.find('option').remove();
+    options.append($("<option />").val('no-value').text('Vyberte okres'));
     var kraj = $("#addressslovakia-kraj").val();
 	for (var key in App.cities[kraj]) {
 		options.append($("<option />").val(key).text(key));
@@ -111,6 +113,7 @@ function nastavKraj(){
 function nastavOkres(){
 	var options = $("#addressslovakia-city");
 	options.find('option').remove();
+    options.append($("<option />").val('no-value').text('Vyberte svoje mesto/obec'));
     var kraj = $("#addressslovakia-kraj").val();
     var okres = $("#addressslovakia-okres").val();
 	for (var key in App.cities[kraj][okres]) {
