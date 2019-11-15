@@ -148,6 +148,43 @@ if (($handle = fopen("emaily.csv", "r")) !== FALSE) {
 	}
 }
 
+echo "kontrolujem udaje zo slovensko digital";
+
+if (($handle = fopen("volby.digital 2020 - master.csv", "r")) !== FALSE) {
+	$i = 0;
+    $sdn2k = [];
+	while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {$i++;
+        if($i == 1){
+            foreach($data as $k=>$v){
+                $sdn2k[Texts::clear($v)] = $k;
+            }
+        }else{
+            $kraj = $data[$sdn2k["kraj"]];
+            $okres = $data[$sdn2k["okres"]];
+            $obec = $data[$sdn2k["id-obce"]];
+            $finalemail = $data[$sdn2k["editacie-sem-final-ak-iny-ako-i-j"]];
+            if(!$finalemail) continue;
+            if(!isset($db[$kraj][$okres][$obec])){
+                var_dump("Chyba pri zazname $obec");
+                exit;
+            }
+            switch($db[$kraj][$okres][$obec][11]){
+                case "0":
+                case "2":
+                    if(strpos($db[$kraj][$okres][$obec][6],$db[$kraj][$okres][$obec][11]) === false){
+                        $db[$kraj][$okres][$obec][6].=";".$finalemail;
+                        echo "\npridavam k obci $obec email $finalemail";
+                    }
+                
+                    //var_dump($db[$kraj][$okres][$obec]);
+                    //var_dump($data);
+                    //exit;
+                break;
+            }
+        }
+	}
+}
+
 echo "\nnastavujem udaje podla corrections 2\n";
 $corrections2 = [];
 if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
