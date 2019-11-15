@@ -186,10 +186,22 @@ if (($handle = fopen("volby.digital 2020 - master.csv", "r")) !== FALSE) {
             switch($db[$kraj][$okres][$obec][11]){
                 case "0":
                 case "2":
-                    if(strpos($db[$kraj][$okres][$obec][6],$db[$kraj][$okres][$obec][11]) === false){
-                        $db[$kraj][$okres][$obec][6].=";".$finalemail;
-                        echo "\npridavam k obci $obec email $finalemail";
+                    
+                    $emails = explode(";",$db[$kraj][$okres][$obec][6].";".$finalemail);
+                    $edone = [];
+                    foreach($emails as $key=>$v){
+                        $emails[$key] = $em = trim($v);
+                        if(!$em){unset($emails[$key]);continue;}
+                        if($edone[$em]){
+                            unset($emails[$key]);continue;
+                        }
+                        $edone[$em] = true;
+                        if(!Validate::check("email",$em)){
+                            echo "!!! OVERENY EMAIL z SK-DIG NIE JE VALIDNY! ".$em."\n";
+                            unset($emails[$key]);
+                        }
                     }
+                    $db[$kraj][$okres][$obec][6] = implode(";",$emails);
                 
                     //var_dump($db[$kraj][$okres][$obec]);                     var_dump($data);                     exit;
                 break;
