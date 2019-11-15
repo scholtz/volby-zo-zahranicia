@@ -21,6 +21,9 @@ $json = trim(str_replace('election.cities=','',$json));
 $json = trim(str_replace('}}};','}}}',$json));
 $json = str_replace("'",'"',$json);
 $json = trim($json,';');
+
+$obec2kraj = [];
+$obec2okres = [];
 //var_dump($json);
 try{
     $db = json_decode($json,true,10000);
@@ -28,9 +31,20 @@ try{
         foreach($db as $kraj=>$arr1){
             foreach($arr1 as $okres=>$arr2){
                 foreach($arr2 as $obec => $obecdata){
-                    
+                    $obec2kraj[$obec] = $kraj;
+                    $obec2okres[$obec] = $okres;
                     $db[$kraj][$okres][$obec][11] = '0';
                 }
+            }
+        }
+    }
+
+
+    foreach($db as $kraj=>$arr1){
+        foreach($arr1 as $okres=>$arr2){
+            foreach($arr2 as $obec => $obecdata){
+                $obec2kraj[$obec] = $kraj;
+                $obec2okres[$obec] = $okres;
             }
         }
     }
@@ -168,6 +182,7 @@ if (($handle = fopen("volby.digital 2020 - master.csv", "r")) !== FALSE) {
                 var_dump("Chyba pri zazname $obec");
                 exit;
             }
+            
             switch($db[$kraj][$okres][$obec][11]){
                 case "0":
                 case "2":
@@ -176,9 +191,7 @@ if (($handle = fopen("volby.digital 2020 - master.csv", "r")) !== FALSE) {
                         echo "\npridavam k obci $obec email $finalemail";
                     }
                 
-                    //var_dump($db[$kraj][$okres][$obec]);
-                    //var_dump($data);
-                    //exit;
+                    //var_dump($db[$kraj][$okres][$obec]);                     var_dump($data);                     exit;
                 break;
             }
         }
@@ -193,7 +206,14 @@ if (($handle = fopen("corrections2.csv", "r")) !== FALSE) {
         if(isset($data[19])){
             $obec = $data[17];
             $okres = $data[18];
+            if($okres == "all") {
+                $okres = $obec2okres[$obec];
+            }
             $kraj = $data[19];
+            if($kraj == "all"){
+                $kraj = $obec2kraj[$obec];
+            }
+            
             $corrections2[$kraj][$okres][$obec] = $data;
 
             if(isset($db[$kraj][$okres][$obec])){
