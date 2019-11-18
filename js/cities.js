@@ -17215,12 +17215,12 @@ election.cities={
     "52",
     "966 41",
     "Veľká Lehota",
-    "obecvelkalehota@nbsiet.sk;obec@velkalehota.eu",
+    "obec@velkalehota.eu",
     "045",
     "672 61 48,49",
     "0908 158 118",
     "Veľká Lehota",
-    "0",
+    "1",
     ""
    ],
    "velke-pole": [
@@ -20689,12 +20689,12 @@ election.cities={
     "42",
     "044 55",
     "Veľká Ida",
-    "ouvida@stonline.sk",
+    "ouvida@stonline.sk;obec.velkaida@gmail.com",
     "055",
     "699 21 55,699 26 16",
     "0905 880 377 ",
     "Veľká Ida",
-    "0",
+    "1",
     ""
    ],
    "velka-lodina": [
@@ -21462,12 +21462,12 @@ election.cities={
     "7",
     "040 12",
     "Košice",
-    "karabasova@kosice-dh.sk",
+    "starosta@kosice-dh.sk;m-urad@kosice-dh.sk;sekretariat@kosice-dh.sk",
     "055",
-    "300 90 01,02,04,05-26  ",
+    "300 90 01,02,04",
     "",
     "Košice - Dargovských Hrdinov",
-    "0",
+    "2",
     ""
    ]
   },
@@ -36219,7 +36219,7 @@ election.cities={
     "591 00 40,41,42",
     "0905 576 710",
     "Voderady",
-    "0",
+    "1",
     ""
    ],
    "zavar": [
@@ -37598,12 +37598,12 @@ election.cities={
     "91\/208",
     "925 28",
     "Pusté Úľany",
-    "ou@pusteulany.sk",
+    "obecpustesady@mail.t-com.sk",
     "031",
     "784 51 21",
     "",
     "Pusté Úľany",
-    "2",
+    "3",
     ""
    ],
    "salgocka": [
@@ -40948,12 +40948,12 @@ election.cities={
     "17",
     "032 04 ",
     "Liptovský Ondrej ",
-    "oubenadikova@alconet.sk;oubenadikova@benadikova.sk",
+    "oubenadikova@benadikova.sk",
     "044",
     "559 52 37",
     "0905 455 543",
     "Beňadiková",
-    "2",
+    "3",
     ""
    ],
    "bobrovcek": [
