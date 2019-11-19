@@ -19494,7 +19494,7 @@ election.cities={
     "466 44 26",
     "",
     "Debraď",
-    "0",
+    "2",
     ""
    ],
    "drienovec": [
@@ -19504,12 +19504,12 @@ election.cities={
     "368",
     "044 01",
     "Drienovec",
-    "starosta.d@mail.t-com.sk",
+    "obec@drienovec.sk",
     "055",
     "489 93 55,460 26 01",
     "0902 898 806",
     "Drienovec",
-    "0",
+    "2",
     ""
    ],
    "druzstevna-pri-hornade": [
@@ -19519,12 +19519,12 @@ election.cities={
     "38",
     "044 31",
     "Družstevná pri Hornáde",
-    "matrika@druzstevna.sk;kultura@druzstevna.sk",
+    "kultura@druzstevna.sk",
     "055",
-    "720 71 11,12-16",
-    "0911 868 261",
+    "720 7113-4",
+    "0911 868 265",
     "Družstevná pri Hornáde",
-    "0",
+    "3",
     ""
    ],
    "durdosik": [
@@ -19534,12 +19534,12 @@ election.cities={
     "13",
     "044 45",
     "Bidovce",
-    "obec.durdosik@post.sk;podatelna@obecdurdosik.sk",
+    "podatelna@obecdurdosik.sk",
     "055",
-    "696 52 15",
-    "0911 137 167",
+    "6965 215",
+    "",
     "Ďurďošík",
-    "0",
+    "3",
     ""
    ],
    "durkov": [
@@ -22396,12 +22396,12 @@ election.cities={
     "7",
     "072 13",
     "Palín",
-    "stretavka@interdum.sk;stretavka@minet.sk",
+    "stretavka@minet.sk",
     "056",
     "649 72 07",
     "",
     "Stretavka",
-    "0",
+    "3",
     ""
    ],
    "suche": [
@@ -22426,12 +22426,12 @@ election.cities={
     "121",
     "072 04",
     "Trhovište",
-    "outrhoviste@centrum.sk;podatelna@obectrhoviste.sk",
+    "kctrhoviste@gmail.com",
     "056",
-    "649 52 23,688 39 62",
+    "688 39 62",
     "0918 548 100",
     "Trhovište",
-    "0",
+    "3",
     ""
    ],
    "trnava-pri-laborci": [
@@ -22461,7 +22461,7 @@ election.cities={
     "649 57 14",
     "0911 235 351",
     "Tušice",
-    "0",
+    "3",
     ""
    ],
    "tusicka-nova-ves": [
@@ -22621,12 +22621,12 @@ election.cities={
     "36",
     "072 33",
     "Hnojné",
-    "ocuzavadka36@stonline.sk;obeczavadka36@gmail.com",
+    "obeczavadka36@gmail.com",
     "056",
     "659 62 25",
     "",
     "Závadka",
-    "0",
+    "3",
     ""
    ],
    "zbince": [
@@ -22654,9 +22654,9 @@ election.cities={
     "ocu-zbudza@dalnet.sk",
     "056",
     "647 51 21",
-    "0949 232 133",
+    "",
     "Zbudza",
-    "0",
+    "3",
     ""
    ],
    "zemplinska-siroka": [
@@ -22666,12 +22666,12 @@ election.cities={
     "304",
     "072 12",
     "Palín",
-    "zemplinskasiroka@minet.sk",
+    "zemplinskasiroka@minet.sk;zemplinskasiroka@gmail.com",
     "056",
     "649 72 33",
     "0911 649 723",
     "Zemplínska Široká",
-    "0",
+    "3",
     ""
    ],
    "zemplinske-kopcany": [
@@ -22681,12 +22681,12 @@ election.cities={
     "56",
     "072 17",
     "Zemplínske Kopčany",
-    "zkopcany@minet.sk;sekretariat@zemplinskekopcany.sk",
+    "sekretariat@zemplinskekopcany.sk",
     "056",
     "649 32 41",
     "0918 457 142",
     "Zemplínske Kopčany",
-    "0",
+    "3",
     ""
    ]
   },
@@ -23468,7 +23468,7 @@ election.cities={
     "732 19 86,788 31 40",
     "0902 966 255",
     "Rudná",
-    "0",
+    "2",
     ""
    ],
    "silica": [
@@ -23815,7 +23815,7 @@ election.cities={
     "659 32 72",
     "",
     "Husák",
-    "0",
+    "2",
     ""
    ],
    "inovce": [
