@@ -17802,12 +17802,12 @@ election.cities={
     "100",
     "966 02",
     "Vyhne",
-    "matrika@vyhne.sk",
+    "matrika@vyhne.sk;vyhne@vyhne.sk",
     "045",
     "677 21 10,677 23 53",
     "0903 470 185",
     "Vyhne",
-    "0",
+    "2",
     ""
    ]
   }
@@ -19744,12 +19744,12 @@ election.cities={
     "259",
     "044 23",
     "Jasov",
-    "obecjasov@stonline.sk",
+    "obecjasov@stonline.sk;sekretariat@jasov.sk",
     "055",
     "466 41 06,16",
     "0905 519 020",
     "Jasov",
-    "0",
+    "2",
     ""
    ],
    "kalsa": [
@@ -19764,7 +19764,7 @@ election.cities={
     "696 68 78",
     "0915 788 295",
     "Kalša",
-    "0",
+    "2",
     ""
    ],
    "kecerovce": [
@@ -20254,12 +20254,12 @@ election.cities={
     "119",
     "044 05",
     "Janík",
-    "peder@peder.sk;ocupeder@gmail.com",
+    "ocupeder@gmail.com",
     "055",
     "460 20 48",
     "0905 373 970",
     "Peder",
-    "0",
+    "3",
     ""
    ],
    "perin-chym": [
@@ -20524,12 +20524,12 @@ election.cities={
     "159\/10",
     "044 31",
     "Sokoľ",
-    "starosta@obecsokol.sk",
+    "obecsokol@stonline.sk",
     "055",
     "729 04 68-70",
     "0918 625 053",
     "Sokoľ",
-    "0",
+    "3",
     ""
    ],
    "sokolany": [
@@ -20859,7 +20859,7 @@ election.cities={
     "698 00 21",
     "0911 205 529,0911 234 761,0903 910 140",
     "Ždaňa",
-    "0",
+    "3",
     ""
    ],
    "zlata-idka": [
@@ -22141,12 +22141,12 @@ election.cities={
     "233",
     "072 13",
     "Palín",
-    "ou.palin@stonline.sk;sekretariat@obecpalin.eu",
+    "oupalin@minet.sk;info@obecpalin.eu",
     "056",
     "649 72 03",
     "0907 921 914",
     "Palín",
-    "0",
+    "3",
     ""
    ],
    "pavlovce-nad-uhom": [
@@ -22186,12 +22186,12 @@ election.cities={
     "238",
     "072 21",
     "Nacina Ves",
-    "ocu-petrovce@dalnet.sk;obecpnl@obecpnl.eu",
+    "obecpnl@obecpnl.eu",
     "056",
-    "688 42 11,12,13",
-    "0902 905 671",
+    "688 42 12",
+    "",
     "Petrovce nad Laborcom",
-    "0",
+    "2",
     ""
    ],
    "poruba-pod-vihorlatom": [
@@ -22216,12 +22216,12 @@ election.cities={
     "144",
     "072 01",
     "Pozdišovce",
-    "ocu.pozdisovce@inmail.sk;ocu.pozdisovce@gmail.com",
+    "ocu.pozdisovce@gmail.com",
     "056",
-    "647 22 03,689 14 11,689 14 12",
-    "0905 682 545",
+    "647 22 03, 689 14 12",
+    "",
     "Pozdišovce",
-    "0",
+    "3",
     ""
    ],
    "ptruksa": [
@@ -22246,12 +22246,12 @@ election.cities={
     "4",
     "072 22",
     "Strážske",
-    "ocupustecemerne@mail.t-com.sk",
+    "pustecemerne@minet.sk",
     "056",
     "647 73 03",
     "",
     "Pusté Čemerné",
-    "0",
+    "3",
     ""
    ],
    "rakovec-nad-ondavou": [
@@ -22411,12 +22411,12 @@ election.cities={
     "150",
     "071 01",
     "Michalovce",
-    "suche@minet.sk;sekretariat@obecsuche.sk",
+    "podatelna@obecsuche.sk",
     "056",
     "642 20 91",
     "",
     "Suché",
-    "0",
+    "2",
     ""
    ],
    "trhoviste": [
@@ -22531,12 +22531,12 @@ election.cities={
     "508",
     "072 31",
     "Vinné",
-    "starosta@vinne.sk;info@vinne.sk",
+    "info@vinne.sk",
     "056",
     "687 10 40-47",
     "0905 236 386,0903 482 411,0911 285 423",
     "Vinné",
-    "0",
+    "3",
     ""
    ],
    "vojany": [
