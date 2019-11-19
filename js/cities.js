@@ -19414,13 +19414,13 @@ election.cities={
     "55",
     "044 71",
     "Čečejovce",
-    "cecejovce@gmail.com;obec@cecejovce.sk",
+    "obec@cecejovce.sk",
     "055",
-    "464 92 01,10",
+    "4649210",
     "",
     "Čečejovce",
-    "0",
-    "cecejovce@gmail.com"
+    "3",
+    ""
    ],
    "cestice": [
     "Obecný úrad",
@@ -22326,7 +22326,7 @@ election.cities={
     "649 32 10",
     "0905 693 194",
     "Slavkovce",
-    "0",
+    "2",
     ""
    ],
    "sliepkovce": [
@@ -22763,7 +22763,7 @@ election.cities={
     "788 20 36",
     "0903 211 826",
     "Bôrka",
-    "0",
+    "2",
     ""
    ],
    "brdarka": [
@@ -22853,7 +22853,7 @@ election.cities={
     "732 57 80",
     "0903 603 839",
     "Čučma",
-    "0",
+    "2",
     ""
    ],
    "dedinky": [
@@ -23033,7 +23033,7 @@ election.cities={
     "788 35 90",
     "0905 276 033",
     "Honce",
-    "0",
+    "2",
     ""
    ],
    "hrhov": [
