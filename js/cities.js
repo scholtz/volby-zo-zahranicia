@@ -6366,7 +6366,7 @@ election.cities={
     "118",
     "067 61 ",
     "Stakčín",
-    "obeckolonica@gmail.com",
+    "obeckolonica@gmail.com;obeckolonica@gmail.com",
     "057",
     "769 23 74",
     "",
