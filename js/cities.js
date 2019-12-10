@@ -680,12 +680,12 @@ election.cities={
     "92",
     "082 36",
     "Lipovce",
-    "obeclipovce@mail.t-com.sk",
+    "obec@lipovce.eu",
     "051",
     "758 17 87",
     "948 302 891",
     "Lipovce",
-    "2",
+    "3",
     ""
    ],
    "lubotice": [
@@ -3554,7 +3554,7 @@ election.cities={
     "779 66 29,788 00 69",
     "",
     "Vyšný Hrušov",
-    "2",
+    "3",
     ""
    ],
    "zavada": [
@@ -4940,7 +4940,7 @@ election.cities={
     "739 41 02",
     "0907 979 685",
     "Radvaň nad Laborcom",
-    "2",
+    "3",
     ""
    ],
    "repejov": [
@@ -8247,12 +8247,12 @@ election.cities={
     "30",
     "087 01",
     "Giraltovce",
-    "kalniste@post.sk",
+    "kalniste@centrum.sk",
     "054",
     "732 22 91",
     "904 172 992",
     "Kalnište",
-    "2",
+    "3",
     ""
    ],
    "kapisova": [
@@ -10203,12 +10203,12 @@ election.cities={
     "68",
     "976 61",
     "Lučatín",
-    "hiadel@hiadel.sk",
+    "alena.fudorova@hiadel.dcom.sk;urad@hiadel.sk",
     "048",
     "419 11 41,419 11 76",
     "0918 457 267",
     "Hiadeľ",
-    "2",
+    "3",
     ""
    ],
    "horna-micina": [
@@ -13577,12 +13577,12 @@ election.cities={
     "2",
     "050 01",
     "Revúca",
-    "obmokraluka@stonline.sk;durcovahenrieta@gmail.com",
+    "henrieta.durcova@mokraluka.eu",
     "058",
     "442 53 45",
     "0911 469 545",
     "Mokrá Lúka",
-    "2",
+    "3",
     ""
    ],
    "muran": [
@@ -14524,12 +14524,12 @@ election.cities={
     "157",
     "985 42",
     "Veľké Dravce",
-    "obechusina@gmail.com;podatelna@husina.sk",
+    "podatelna@husina.sk",
     "047",
     "569 41 11",
     "0905 433 574,0917 941 029,0907 795 513",
     "Husiná",
-    "0",
+    "3",
     ""
    ],
    "ivanice": [
@@ -15069,7 +15069,7 @@ election.cities={
     "549 52 93",
     "",
     "Rimavská Baňa",
-    "2",
+    "3",
     ""
    ],
    "rimavska-sec": [
@@ -17412,12 +17412,12 @@ election.cities={
     "167",
     "966 04",
     "Horná Ždaňa",
-    "podatelna@hornazdana.sk;starosta@hornazdana.sk",
+    "podatelna@hornazdana.sk",
     "045",
     "676 61 38",
     "0918 546 984",
     "Horná Ždaňa",
-    "2",
+    "3",
     ""
    ],
    "hronska-dubrava": [
@@ -17742,12 +17742,12 @@ election.cities={
     "161",
     "966 03",
     "Sklené Teplice",
-    "ocuskleneteplice@stonline.sk;starosta@sklene-teplice.sk",
+    "podatelna@sklene-teplice.sk",
     "045",
     "677 10 70;677 12 75",
     "",
     "Sklené Teplice",
-    "2",
+    "3",
     ""
    ],
    "slaska": [
@@ -29649,7 +29649,7 @@ election.cities={
     "650 69 65, 651 51 22",
     "0915 946 714",
     "Pozba",
-    "2",
+    "3",
     ""
    ],
    "radava": [
@@ -30126,12 +30126,12 @@ election.cities={
     "75",
     "956 03",
     "Hajná Nová Ves",
-    "info@hornestitare.sk",
+    "obec.horne.stitare@stonline.sk",
     "038",
     "538 81 21,82 03",
     "0902 404 499",
     "Horné Štitáre",
-    "1",
+    "2",
     ""
    ],
    "hrusovany": [
@@ -31720,16 +31720,16 @@ election.cities={
    "kocurany": [
     "Obecný úrad",
     "",
-    "Kocurany",
     "105",
+    "",
     "972 02",
     "Kocurany",
-    "obec@kocurany.sk",
+    "silvia.grajciarova@kocurany.sk",
     "046",
     "543 98 72,73",
     "",
     "Kocurany",
-    "2",
+    "3",
     ""
    ],
    "kos": [
@@ -32401,12 +32401,12 @@ election.cities={
     "142",
     "956 53",
     "Krásna Ves",
-    "obec@krasnaves.sk",
+    "martina.mikusova@krasnaves.sk",
     "038",
     "766 91 26",
     "",
     "Krásna Ves",
-    "2",
+    "3",
     ""
    ],
    "ksinna": [
@@ -32421,7 +32421,7 @@ election.cities={
     "769 91 22",
     "0905 509 025",
     "Kšinná",
-    "2",
+    "3",
     ""
    ],
    "libichava": [
@@ -32676,7 +32676,7 @@ election.cities={
     "760 40 97",
     "0908 536 757",
     "Šišov",
-    "2",
+    "3",
     ""
    ],
    "slatina-nad-bebravou": [
@@ -32993,7 +32993,7 @@ election.cities={
     "449 32 53",
     "",
     "Kameničany",
-    "2",
+    "3",
     ""
    ],
    "koseca": [
@@ -36114,7 +36114,7 @@ election.cities={
     "559 94 17",
     "0910 993 901",
     "Slovenská Nová Ves",
-    "2",
+    "3",
     ""
    ],
    "smolenice": [
