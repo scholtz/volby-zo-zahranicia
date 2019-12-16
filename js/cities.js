@@ -38187,13 +38187,13 @@ election.cities={
     "3",
     "921 01",
     "Piešťany",
-    "volbapostou@piestany.sk;daniela.juricova@piestany.sk;maria.krajcirova@piestany.sk",
+    "volby@piestany.sk",
     "033",
     "776 53 11,776 53 01,02",
     "",
     "Piešťany",
     "3",
-    ""
+    "daniela.juricova@piestany.sk;maria.krajcirova@piestany.sk"
    ],
    "banka": [
     "Obecný úrad",
