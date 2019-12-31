@@ -13070,7 +13070,7 @@ election.cities={
     "429 18 25",
     "0903 490 903",
     "Hradište",
-    "3",
+    "1",
     ""
    ],
    "hrnciarska-ves": [
@@ -17050,12 +17050,12 @@ election.cities={
     "185",
     "966 61",
     "Hodruša -  Hámre",
-    "matrika@hodrusa-hamre.sk;sekretariat@hodrusa-hamre.sk",
+    "matrika@hodrusa-hamre.sk",
     "045",
     "684 44 15;684 43 93;684 44 15",
     "0908 933 036",
     "Hodruša - Hámre",
-    "3",
+    "1",
     ""
    ],
    "horne-hamre": [
@@ -18795,12 +18795,12 @@ election.cities={
     "333",
     "900 83",
     "Čataj",
-    "sekretariat@cataj.sk;ekonom@cataj.sk;starosta@cataj.sk",
+    "sekretariat@cataj.sk",
     "033",
     "645 01 07",
     "0903 809 954",
     "Čataj",
-    "2",
+    "1",
     ""
    ],
    "chorvatsky-grob": [
@@ -20124,7 +20124,7 @@ election.cities={
     "466 51 77",
     "0907 919 985",
     "Nižný Lánec",
-    "2",
+    "1",
     ""
    ],
    "nova-polhora": [
