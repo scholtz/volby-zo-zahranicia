@@ -24220,7 +24220,7 @@ election.cities={
     "652 22 71",
     "0905 890 046",
     "Tibava",
-    "2",
+    "1",
     ""
    ],
    "ubrez": [
@@ -26818,12 +26818,12 @@ election.cities={
     "54",
     "951 26",
     "Šurianky",
-    "ousurianky@stonline.sk",
+    "ousurianky@stonline.sk;volby@surianky.sk",
     "037",
     "789 60 27, -862, -863",
     "0907 753 108",
     "Šurianky",
-    "3",
+    "1",
     ""
    ],
    "svatoplukovo": [
@@ -41775,7 +41775,7 @@ election.cities={
     "1",
     "036 01",
     "Martin",
-    "salagova@martin.sk",
+    "zuzana.hornakova@martin.sk;margareta.sefcikova@martin.sk;msu@martin.sk",
     "043",
     "4204 111; 4204 176",
     "",
