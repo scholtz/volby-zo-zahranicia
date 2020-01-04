@@ -17994,7 +17994,7 @@ election.cities={
     "8",
     "842 62",
     "Bratislava 4",
-    "hlasovacipreukaz@karlovaves.sk;volby@karlovaves.sk",
+    "volby2020karlovaves@gmail.com",
     "02",
     "6025 91 11",
     "",
