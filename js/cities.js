@@ -19359,7 +19359,7 @@ election.cities={
     "699 01 02",
     "0905 929 758",
     "Bunetice",
-    "2",
+    "1",
     ""
    ],
    "buzica": [
@@ -38187,7 +38187,7 @@ election.cities={
     "3",
     "921 01",
     "Piešťany",
-    "volby@piestany.sk",
+    "volbapostou@piestany.sk",
     "033",
     "776 53 11,776 53 01,02",
     "",
