@@ -9854,7 +9854,7 @@ election.cities={
     "4",
     "094 02 ",
     "Slovenská Kajňa",
-    "sl.kajna@watel.sk",
+    "obecnyurad@slovenskakajna.sk",
     "057",
     "449 41 58,488 57 10",
     "0915 879 810",
