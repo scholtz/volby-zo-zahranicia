@@ -6341,7 +6341,7 @@ election.cities={
     "758 01 93",
     "0907 944 511",
     "Klenová",
-    "2",
+    "1",
     ""
    ],
    "kolbasov": [
@@ -28127,12 +28127,12 @@ election.cities={
     "98",
     "935 82",
     "Plášťovce",
-    "ipulany@stonline.sk",
+    "ipulany@gmail.com",
     "036",
     "749 43 21",
     "0908 379 003",
     "Ipeľské Úľany",
-    "0",
+    "1",
     ""
    ],
    "ipelsky-sokolec": [
@@ -39710,12 +39710,12 @@ election.cities={
     "60",
     "013 13",
     "Rajecké Teplice",
-    "oukunerad@gmail.com;oukunerad@rajec.net",
+    "oukunerad@gmail.com",
     "041",
     "549 37 13",
     "0902 328 892",
     "Kunerad",
-    "3",
+    "1",
     ""
    ],
    "lietava": [
