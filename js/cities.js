@@ -15956,7 +15956,7 @@ election.cities={
     "489 42 66",
     "0918 702 142, 0908 542 050 ",
     "Koláre",
-    "2",
+    "1",
     ""
    ],
    "kosihovce": [
@@ -18000,7 +18000,7 @@ election.cities={
     "",
     "Bratislava - Karlova Ves ",
     "3",
-    ""
+    "hlasovacipreukaz@karlovaves.sk"
    ],
    "bratislava-devin": [
     "Miestny úrad",
@@ -28712,12 +28712,12 @@ election.cities={
     "1",
     "935 26",
     "Starý Tekov",
-    "podatelna@starytekov.sk",
+    "eva.sebova@starytekov.sk",
     "036",
     "6311 019, 194",
     "0905 625 716",
     "Starý Tekov",
-    "3",
+    "1",
     ""
    ],
    "tehla": [
