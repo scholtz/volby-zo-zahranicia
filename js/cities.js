@@ -39386,7 +39386,7 @@ election.cities={
     "0917 924 877",
     "Žilina",
     "1",
-    "kc-zalozny@zilina.sk"
+    "hlasovacipreukaz@zilina.sk"
    ],
    "bela": [
     "Obecný úrad",
